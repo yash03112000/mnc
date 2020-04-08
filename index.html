@@ -24,7 +24,7 @@
                 current = current % backgrounds.length;
                 header.css('background-image', backgrounds[current]);
             }
-            setInterval(nextBackground, 3000);
+            setInterval(nextBackground, 2000);
 
             header.css('background-image', backgrounds[0]);
         });
@@ -32,20 +32,22 @@
     </head>
     <body>
         <nav class="fixed-nav-bar">
-				<div id="menu" class="menu">
-				  <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
-				  <div class="logo">
-					  <a href="#">Media & Cultural Portal</a>
-				  </div>
-				  <ul class="menu-items">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Cultural & Hobby Groups</a></li>
-					<li><a href="#">Blogs</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">About Us</a></li>
-				</ul>
-				</div>
-			  </nav>
+            <div id="menu" class="menu">
+              <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+              <div class="logo">
+                  <a href="#">Media & Cultural Portal</a>
+              </div>
+              <ul class="menu-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cultural & Hobby Groups</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        
         <section class="section section-top">
             <div class="content rellax" data-rellax-speed="5">
                 <h1>Media And Culture Council</h1>
@@ -68,7 +70,10 @@
         </section>
 
         <section class="section section-grid">
-            <div class="rellax" data-rellax-speed="2" data-rellax-xs-speed="3">
+            <div class="rellax item1" data-rellax-speed="2" data-rellax-xs-speed="3">
+                <h2>Clubs/Societies</h2>
+            </div>
+            <div class="rellax item2" data-rellax-speed="2" data-rellax-xs-speed="3">
                 <i class="fas fa-video fa-3x secondary-text"></i>
                 <h2>Watch<span class="secondary-text dot">.</span></h2>
                 <p>
@@ -76,7 +81,7 @@
                         dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
                 </p>
             </div>
-            <div class="rellax" data-rellax-speed="2" data-rellax-xs-speed="3">
+            <div class="rellax item3" data-rellax-speed="2" data-rellax-xs-speed="3">
                 <i class="fas fa-users fa-3x secondary-text"></i>
                 <h2>Share<span class="secondary-text dot">.</span></h2>
                 <p>
@@ -84,7 +89,7 @@
                         dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
                 </p>
             </div>
-            <div class="rellax" data-rellax-speed="2" data-rellax-xs-speed="3">
+            <div class="rellax item4" data-rellax-speed="2" data-rellax-xs-speed="3">
                 <i class="fas fa-book fa-3x secondary-text"></i>
                 <h2>Learn<span class="secondary-text dot">.</span></h2>
                 <p>
@@ -95,6 +100,7 @@
         </section>
 
         <section class="section section-stream">
+            <h2 class="eventhead  rellax" data-rellax-speed="2">Events</h2>
             <img
                 class="play rellax"
                 src="https://i.ibb.co/TvdbMhQ/play-button.png"
