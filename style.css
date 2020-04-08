@@ -175,22 +175,26 @@ ul {
 
 /* Section Top */
 .section-top {
-    min-height: 500px;
+   /* min-height: 500px;
     background:  no-repeat center center/cover;
-    animation: fade 2s infinite;
+	animation: fade 3s infinite;
+	margin: 0;*/
+	height: 90vh ;
+  background-size: cover;
+  background:   no-repeat center center/cover;
+  background-blend-mode: darken;
+  transition: 3s;
 }
-.anime{
-    
-}
+
 @keyframes fade {
-    0% {
-      opacity: 0;
+    30% {
+      background-image: url(photos/a.jpg);
     }
-    50% {
-      opacity: 1;
+    66% {
+		background-image: url(photos/b.jpg);
     }
-    100% {
-      opacity: 0;
+    99% {
+		background-image: url(photos/c.jpg);
     }
   }
 
