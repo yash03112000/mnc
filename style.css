@@ -37,9 +37,9 @@ body {
 	line-height: 50px;
   }
   .menu {
-	width: 95%;
+	width: 100%;
 
-	margin: 0 auto;
+	margin: 0 20px;
   }
   .menu a, .menu a:visited {
 	color: #ffffff;
@@ -48,8 +48,9 @@ body {
 	color:chartreuse;
   }
 .logo{
- width:40%;
+ width:42%;
  float:left;
+ /*margin: 0 20px;*/
  line-height:50px;
 }
 .logo a{
@@ -254,7 +255,8 @@ ul {
 }
 .eventhead{
     position: absolute;
-    top: 500px;
+	top: 500px;
+	left:0px;
     text-align: center;
     width:100%;
     font-family: Arial, Helvetica, sans-serif;
