@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="swiper.min.css">
         <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script>
@@ -128,6 +129,46 @@ backgroundSequence();
                 </div>
             </div>
         </section>
+
+
+        <section class="section">
+            <h2 class="galleryhead">Gallery</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/a.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/b.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/c.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/a.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/b.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/c.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/a.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/b.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/c.jpg')">
+                  </div>
+                  
+                  
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
         
         
         <footer class="footer">
@@ -139,8 +180,25 @@ backgroundSequence();
         <li><a href="#">About Us</a></li>
         </ul>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha256-+xf9aJnHocnmrigq2hIDJGBSAnJdF5NH+Ooe5J2PHiI=" crossorigin="anonymous"></script>
+        <script src="swiper.min.js"></script>
         <script>
             let rellax = new Rellax('.rellax');
+            var swiper = new Swiper('.swiper-container', {
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows : true,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                    });
         </script>
     </body>
 </html>
