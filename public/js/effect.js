@@ -1751,6 +1751,7 @@ return {
 
 function abcd(){
   var preload=document.getElementById("canvas");
+  var main=document.getElementById("index2");
   console.log('swwsw');
   var loading=0;
   var id=setInterval(frame,64);
@@ -1758,11 +1759,14 @@ function abcd(){
   function frame(){
     if(loading==100){
       clearInterval(id);
-      window.open("index2.html","_self");
+      //window.open("index2.html","_self");
+      preload.style.display = 'none';
+      main.style.display = 'inline';
     } else {
         loading = loading+1;
         if(loading == 90) {
-            preload.style.animation = "fadeout 1s ease";
+            main.style.animation = "fadeIn 3s ease";
+            preload.style.animation = "fadeOut 3s ease";
         }
     }
 }
