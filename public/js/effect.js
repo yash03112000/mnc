@@ -1761,7 +1761,7 @@ function abcd(){
       clearInterval(id);
       //window.open("index2.html","_self");
       preload.style.display = 'none';
-      main.style.display = 'inline';
+      main.style.display = 'inherit';
     } else {
         loading = loading+1;
         if(loading == 90) {
