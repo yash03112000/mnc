@@ -1476,7 +1476,7 @@ function $m6Ky$var$_createClass(Constructor, protoProps, staticProps) {
   return Constructor;
 }
 
-var $m6Ky$var$TEXT = 'Media And Culture Council';
+var $m6Ky$var$TEXT = 'Media And Cultural Council';
 var $m6Ky$var$FONT_SIZE = 30;
 var $m6Ky$var$FONT_SIZE_SP = 84;
 var $m6Ky$var$FONT_SIZE_MIN =10;

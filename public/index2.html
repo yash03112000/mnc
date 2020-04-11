@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script>
         
@@ -33,29 +34,54 @@ function backgroundSequence() {
 backgroundSequence();
 
 
+
+
+
         </script>
     </head>
     <body>
-        <nav class="fixed-nav-bar">
-            <div id="menu" class="menu">
-              <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
-              <div class="logo">
-                  <a href="#">Media & Cultural Portal</a>
-              </div>
-              <ul class="menu-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cultural & Hobby Groups</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
+
+
+        <!-- navigation menu    -->
+    <nav class="nav flex-row">
+        <div class="nav-menu">
+            <div class="nav-brand">
+                <a href="#" class="text-black">Media And Cultural Portal</a>
             </div>
-        </nav>
+        </div>
+        <div class="toggle-collapse">
+            <div class="toggle-icons text-black">
+                <!--<span><i class="fas fa-bars"></i></span>-->
+                <span class="icon"></span>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-items flex-row">
+                <li class="nav-link">
+                    <a href="#" class="text-black">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="text-black">Clubs & Hobby Groups</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="text-black">Blogs</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="text-black">About Us</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="text-black">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+        
 
         
         <section class="section section-top">
-            <div class="content rellax" data-rellax-speed="5">
-                <h1>Media And Culture Council</h1>
+            <div class="content rellax" data-rellax-speed="5" >
+                <h1>Media And Cultural Council</h1>
                 <a href="#" class="btn btn-primary">Learn More</a>
             </div>
         </section>
@@ -168,9 +194,9 @@ backgroundSequence();
               </div>
         </section>
 
-<!--
 
-        <section class="section">
+
+        <!-- <section class="section">
             <h2 class="galleryhead">Clubs And Societies</h2>
             <div class="swiper-container2">
                 <div class="swiper-wrapper">
@@ -205,8 +231,8 @@ backgroundSequence();
                 
                 <div class="swiper-pagination"></div>
               </div>
-        </section>
-       -->
+        </section> -->
+       
 
 
 
@@ -222,6 +248,7 @@ backgroundSequence();
         </ul>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha256-+xf9aJnHocnmrigq2hIDJGBSAnJdF5NH+Ooe5J2PHiI=" crossorigin="anonymous"></script>
         <script src="js/swiper.min.js"></script>
+        <script src="js/nav.js"></script>
         <script>
             let rellax = new Rellax('.rellax');
             var swiper = new Swiper('.swiper-container', {
