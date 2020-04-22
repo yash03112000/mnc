@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/effect.css"> 
+
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script>
+        
+//         var bg = document.querySelector('.section-top');
+//         var bgImageArray = ["photos/a.jpg", "photos/b.jpg", "photos/c.jpg"],
+// //base = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/full-",
+// secs = 4;
+// bgImageArray.forEach(function(img){
+//     new Image().src = img; 
+//     // caches images, avoiding white flash between background replacements
+// });
+
+// function backgroundSequence() {
+// 	window.clearTimeout();
+// 	var k = 0;
+// 	for (i = 0; i < bgImageArray.length; i++) {
+// 		setTimeout(function(){ 
+// 			document.querySelector('.section-top').style.background = "url(" +  bgImageArray[k] + ") no-repeat center center/cover";
+// 			document.querySelector('.section-top').style.backgroundSize ="cover";
+// 		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
+// 		}, (secs * 1000) * i)	
+// 	}
+// }
+// backgroundSequence();
+
+
+
+
+
+        </script>
+    </head>
+    <body>
+
+        <canvas id="canvas"></canvas>
+
+        <div id="index2">
+
+                <!-- navigation menu    -->
+    <nav class="nav flex-row">
+        <div class="nav-menu">
+            <div class="nav-brand">
+                <a href="#" class="text-black">Media And Cultural Portal</a>
+            </div>
+        </div>
+        <div class="toggle-collapse">
+            <div class="toggle-icons text-black">
+                <!--<span><i class="fas fa-bars"></i></span>-->
+                <span class="icon"></span>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-items flex-row">
+                <li class="nav-link">
+                    <a href="#" class="text-black">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="text-black">Clubs & Hobby Groups</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="text-black">Blogs</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="text-black">About Us</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="text-black">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+        
+
+        
+        <!-- <section class="section section-top">
+            <div class="content rellax" data-rellax-speed="5" >
+                <h1>Media And Cultural Council</h1>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </section> -->
+        
+        <section class="section section-about">
+            <div class="content rellax" data-rellax-speed="2">
+                <h1>About Us</h1>
+                <p>
+                    The Media and Cultural Council at IITK is a hub for all activities about media and culture.<br>
+                    Sounds obvious, right? Obvious as it may be, the implications of that have enriched the campus experience for innumerable students.<br>
+                    Led by a dedicated team along with the respective clubs, the council organises a plethora of events throughout each year.<br>
+                    From full-fledged workshops to hour-long impromptu sessions, we do it all.
+                </p>
+            </div>
+        </section>
+
+            <section class="section section-grid">
+            <div class="rellax item1" data-rellax-speed="2" data-rellax-xs-speed="3">
+                <h2>Clubs/Societies</h2>
+            </div>
+            <div class="rellax item2" data-rellax-speed="2" data-rellax-xs-speed="3">
+                <i class="fas fa-video fa-3x secondary-text"></i>
+                <h2>Watch<span class="secondary-text dot">.</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+                        dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+                </p>
+            </div>
+            <div class="rellax item3" data-rellax-speed="2" data-rellax-xs-speed="3">
+                <i class="fas fa-users fa-3x secondary-text"></i>
+                <h2>Share<span class="secondary-text dot">.</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+                        dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+                </p>
+            </div>
+            <div class="rellax item4" data-rellax-speed="2" data-rellax-xs-speed="3">
+                <i class="fas fa-book fa-3x secondary-text"></i>
+                <h2>Learn<span class="secondary-text dot">.</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+                        dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+                </p>
+            </div>
+        </section> 
+
+        <section class="section section-stream">
+            <h1 class="eventhead">Events</h1>
+            <div class="content">
+                <div>
+                    <h2 class="secondary-text">Galaxy</h2>
+                    <p>Galaxy is an intra-IITK event which seeks participation from the students in the form of pools.
+                       Both UG and PG students combine to put forth their creative juices<span id="dots_1">...</span><span id="more_1">
+                       to work on various events in dance, dramatics, music, literature, and so much more. Galaxy is aimed at unearthing
+                       talent from people who don’t even know that it existed within them. The competition is intense to claim the bragging rights, 
+                       and each pool has a near-crazy team who works to achieve that success.</span></p>
+                        <button class="button button1" onclick="myFunction_1()" id="myBtn_1" >Read More</button>                 
+                </div>
+                <div>
+                    <h2 class="secondary-text">Impressions</h2 class="secondary-text">
+                     <p>Unlike the UG community, there is a whole lot of shrouded talent in the PG community. 
+                        Impressions is the annual cultural festival for the PG community to<span id="dots_2">...</span><span id="more_2">
+                        bring out these hidden gems and give them a proper stage to showcase their talents. 
+                        Be it standup comedy or monoacts, we cater it all.</span></p>
+                        <button class="button button2" onclick="myFunction_2()" id="myBtn_2" >Read More</button>                 
+                </div>
+            </div>
+            <div class="cont">
+                <div>
+                    <h2 class="secondary-text">Freshers</h2>
+                    <p>For many incoming freshers, the two years of JEE preparation is a tedious experience to say the least. 
+                        After narrowing their eyes on books for a long time, <span id="dots_3">...</span><span id="more_3">
+                        the Freshers’ Night introduces themselves to the endless possibilities which the council offers. 
+                        Each club has numerous events which come together to constitute a memorable night in the first month of college.
+                        It’s a great stage to showcase your talents to your batchmates. You can dance, narrate, paint, and much more.
+                        Trust us; few people remember your first quiz score. Many more remember your Freshers’ performance.</span></p>
+                        <button class="button button3" onclick="myFunction_3()" id="myBtn_3" >Read More</button>
+                </div>
+                <div>
+                    <h2 class="secondary-text">Montage Film Festival</h2 class="secondary-text">
+                    <p>The Montage Film Fest of IIT Kanpur is not just a celebration or an event, but an experience.
+                       An experience that we hope will change your outlook on cinema.<span id="dots_4">...</span><span id="more_4">
+                       Main-stream or Bollywood is but a small part of our rich cinematic heritage and we hope that the festival would
+                       provide the campus with an opportunity to experience great cinema, both contemporary and classic, that has often 
+                       gone unnoticed by many of us . The festival would not only broaden and enhance the viewing experience of the audience
+                       but also introduce them to the wonders of artistic qualities of the media .</span></p>
+                         <button class="button button4" onclick="myFunction_4()" id="myBtn_4" >Read More</button>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+        <!-- <section class="section">
+            <h2 class="galleryhead">Clubs And Societies</h2>
+            <div class="swiper-container swiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/photoclub.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/photoclub.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/filmclub.png')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/photoclub.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/filmclub.png')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/photoclub.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/filmclub.png')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/photoclub.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/filmclub.png')">
+                  </div>
+            </div>
+                
+                <div class="swiper-pagination swiper-pagination2"></div>
+              </div>
+        </section> -->
+       
+
+        <section class="section section-grid">
+            <div class="rellax item1" data-rellax-speed="1" data-rellax-xs-speed="3">
+                <h2>From the Blog</h2>
+            </div>
+            <div class="rellax item2" data-rellax-speed="1" data-rellax-xs-speed="3">
+                <i class="fas fa-calendar fa-3x secondary-text"></i>
+                <h2>Events Schedule<span class="secondary-text dot">.</span></h2>
+                <div class="calendar">
+                  <p>
+                    <iframe src="https://calendar.google.com/calendar/embed?src=u1r6hf76b5brn58v6nikl9o1ko%40group.calendar.google.com&ctz=Asia%2FKolkata"
+                       style="border: 0" width="550" height="500" frameborder="0" scrolling="no"></iframe>
+                 </p>          
+                </div>
+            </div>
+            <div class="rellax item3" data-rellax-speed="1" data-rellax-xs-speed="3">
+                <i class="fas fa-users fa-3x secondary-text"></i>
+                <h2>Upcoming Events<span class="secondary-text dot">.</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+                        dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <h2 class="galleryhead">Gallery</h2>
+            <div class="swiper-container swiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/a.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/b.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/c.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/a.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/b.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/c.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/a.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/b.jpg')">
+                  </div>
+                  <div class="swiper-slide" style="background-image:
+                  url('photos/c.jpg')">
+                  </div>
+            </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination1"></div>
+              </div>
+        </section>
+
+
+
+        
+        
+        <footer class="footer">
+        <ul>
+        <li><a href="#">Faq</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Notice</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+        </ul>
+        </div>
+    
+
+        <script src="js/swiper.min.js"></script>
+        <script src="js/effect.js"></script> 
+        <script src="js/know more.js"></script>
+        <script src="js/nav.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/101/three.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js'></script>    
+        <script type="module" src="js/effect.js"></script> 
+
+        <script>
+            let rellax = new Rellax('.rellax');
+            
+                var swiper2 = new Swiper('.swiper2', {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: '.swiper-pagination2',
+                            clickable: true,
+                        },
+                        });
+
+
+                    var swiper1 = new Swiper('.swiper1', {
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 3,
+                    observer: true,
+                    observeParents: true,
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows : true,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination1',
+                        Clickable: true
+                    },
+                    });        
+        </script>
+    </body>
+</html>
