@@ -1,0 +1,31 @@
+.clubs{
+    padding-top: 2.5%;
+    padding-bottom: 5%;
+    max-width: 100vw;
+    background-color: darkgray;
+    /* overflow-x: scroll; */
+}
+.clubscroll{
+    max-width: 100vw;
+    overflow-x: scroll;
+}
+.clubscroll::-webkit-scrollbar { width: 0 !important }
+.clubscroll { overflow: -moz-scrollbars-none; }
+.clubscroll { -ms-overflow-style: none; }
+/* body::-webkit-scrollbar { width: 0 !important } */
+.clubscroll { overflow: -moz-scrollbars-none; }
+.clubscroll { -ms-overflow-style: none; }
+.clubhead{
+    width: 100%;
+    text-align: center;
+}
+.clubimg{
+    width: 3400px;
+    /* overflow-x: scroll */
+}
+.clublogo{
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
