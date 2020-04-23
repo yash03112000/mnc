@@ -48,9 +48,9 @@ nav{
     transition: height 1s cubic-bezier(0.26, -0.01, 0,  1.01);
     z-index: 2;
 }
-.section-top{
+/* .section-top{
     z-index: 1;
-}
+} */
 
 nav .nav-brand a{
     display: block;

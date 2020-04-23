@@ -12,6 +12,9 @@
 .clubscroll::-webkit-scrollbar { width: 0 !important }
 .clubscroll { overflow: -moz-scrollbars-none; }
 .clubscroll { -ms-overflow-style: none; }
+/* body::-webkit-scrollbar { width: 0 !important } */
+.clubscroll { overflow: -moz-scrollbars-none; }
+.clubscroll { -ms-overflow-style: none; }
 .clubhead{
     width: 100%;
     text-align: center;
@@ -21,6 +24,7 @@
     /* overflow-x: scroll */
 }
 .clublogo{
+    cursor: pointer;
     height: 300px;
     width: 300px;
     padding: 20px;
