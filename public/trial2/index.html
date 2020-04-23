@@ -13,35 +13,19 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
-        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script>
-        
-//         var bg = document.querySelector('.section-top');
-//         var bgImageArray = ["photos/a.jpg", "photos/b.jpg", "photos/c.jpg"],
-// //base = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/full-",
-// secs = 4;
-// bgImageArray.forEach(function(img){
-//     new Image().src = img; 
-//     // caches images, avoiding white flash between background replacements
-// });
-
-// function backgroundSequence() {
-// 	window.clearTimeout();
-// 	var k = 0;
-// 	for (i = 0; i < bgImageArray.length; i++) {
-// 		setTimeout(function(){ 
-// 			document.querySelector('.section-top').style.background = "url(" +  bgImageArray[k] + ") no-repeat center center/cover";
-// 			document.querySelector('.section-top').style.backgroundSize ="cover";
-// 		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
-// 		}, (secs * 1000) * i)	
-// 	}
-// }
-// backgroundSequence();
-
-
-
-
-
+            $(document).ready(function(){
+                $('.clubs').mousemove(function(e){
+                // console.log('abcd1234');
+                var X = e.pageX;
+                // X=500;
+                var Y = e.pageY-$(this).offset().top;
+                //console.log(Y);//radial-gradient(circle at'+X+'px '+Y+'px,transparent,#000 30%)
+                $('.clubscroll').css('background','radial-gradient(circle at '+X+'px '+Y+'px,#f5e63d,#000 15%)');
+            });
+            });
+            
         </script>
     </head>
     <body>
