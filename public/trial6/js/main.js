@@ -70,3 +70,55 @@ var current = 1;
             tl.to('.part11',{duration: 1,opacity:1})
             tl.to('.img1',{duration: 1,opacity:1},"-=0.5")
         };
+
+
+
+let touchstartX = 0;
+let touchstartY = 0;
+let touchendX = 0;
+let touchendY = 0;
+
+const gestureZone = document.getElementById('gestureZone');
+
+document.addEventListener('touchstart', function(event) {
+    touchstartX = event.changedTouches[0].screenX;
+    touchstartY = event.changedTouches[0].screenY;
+}, false);
+
+document.addEventListener('touchend', function(event) {
+    touchendX = event.changedTouches[0].screenX;
+    touchendY = event.changedTouches[0].screenY;
+    handleGesture();
+}, false); 
+
+function handleGesture() {
+    // if (touchendX <= touchstartX) {
+    //     console.log('Swiped left');
+    // }
+    
+    // if (touchendX >= touchstartX) {
+    //     console.log('Swiped right');
+    // }
+    
+    if (touchendY <= touchstartY) {
+        console.log('Swiped up');
+        if(current<6){
+            // document.querySelector('.sec'+current).removeEventListener('wheel',findScrollDirectionOtherBrowsers);
+            // document.querySelector('.sec'+(current+1)).addEventListener('wheel', findScrollDirectionOtherBrowsers);
+            scrolldown(current,++current);
+        }
+    }
+    
+    if (touchendY >= touchstartY) {
+        console.log('Swiped down');
+        if(current>0){
+            // document.querySelector('.sec'+current).removeEventListener('wheel',findScrollDirectionOtherBrowsers);
+            // document.querySelector('.sec'+(current-1)).addEventListener('wheel', findScrollDirectionOtherBrowsers);
+            scrollup(current,--current);
+        }
+    }
+    
+    // if (touchendY === touchstartY) {
+    //     console.log('Tap');
+    // }
+}
