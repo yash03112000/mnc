@@ -13,15 +13,21 @@ var current = 1;
                 console.log('DOWN');
                 if(current<6){
                     document.querySelector('.sec'+current).removeEventListener('wheel',findScrollDirectionOtherBrowsers);
-                    document.querySelector('.sec'+(current+1)).addEventListener('wheel', findScrollDirectionOtherBrowsers);
+                    setTimeout(() => {
+                        document.querySelector('.sec'+(current)).addEventListener('wheel', findScrollDirectionOtherBrowsers);                        
+                    }, 2000);
+                    // document.querySelector('.sec'+(current+1)).addEventListener('wheel', findScrollDirectionOtherBrowsers);
                     scrolldown(current,++current);
                 }
                 
             }else if (delta > 0){
                 console.log('UP');
-                if(current>0){
+                if(current>1){
                     document.querySelector('.sec'+current).removeEventListener('wheel',findScrollDirectionOtherBrowsers);
-                    document.querySelector('.sec'+(current-1)).addEventListener('wheel', findScrollDirectionOtherBrowsers);
+                    setTimeout(() => {
+                        document.querySelector('.sec'+(current)).addEventListener('wheel', findScrollDirectionOtherBrowsers);                        
+                    }, 2000);
+                    // document.querySelector('.sec'+(current-1)).addEventListener('wheel', findScrollDirectionOtherBrowsers);
                     scrollup(current,--current);
                 }
                 
@@ -31,6 +37,7 @@ var current = 1;
         function scrolldown(a,b){
             var tl = gsap.timeline();
             tl.set(`.part${a}3`, { transformOrigin: "left"});
+            tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
             tl.to(`.part${a}1`, { duration: .5,y:'-30px',opacity:'0' });
             tl.to(`.part${a}3`, { duration: .01,display: 'initial' },"-=0.3");
             tl.from(`.part${a}3`,{duration: .5,x:'100%'},"-=0.31")
@@ -41,13 +48,16 @@ var current = 1;
             tl.to(`.sec${b}`, { duration: .01,display: 'flex' },"-=0.2");
             tl.from(`.sec${b}`, { duration: .4,x:'100%' },"-=0.21");
             tl.to(`.part${b}1`, { duration: .5,y:'30px',opacity:'1' });
-            tl.to(`.img${b}`, { duration: .3,opacity: '1' });
+            tl.to(`.img${b}`, { duration: .3,opacity: '1' })
+                .call(updatedown,[a,b]);
+            tl.to(`.sidenav`, {duration:.2, opacity:'1' });
             tl.set(`.part${a}3`,{x:'0%'})
         }
         function scrollup(a,b){
             var tl = gsap.timeline();
             console.log(b);
             // tl.set(`.part${a}3`, { transformOrigin: "left"});
+            tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
             tl.to(`.part${a}1`, { duration: .5,y:'-30px',opacity:'0' });
             tl.to(`.part03`, { duration: .01,display: 'initial' },"-=0.3");
             tl.from(`.part03`,{duration: .5,x:'-100%'},"-=0.31")
@@ -58,7 +68,9 @@ var current = 1;
             tl.to(`.sec${b}`, { duration: .01,display: 'flex' },"-=0.2");
             tl.from(`.sec${b}`, { duration: 1,x:'-100%' },"-=0.21");
             tl.to(`.part${b}1`, { duration: .5,y:'30px',opacity:'1' })
-            tl.to(`.img${b}`, { duration: .3,opacity: '1' });
+            tl.to(`.img${b}`, { duration: .3,opacity: '1' })
+                .call(updateup,[a,b]);
+            tl.to(`.sidenav`, {duration:.2, opacity:'1' });
             tl.set(`.part03`,{x:'00%'})
         }
 
@@ -100,7 +112,7 @@ function handleGesture() {
     //     console.log('Swiped right');
     // }
     
-    if (touchendY <= touchstartY) {
+    if (touchendY < touchstartY) {
         console.log('Swiped up');
         if(current<6){
             // document.querySelector('.sec'+current).removeEventListener('wheel',findScrollDirectionOtherBrowsers);
@@ -109,7 +121,7 @@ function handleGesture() {
         }
     }
     
-    if (touchendY >= touchstartY) {
+    if (touchendY > touchstartY) {
         console.log('Swiped down');
         if(current>0){
             // document.querySelector('.sec'+current).removeEventListener('wheel',findScrollDirectionOtherBrowsers);
@@ -121,4 +133,25 @@ function handleGesture() {
     // if (touchendY === touchstartY) {
     //     console.log('Tap');
     // }
+}
+
+function updatedown(a,b){
+    console.log(a);
+    document.querySelectorAll('.sidenav ul li')[a-1].classList.remove('active');
+    document.querySelectorAll('.sidenav ul li')[b-1].classList.add('active')
+}
+function updateup(a,b){
+    console.log(a);
+    document.querySelectorAll('.sidenav ul li')[a-1].classList.remove('active');
+    document.querySelectorAll('.sidenav ul li')[b-1].classList.add('active')
+}
+
+function abc(a){
+    if(current<a){
+        scrolldown(current,a);
+        current=a;
+    }else if(current>a){
+        scrollup(current,a)
+        current=a;
+    }
 }
