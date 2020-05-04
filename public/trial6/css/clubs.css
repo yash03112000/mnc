@@ -1,0 +1,239 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    font-family: system-ui, sans-serif;
+    
+    /* this breaks position sticky in Firefox */
+    /* overflow-x: hidden; */
+  }
+  header {
+    grid-column: 1 / 3;
+    background: #455A64;
+    color: white;
+    padding: 4rem;
+    text-align: center;
+    font-size: 30px;
+  }
+  /* .logo img{
+      margin-left: auto;
+      margin-right: auto;
+  } */
+  nav {
+    white-space: nowrap;
+    /* background: #37474F; */
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .logo{
+      margin-top:100px;
+      height: 70%;
+      width: 40%;
+      float:right;
+      padding-left: 2rem;
+  }
+  /* Only stick if you can fit */
+  @media (min-height: 300px) {
+    nav ul {
+      position: sticky;
+      top: 0;
+    }
+  }
+  nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: black;
+    text-decoration: none;
+  }
+  nav ul li a.current {
+    background: blue;
+  }
+ main{
+   padding-bottom:10px;
+ }
+
+  section{
+   /* display:flex; */
+    padding: 1rem;
+    margin-top: 2rem;
+   /* height:1000px; */ 
+    background-color: white;
+    padding-top: 0 10px; 
+  }
+  section p{
+   padding:5px;
+   margin:0rem;
+   font-size:18px;
+  }
+  section h1{
+    font-size:36px;
+    padding: 2px;
+  }
+  section h2{
+    font-weight: lighter;
+    opacity:0.5;
+    padding:15px 0;
+    margin:10px;
+  }
+  .section-header{
+    padding:15px 0;
+  }
+  
+  .events_vm_1 ,.events_vm_2,.events_vm_3,.events_vm_4{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+    position: relative;
+    top:10vh;
+  }
+
+  .divider1{
+    width:55%;
+    float:left;
+    margin-bottom: 20px;
+    list-style-type: circle;
+    font-size: 18px;
+  }
+  .divider2{
+    width:45%;
+    float:right;
+    margin-bottom: 20px;
+    list-style-type: circle;
+    font-size: 18px;
+  }
+  
+
+
+  /*--- Meet the team --- */
+
+  .our-team{
+    text-align: center;
+    position: relative;
+}
+.our-team:before{
+    content: "";
+    border: 4px solid #083d77;
+    opacity: 0;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    bottom: -7px;
+    right: -7px;
+    transform: scale(1.03);
+    transition: all 0.6s ease 0s;
+}
+.our-team:hover:before{
+    opacity: 1;
+    transform: scale(1);
+}
+.our-team .pic{ position: relative; }
+.our-team .pic:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+}
+.our-team:hover .pic:before{ opacity: 1; }
+.our-team img{
+    width: 100%;
+    height: 100%;
+}
+.our-team .team-content{
+    padding: 30px 0 20px;
+    position: relative;
+    top: 0;
+    transition: all 0.6s ease 0s;
+}
+.our-team:hover .team-content{ top: -50%; }
+.our-team .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+    transition: all 0.6s ease 0s;
+}
+.our-team:hover .title{ color: #fff; }
+.our-team .post{
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    color: #707070;
+    text-transform: capitalize;
+    transition: all 0.6s ease 0s;
+}
+.our-team:hover .post{ color: white; }
+.our-team .social{
+    width: 100%;
+    padding: 0;
+    margin: 0 0 30px;
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.6s ease 0s;
+}
+.our-team:hover .social{
+    opacity: 1;
+    transform: scale(1);
+}
+.our-team .social li{ display: inline-block; }
+.our-team .social li a{
+    display: block;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #083d77;
+    border-right: 1px solid #083d77;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.our-team .social li a:hover{ color: #ffcc00; }
+.our-team .social li:last-child a{ border-right: none; }
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+
+
+/*--- Footer --- */
+
+footer {
+  grid-column: 1 / 3;
+  background: #607D8B;
+  padding: 5rem 1rem;
+}
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  margin:20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
