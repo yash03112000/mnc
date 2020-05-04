@@ -160,37 +160,5 @@
   }
 
 
-  nav{
-    position: absolute;
-    right: 0px;
-    /* padding-right:30px; */
-    top:30%;
-    width:60px;
-    z-index:50;
-  }
-  nav ul{
-    list-style: none;
-  }
-  nav ul li{
-    padding-top: 10px;
-    color:#8a8787;
-    opacity: 0.5;
-    font-family: 'Volkhov', serif;
-    font-size: 10px;
-    letter-spacing: -1px;
-  }
-  nav ul li span{
-    /* overflow: hidden;*/
-     
-    display: none;
-  }
-  nav ul li:hover span{
-    display: initial;
-  }
-  .active{
-    /* text-decoration: line-through; */
-    /* font-size: 20px; */
-  color: #ebe6e6;
-  opacity: 1;
-  }
+  
   

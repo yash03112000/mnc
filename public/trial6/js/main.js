@@ -81,6 +81,8 @@ var current = 1;
             tl.from('.sec1',{duration: 1,x:'50px',opacity:0})
             tl.to('.part11',{duration: 1,opacity:1})
             tl.to('.img1',{duration: 1,opacity:1},"-=0.5")
+            // trial();
+            //barba1234();
         };
 
 
@@ -155,3 +157,54 @@ function abc(a){
         current=a;
     }
 }
+
+
+// document.addEventListener('mousemove',function(e){
+//     // console.log(e.clientX)
+//     // console.log(getViewport());
+//     var xsize = getViewport()[0];
+//     var flag = e.clientX - (xsize/2);
+//     if(Math.abs(flag)<(xsize/4)){
+//         // console.log('yo');
+//         var percent = (flag/xsize)*23;
+//         console.log(2*percent);
+//         document.querySelector('.layer11').style.width = `${50+percent}%`;
+//         document.querySelector('.layer12').style.width = `${50-percent}%`;
+//         document.querySelector('.part11').style.width = `${50+percent}%`; 
+//         document.querySelector('.part12').style.width = `${50-percent}%`;
+//         document.getElementById('svg').style.transform = `rotateY(${6*percent}deg)`;
+//         document.getElementById('svg2').style.transform = `rotateY(${6*percent}deg)`;
+//     }
+
+// })
+
+function getViewport() {
+
+    var viewPortWidth;
+    var viewPortHeight;
+   
+    // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+    if (typeof window.innerWidth != 'undefined') {
+      viewPortWidth = window.innerWidth,
+      viewPortHeight = window.innerHeight
+    }
+   
+   // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+    else if (typeof document.documentElement != 'undefined'
+    && typeof document.documentElement.clientWidth !=
+    'undefined' && document.documentElement.clientWidth != 0) {
+       viewPortWidth = document.documentElement.clientWidth,
+       viewPortHeight = document.documentElement.clientHeight
+    }
+   
+    // older versions of IE
+    else {
+      viewPortWidth = document.getElementsByTagName('body')[0].clientWidth,
+      viewPortHeight = document.getElementsByTagName('body')[0].clientHeight
+    }
+    return [viewPortWidth, viewPortHeight];
+   }
+
+
+
+   
