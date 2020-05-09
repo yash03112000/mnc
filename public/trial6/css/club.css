@@ -16,6 +16,8 @@ html {
   }
   section{
     opacity: 0;
+    position: relative;
+    top:30px;
   }
   header {
     grid-column: 1 / 3;
@@ -131,6 +133,15 @@ html {
 body::-webkit-scrollbar { width: 0 !important }
 body { overflow: -moz-scrollbars-none; }
 body { -ms-overflow-style: none; }
+
+.part23{
+  height:100vh;
+  width: 100vw;
+  position: absolute;
+  /* background-color: #610c68; */
+  display: none;
+  z-index: 1000;
+}
 
 
 

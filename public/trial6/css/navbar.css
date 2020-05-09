@@ -159,6 +159,30 @@
     transition: color 0.4s ease;
   }
 
+  header h1{
+    opacity: 0;
+  }
+
+  body::-webkit-scrollbar { width: 0 !important }
+body { overflow: -moz-scrollbars-none; }
+body { -ms-overflow-style: none; }
+
+
+nav ul li a.current {
+  /* background: #cf8686; */
+  color: #8a8787;
+  background-color: white;
+}
+nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ebe6e6;
+  text-decoration: none;
+}
+nav ul li{
+  color: #ebe6e6;
+}
+
 
   
   

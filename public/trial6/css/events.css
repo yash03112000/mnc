@@ -82,7 +82,9 @@ html {
     margin: 0 0 2rem 0;
     height:500px; 
     background-color: white;
-    padding-top: 0 10px; 
+    padding-top: 0 10px;
+    position: relative;
+    top:30px; 
   }
   section p{
    padding-top:5px;

@@ -3,6 +3,9 @@
 let lastId;
 let cur = [];
 
+// var film = '#e6837e',
+//     photo = '#aaaaaa';
+
 // This should probably be throttled.
 // Especially because it triggers during smooth scrolling.
 // https://lodash.com/docs/4.17.10#throttle
@@ -30,7 +33,7 @@ let mainSections = document.querySelectorAll("main section");
       link.classList.add("current");
       var tl = gsap.timeline();
               // console.log(entry)
-              tl.to(section,{duration: 2,opacity:1})
+              tl.to(section,{duration: 2,opacity:1,y:-30})
 
     } else {
       link.classList.remove("current");
@@ -46,35 +49,51 @@ window.onload = function(){
   // document.querySelector('.sec1').addEventListener('wheel', findScrollDirectionOtherBrowsers);
   var tl = gsap.timeline();
   tl.to('header h1',{duration: 1,opacity:1})
-
-      
-  // const section = document.querySelectorAll('section');
-  // console.log(section);
-  // observer = new IntersectionObserver((entries) => {
-
-  //     entries.forEach(entry => {
-  //         if(entry.intersectionRatio > 0) {
-  //           // console.log('aa');
-  //             // entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
-              // var tl = gsap.timeline();
-              // console.log(entry)
-              // tl.to(entry.target,{duration: 2,opacity:1})
-  //         }
-  //         else {
-  //             entry.target.style.animation = 'none';
-  //         }
-  //     })
-
-  // })
-
-  // let option = {
-  //   // root: document.querySelector('#scrollArea'),
-  //   // rootMargin: '0px',
-  //   threshold: 0
-  // }
-
-  // section.forEach(image => {
-  //     observer.observe(image)
-  // })
-
 };
+
+function trans(a,b){
+  console.log('trans')
+  document.querySelector('.part23').style.backgroundColor = b;
+  var pos = window.pageYOffset ||  document.documentElement.scrollTop;
+  var final = pos + getViewport()[1];
+  // console.log(pos);
+  // console.log(final)
+  document.querySelector('body').style.height = "100vh";
+  document.querySelector('body').style.overflow = "hidden";
+  var tl = gsap.timeline();
+  tl.set('.part23',{display:'grid'});
+  tl.set(`.part23`, { transformOrigin: "bottom",y:final});
+  tl.to('.part23',{duration:0.8,y:pos})
+  .call(trans1,[a])
+}
+function trans1(a){
+  window.location = `./${a}.html`
+}
+
+
+function getViewport() {
+
+  var viewPortWidth;
+  var viewPortHeight;
+ 
+  // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+  if (typeof window.innerWidth != 'undefined') {
+    viewPortWidth = window.innerWidth,
+    viewPortHeight = window.innerHeight
+  }
+ 
+ // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+  else if (typeof document.documentElement != 'undefined'
+  && typeof document.documentElement.clientWidth !=
+  'undefined' && document.documentElement.clientWidth != 0) {
+     viewPortWidth = document.documentElement.clientWidth,
+     viewPortHeight = document.documentElement.clientHeight
+  }
+ 
+  // older versions of IE
+  else {
+    viewPortWidth = document.getElementsByTagName('body')[0].clientWidth,
+    viewPortHeight = document.getElementsByTagName('body')[0].clientHeight
+  }
+  return [viewPortWidth, viewPortHeight];
+ }
