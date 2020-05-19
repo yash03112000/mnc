@@ -41,12 +41,12 @@ let mainSections = document.querySelectorAll("main section div");
   
 });
 
-window.onload = function(){
-  console.log('abcde');
-  // document.querySelector('.sec1').addEventListener('wheel', findScrollDirectionOtherBrowsers);
-  var tl = gsap.timeline();
-  tl.to('header h1',{duration: 1,opacity:1})
-};
+// window.onload = function(){
+//   console.log('abcde');
+//   // document.querySelector('.sec1').addEventListener('wheel', findScrollDirectionOtherBrowsers);
+//   var tl = gsap.timeline();
+//   tl.to('header h1',{duration: 1,opacity:1})
+// };
 
 
 function trans(a,b){
@@ -95,3 +95,11 @@ function getViewport() {
   }
   return [viewPortWidth, viewPortHeight];
  }
+
+ window.onload = function(){
+  console.log('abcde');
+  // document.querySelector('.sec1').addEventListener('wheel', findScrollDirectionOtherBrowsers);
+  var tl = gsap.timeline();
+  tl.to('.part23',{duration: 1,y:'-100vh'})
+  tl.to('.mega',{duration: 1,y:'-100vh'},'-=1')
+};

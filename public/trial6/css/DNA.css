@@ -3,13 +3,18 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  margin: 0;
-  display: grid;
-  grid-template-columns: min-content 1fr;
+  
   font-family: system-ui, sans-serif;
   
   /* this breaks position sticky in Firefox */
   /* overflow-x: hidden; */
+}
+.mega{
+  margin: 0;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  position: relative;
+  top:100vh;
 }
 header {
   grid-column: 1 / 3;
@@ -432,7 +437,7 @@ counter-increment: li-counter;
   height:100vh;
   width: 100vw;
   position: absolute;
-  /* background-color: #610c68; */
-  display: none;
-  z-index: 1000;
+  background-color: #e67496;
+  /* display: none; */
+  /* z-index: 2000; */
 }
