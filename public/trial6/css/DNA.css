@@ -116,6 +116,9 @@ section h2{
 .section-performance-els{
   margin-top: 450px;
 }
+.section-news-anime{
+  margin-top:700px;
+}
 .section-header{
   padding:25px 0;
 }
@@ -142,7 +145,9 @@ section h2{
   /* list-style-type: circle; */
   font-size: 18px;
 }
-
+.list-type{
+  margin-bottom: 600px;
+}
 
 
 /*--- Meet the team --- */
@@ -423,12 +428,20 @@ counter-increment: li-counter;
     width:30%;
     margin:10px;
 }
+.column-contact-anime{
+   width:45%;
+   margin-left:20px;
+}
   @media screen and (max-width: 600px) {
     .column-contact {
       width: 100%;
     }
     .column-contact-els {
       width: 100%;
+    }
+    .column-contact-anime{
+      width:100%;
+      margin-top:10px;
     }
 }
  .images{
@@ -439,6 +452,12 @@ counter-increment: li-counter;
   width:300px;
   height:200px;
 }
-
+.frame{
+  width:390px;
+  height: 310px;
+  border: 5px solid #000;
+  background-color: #000;
+  padding-right: 5px;
+}
 
 
