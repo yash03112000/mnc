@@ -289,6 +289,10 @@ clear: both;
 }
 }
 
+.list-type{
+  margin-bottom: 250px;
+}
+
 .list-type5{
 width:430px;
 margin:0 auto;
@@ -412,9 +416,17 @@ counter-increment: li-counter;
       width:30%;
       margin-left:10px;
   }
+.column-contact-qc{
+    width:45%;
+    margin-left:20px;
+}
+
   @media screen and (max-width: 600px) {
     .column-contact {
       width: 100%;
+    }
+    .column-contact-qc{
+    width:100%;
     }
 }
  .images{
