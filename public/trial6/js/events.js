@@ -102,4 +102,6 @@ function getViewport() {
   var tl = gsap.timeline();
   tl.to('.part23',{duration: 1,y:'-100vh'})
   tl.to('.mega',{duration: 1,y:'-100vh'},'-=1')
+  tl.to('header h1',{duration: 1,opacity:1},'-=1')
+
 };

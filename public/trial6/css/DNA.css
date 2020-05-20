@@ -16,6 +16,14 @@ body {
   position: relative;
   top:100vh;
 }
+.part23{
+  height:100vh;
+  width: 100vw;
+  position: absolute;
+  /* background-color: #e67496; */
+  /* display: none; */
+  z-index: 2000;
+}
 header {
   grid-column: 1 / 3;
   /* background: #455A64; */
@@ -433,11 +441,3 @@ counter-increment: li-counter;
 
 
 
-.part23{
-  height:100vh;
-  width: 100vw;
-  position: absolute;
-  background-color: #e67496;
-  /* display: none; */
-  /* z-index: 2000; */
-}
