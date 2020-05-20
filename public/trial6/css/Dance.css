@@ -108,6 +108,7 @@ section h2{
   padding:15px 0;
   margin:10px;
   /* font-family: 'Open Sans Condensed', sans-serif; */
+  font-family: 'Comic Sans MS';
 
 }
 .section-performance{
@@ -130,14 +131,14 @@ section h2{
 }
 
 .divider1{
-  width:55%;
+  width:50%;
   float:left;
   margin-bottom: 40px;
   /* list-style-type: circle; */
   font-size: 18px;
 }
 .divider2{
-  width:45%;
+  width:50%;
   float:right;
   margin-bottom: 40px;
   /* list-style-type: circle; */

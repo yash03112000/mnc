@@ -118,14 +118,14 @@ html {
   }
 
   .divider1{
-    width:55%;
+    width:50%;
     float:left;
     margin-bottom: 20px;
     list-style-type: circle;
     font-size: 18px;
   }
   .divider2{
-    width:45%;
+    width:50%;
     float:right;
     margin-bottom: 20px;
     list-style-type: circle;
