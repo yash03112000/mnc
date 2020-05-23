@@ -170,13 +170,13 @@ body { -ms-overflow-style: none; }
 
 nav ul li a.current {
   /* background: #cf8686; */
-  color: #8a8787;
+  color: #4e4e4e;
   background-color: white;
 }
 nav ul li a {
   display: block;
   padding: 0.5rem 1rem;
-  color: #ebe6e6;
+  color: #999797;
   text-decoration: none;
 }
 nav ul li{
