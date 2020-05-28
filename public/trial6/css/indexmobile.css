@@ -14,4 +14,20 @@
         top: 0;
         right:0vw;
       }
+
+    .content2{
+    font-size: 12px;
+    }
+    .view2{
+        top:5vh;
+    }
+    .events{
+        font-size: 20px;
+    }
+    .view3{
+        top:5vh;
+    }
+    .view4{
+        top:5vh;
+    }
 }
