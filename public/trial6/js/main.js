@@ -35,43 +35,88 @@ var current = 1;
         }
 
         function scrolldown(a,b){
-            var tl = gsap.timeline();
-            tl.set(`.part${a}3`, { transformOrigin: "left"});
-            tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
-            tl.to(`.part${a}1`, { duration: .5,y:'-30px',opacity:'0' });
-            tl.to(`.part${a}3`, { duration: .01,display: 'initial' },"-=0.3");
-            tl.from(`.part${a}3`,{duration: .5,x:'100%'},"-=0.31")
-            tl.to(`.img${a}`, { duration: .3,opacity: '0' });
-            tl.to(`.sec${a}`,{duration: .01,display:'none'},"-=0.2")
-            tl.to(`.part${a}3`,{duration: .5,x:'-100%'},"-=0.2")
-            tl.to(`.part${a}3`, { duration: .01,display:'none' });
-            tl.to(`.sec${b}`, { duration: .01,display: 'flex' },"-=0.2");
-            tl.from(`.sec${b}`, { duration: .4,x:'100%' },"-=0.21");
-            tl.to(`.part${b}1`, { duration: .5,y:'30px',opacity:'1' });
-            tl.to(`.img${b}`, { duration: .3,opacity: '1' })
-                .call(updatedown,[a,b]);
-            tl.to(`.sidenav`, {duration:.2, opacity:'1' });
-            tl.set(`.part${a}3`,{x:'0%'})
+            var x = window.matchMedia("(max-width: 500px)")
+            if(x.matches){
+                var tl = gsap.timeline();
+                tl.set(`.part${a}3`, { transformOrigin: "bottom"});
+                tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
+                tl.to(`.part${a}1`, { duration: .5,y:'-30px',opacity:'0' });
+                tl.to(`.part${a}3`, { duration: .01,display: 'initial' },"-=0.3");
+                tl.from(`.part${a}3`,{duration: .5,y:'100%'},"-=0.31")
+                tl.to(`.img${a}`, { duration: .3,opacity: '0' });
+                tl.to(`.sec${a}`,{duration: .01,display:'none'},"-=0.2")
+                tl.to(`.part${a}3`,{duration: .5,y:'-100%'},"-=0.2")
+                tl.to(`.part${a}3`, { duration: .01,display:'none' });
+                tl.to(`.sec${b}`, { duration: .01,display: 'block' },"-=0.2");
+                tl.from(`.sec${b}`, { duration: .4,y:'100%' },"-=0.21");
+                tl.to(`.part${b}1`, { duration: .5,y:'30px',opacity:'1' });
+                tl.to(`.img${b}`, { duration: .3,opacity: '1' })
+                    .call(updatedown,[a,b]);
+                tl.to(`.sidenav`, {duration:.2, opacity:'1' });
+                tl.set(`.part${a}3`,{y:'0%'})
+            }else{
+                var tl = gsap.timeline();
+                tl.set(`.part${a}3`, { transformOrigin: "left"});
+                tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
+                tl.to(`.part${a}1`, { duration: .5,y:'-30px',opacity:'0' });
+                tl.to(`.part${a}3`, { duration: .01,display: 'initial' },"-=0.3");
+                tl.from(`.part${a}3`,{duration: .5,x:'100%'},"-=0.31")
+                tl.to(`.img${a}`, { duration: .3,opacity: '0' });
+                tl.to(`.sec${a}`,{duration: .01,display:'none'},"-=0.2")
+                tl.to(`.part${a}3`,{duration: .5,x:'-100%'},"-=0.2")
+                tl.to(`.part${a}3`, { duration: .01,display:'none' });
+                tl.to(`.sec${b}`, { duration: .01,display: 'flex' },"-=0.2");
+                tl.from(`.sec${b}`, { duration: .4,x:'100%' },"-=0.21");
+                tl.to(`.part${b}1`, { duration: .5,y:'30px',opacity:'1' });
+                tl.to(`.img${b}`, { duration: .3,opacity: '1' })
+                    .call(updatedown,[a,b]);
+                tl.to(`.sidenav`, {duration:.2, opacity:'1' });
+                tl.set(`.part${a}3`,{x:'0%'})
+            }
+
         }
         function scrollup(a,b){
-            var tl = gsap.timeline();
-            console.log(b);
-            // tl.set(`.part${a}3`, { transformOrigin: "left"});
-            tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
-            tl.to(`.part${a}1`, { duration: .5,y:'-30px',opacity:'0' });
-            tl.to(`.part03`, { duration: .01,display: 'initial' },"-=0.3");
-            tl.from(`.part03`,{duration: .5,x:'-100%'},"-=0.31")
-            tl.to(`.img${a}`, { duration: .3,opacity: '0' });
-            tl.to(`.sec${a}`,{duration: .01,display:'none'},"-=0.2")
-            tl.to(`.part03`,{duration: .5,x:'100%'},"-=0.2")
-            tl.to(`.part03`, { duration: .01,display:'none' },"+=0.02");
-            tl.to(`.sec${b}`, { duration: .01,display: 'flex' },"-=0.2");
-            tl.from(`.sec${b}`, { duration: 1,x:'-100%' },"-=0.21");
-            tl.to(`.part${b}1`, { duration: .5,y:'30px',opacity:'1' })
-            tl.to(`.img${b}`, { duration: .3,opacity: '1' })
-                .call(updateup,[a,b]);
-            tl.to(`.sidenav`, {duration:.2, opacity:'1' });
-            tl.set(`.part03`,{x:'00%'})
+            var x = window.matchMedia("(max-width: 500px)")
+            if(x.matches){
+                var tl = gsap.timeline();
+                console.log(b);
+                // tl.set(`.part${a}3`, { transformOrigin: "left"});
+                tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
+                tl.to(`.part${a}1`, { duration: .5,y:'-30px',opacity:'0' });
+                tl.to(`.part03`, { duration: .01,display: 'initial' },"-=0.3");
+                tl.from(`.part03`,{duration: .5,y:'-100%'},"-=0.31")
+                tl.to(`.img${a}`, { duration: .3,opacity: '0' });
+                tl.to(`.sec${a}`,{duration: .01,display:'none'},"-=0.2")
+                tl.to(`.part03`,{duration: .5,y:'100%'},"-=0.2")
+                tl.to(`.part03`, { duration: .01,display:'none' },"+=0.02");
+                tl.to(`.sec${b}`, { duration: .01,display: 'block' },"-=0.2");
+                tl.from(`.sec${b}`, { duration: 1,y:'-100%' },"-=0.21");
+                tl.to(`.part${b}1`, { duration: .5,y:'30px',opacity:'1' })
+                tl.to(`.img${b}`, { duration: .3,opacity: '1' })
+                    .call(updateup,[a,b]);
+                tl.to(`.sidenav`, {duration:.2, opacity:'1' });
+                tl.set(`.part03`,{y:'00%'})
+            }else{
+                var tl = gsap.timeline();
+                console.log(b);
+                // tl.set(`.part${a}3`, { transformOrigin: "left"});
+                tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
+                tl.to(`.part${a}1`, { duration: .5,y:'-30px',opacity:'0' });
+                tl.to(`.part03`, { duration: .01,display: 'initial' },"-=0.3");
+                tl.from(`.part03`,{duration: .5,x:'-100%'},"-=0.31")
+                tl.to(`.img${a}`, { duration: .3,opacity: '0' });
+                tl.to(`.sec${a}`,{duration: .01,display:'none'},"-=0.2")
+                tl.to(`.part03`,{duration: .5,x:'100%'},"-=0.2")
+                tl.to(`.part03`, { duration: .01,display:'none' },"+=0.02");
+                tl.to(`.sec${b}`, { duration: .01,display: 'flex' },"-=0.2");
+                tl.from(`.sec${b}`, { duration: 1,x:'-100%' },"-=0.21");
+                tl.to(`.part${b}1`, { duration: .5,y:'30px',opacity:'1' })
+                tl.to(`.img${b}`, { duration: .3,opacity: '1' })
+                    .call(updateup,[a,b]);
+                tl.to(`.sidenav`, {duration:.2, opacity:'1' });
+                tl.set(`.part03`,{x:'00%'})
+            }
+
         }
 
         window.onload = function(){
