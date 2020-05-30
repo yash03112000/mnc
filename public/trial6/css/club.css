@@ -7,14 +7,20 @@ html {
   }
   body {
     margin: 0;
-    display: grid;
-    grid-template-columns: min-content 1fr;
+    /* display: grid;
+    grid-template-columns: min-content 1fr; */
     font-family: system-ui, sans-serif;
     
     /* this breaks position sticky in Firefox */
     /* overflow-x: hidden; */
   }
-@media (max-width:500px){
+  .mega{
+    margin: 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    font-family: system-ui, sans-serif;
+  }
+@media (max-width:700px){
     body{
       grid-template-columns:0% auto;
     }
@@ -72,7 +78,7 @@ nav {
     /* background: #cf8686; */
     color: #8a8787;
   }
-@media (max-width:500px){
+@media (max-width:700px){
   nav{
       display: block;
       width:100%;
@@ -110,22 +116,7 @@ nav {
     font-size: 2em;
   }
 
-@media (max-width:500px){
-   main{
-       padding-top:200px;
-       padding-bottom: 500px;
-       width:100%;
-   }
-   section{
-       width:90%;
-       margin: 1rem;
-       height:400px;
-       border: 1px solid black; 
-   }
-   section h2{
-       font-size:20px;
-   }
-  }
+
  
   /* .logo{
       background-color: #e6837e;
@@ -169,6 +160,46 @@ body { -ms-overflow-style: none; }
   z-index: 1000;
 }
 
+
+
+@media (max-width:700px){
+  main{
+      padding-top:200px;
+      padding-bottom: 500px;
+      width:100%;
+  }
+  .mega{
+   grid-template-columns:0% 100vw;
+   min-width: 0;
+   min-height: 0;
+ }
+  section{
+      width:90%;
+      margin: 1rem;
+      height:400px;
+      border: 1px solid black; 
+  }
+  section h2{
+      font-size:20px;
+  }
+  section h1{
+    padding-top: 0;
+    font-size:20px;
+}
+  nav ul li{
+    font-size: 2.5vw;
+  }
+  header h1{
+    font-size: 50px;
+  }
+  .events_vm_1 ,.events_vm_2,.events_vm_3,.events_vm_4{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+    position: relative;
+    top:5vh;
+  }
+ }
 
 
   
