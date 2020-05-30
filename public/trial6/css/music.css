@@ -16,6 +16,13 @@ body {
   position: relative;
   top:100vh;
 }
+@media (max-width:500px){
+  .mega{
+    grid-template-columns:0% 100vw;
+    min-width: 0;
+    min-height: 0;
+  }
+}
 .part23{
   height:100vh;
   width: 100vw;
@@ -37,8 +44,14 @@ header {
 }
 header h1{
   font-size: 70px;
-
+  opacity: 0;
 }
+@media (max-width:500px){
+  header h1{
+  font-size: 50px;
+  }
+}
+
 /* .logo img{
     margin-left: auto;
     margin-right: auto;
@@ -75,6 +88,16 @@ nav ul li a {
 }
 nav ul li a.current {
   background: blue;
+}
+@media (max-width:500px){
+  nav{
+      display: block;
+      width:100%;
+  }
+  nav ul li {
+     display:inline-table;
+     font-size: 12px;
+ } 
 }
 main{
  padding-bottom:10px;
@@ -119,7 +142,21 @@ section h2{
 .section-team{
   width:100%;
 }
-
+@media (max-width:500px){
+  main{
+      padding-top:200px;
+      padding-bottom: 200px;
+      width:100%;
+  }
+  section{
+      width:90%;
+      margin: 1rem;
+       
+  }
+  section h2{
+      font-size:20px;
+  }
+ }
 .events_vm_1 ,.events_vm_2,.events_vm_3,.events_vm_4{
   font-weight: bold;
   font-size: 18px;
@@ -417,6 +454,12 @@ counter-increment: li-counter;
   @media screen and (max-width: 600px) {
     .column-contact {
       width: 100%;
+    }
+    .list-type5,.list-type6{
+      width:80vw;
+    }
+    iframe{
+      width:80vw;
     }
 }
 
