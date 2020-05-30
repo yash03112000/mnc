@@ -16,7 +16,7 @@ body {
   position: relative;
   top:100vh;
 }
-@media (max-width:500px){
+@media (max-width:700px){
   .mega{
     grid-template-columns:0% 100vw;
     min-width: 0;
@@ -96,7 +96,7 @@ nav ul li a.current {
   }
   nav ul li {
      display:inline-table;
-     font-size: 12px;
+     font-size: 2.5vw;
  } 
 }
 main{
@@ -153,7 +153,7 @@ section h2{
   position: relative;
   top:10vh;
 }
-@media (max-width:500px){
+@media (max-width:700px){
   main{
       padding-top:200px;
       padding-bottom: 200px;
@@ -312,7 +312,7 @@ clear: both;
 }
 
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 .column {
   width: 100%;
 }
@@ -484,7 +484,7 @@ border: 5px solid #000;
 background-color: #000;
 padding-right: 5px;
 }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .column-contact {
       width: 100%;
       margin-left: 10px;
