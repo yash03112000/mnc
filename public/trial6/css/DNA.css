@@ -16,6 +16,13 @@ body {
   position: relative;
   top:100vh;
 }
+@media (max-width:500px){
+  .mega{
+    grid-template-columns:0% 100vw;
+    min-width: 0;
+    min-height: 0;
+  }
+}
 .part23{
   height:100vh;
   width: 100vw;
@@ -37,7 +44,13 @@ header {
 }
 header h1{
   font-size: 70px;
-
+  opacity: 0;
+}
+@media (max-width:500px){
+  header h1{
+  font-size: 35px;
+  opacity: 0;
+  }
 }
 /* .logo img{
     margin-left: auto;
@@ -75,6 +88,16 @@ nav ul li a {
 }
 nav ul li a.current {
   background: blue;
+}
+@media (max-width:500px){
+  nav{
+      display: block;
+      width:100%;
+  }
+  nav ul li {
+     display:inline-table;
+     font-size: 12px;
+ } 
 }
 main{
  padding-bottom:10px;
@@ -130,7 +153,21 @@ section h2{
   position: relative;
   top:10vh;
 }
-
+@media (max-width:500px){
+  main{
+      padding-top:200px;
+      padding-bottom: 200px;
+      width:100%;
+  }
+  section{
+      width:90%;
+      margin: 1rem;
+       
+  }
+  section h2{
+      font-size:20px;
+  }
+ }
 .divider1{
   width:50%;
   float:left;
@@ -432,9 +469,25 @@ counter-increment: li-counter;
    width:45%;
    margin-left:20px;
 }
+.images{
+  width:380px;
+  height:300px;
+}
+.img-blog{
+width:300px;
+height:200px;
+}
+.frame{
+width:390px;
+height: 310px;
+border: 5px solid #000;
+background-color: #000;
+padding-right: 5px;
+}
   @media screen and (max-width: 600px) {
     .column-contact {
       width: 100%;
+      margin-left: 10px;
     }
     .column-contact-els {
       width: 100%;
@@ -443,21 +496,17 @@ counter-increment: li-counter;
       width:100%;
       margin-top:10px;
     }
+    .list-type5,.list-type6{
+      width:80vw;
+    }
+    .img-container,.video-container{
+      width:80vw;
+    }
+    iframe{
+      width:80vw;
+    }
+    .images, .frame,.img-blog{
+      width:80vw;
+    }
 }
- .images{
-    width:380px;
-    height:300px;
-}
-.img-blog{
-  width:300px;
-  height:200px;
-}
-.frame{
-  width:390px;
-  height: 310px;
-  border: 5px solid #000;
-  background-color: #000;
-  padding-right: 5px;
-}
-
 
