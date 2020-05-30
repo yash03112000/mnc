@@ -17,7 +17,7 @@ html {
     position: relative;
     top:100vh;
   }
-@media (max-width:500px){
+@media (max-width:700px){
     .mega{
       grid-template-columns:0% 100vw;
       min-width: 0;
@@ -47,7 +47,7 @@ html {
     font-size: 70px;
     opacity: 0;
   }
-  @media (max-width:500px){
+  @media (max-width:700px){
     header h1{
     font-size: 50px;
     }
@@ -89,14 +89,14 @@ html {
   nav ul li a.current {
     background: blue;
   }
-@media (max-width:500px){
+@media (max-width:700px){
     nav{
         display: block;
         width:100%;
     }
     nav ul li {
        display:inline-table;
-       font-size: 12px;
+       font-size: 2.5vw;
    } 
   }
  main{
@@ -134,7 +134,7 @@ html {
     padding:15px 0;
     margin:30px 0 10px 0;
   }
-   @media (max-width:500px){
+   @media (max-width:700px){
     main{
         padding-top:200px;
         padding-bottom: 200px;
@@ -295,7 +295,7 @@ footer {
 }
 
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .column {
     width: 100%;
   }
@@ -422,7 +422,7 @@ footer {
    .get-touch{
      margin-top: 20px;
    }
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 700px) {
     .list-type5,.list-type6{
       width:80vw;
     }
