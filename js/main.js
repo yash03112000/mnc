@@ -125,7 +125,7 @@ function handleGesture() {
     
     if (touchendY > touchstartY) {
         console.log('Swiped down');
-        if(current>0){
+        if(current>1){
             // document.querySelector('.sec'+current).removeEventListener('wheel',findScrollDirectionOtherBrowsers);
             // document.querySelector('.sec'+(current-1)).addEventListener('wheel', findScrollDirectionOtherBrowsers);
             scrollup(current,--current);
