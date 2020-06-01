@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@900&display=swap');
+@import url(http://allfont.net/allfont.css?fonts=comic-sans-ms);
+@font-face{ font-family: leafy;src:url(/fonts/leafy.otf);}
 html {
   scroll-behavior: smooth;
 }
@@ -85,6 +87,8 @@ nav ul li a {
   padding: 0.5rem 1rem;
   color: black;
   text-decoration: none;
+  font-family: leafy;
+  font-size: x-large;
 }
 nav ul li a.current {
   background: blue;
@@ -96,8 +100,8 @@ nav ul li a.current {
   }
   nav ul li {
      display:inline-table;
-     font-size: 2.5vw;
  } 
+  nav ul li a{font-size: 4vw;}
 }
 main{
  padding-bottom:10px;
@@ -115,7 +119,7 @@ section p{
  padding:5px;
  margin:0rem;
  font-size:18px;
- font-family: 'Roboto Mono', monospace;
+ font-family: 'Staatliches', cursive;
 
 }
 section h1{
