@@ -67,9 +67,12 @@ var current = 1;
                 tl.to(`.part${a}3`, { duration: .01,display:'none' });
                 tl.to(`.sec${b}`, { duration: .01,display: 'flex' },"-=0.2");
                 tl.from(`.sec${b}`, { duration: .4,x:'100%' },"-=0.21");
-                tl.to(`.part${b}1`, { duration: .5,y:'30px',opacity:'1' });
                 tl.to(`.img${b}`, { duration: .3,opacity: '1' })
-                    .call(updatedown,[a,b]);
+                .call(updatedown,[a,b]);
+                tl.to(`.part${b}1`, { duration: .5,y:'30px',opacity:'1' });
+                //     .call(updatedown,[a,b]);
+                // tl.to(`.img${b}`, { duration: .3,opacity: '1' })
+                    // .call(updatedown,[a,b]);
                 tl.to(`.sidenav`, {duration:.2, opacity:'1' });
                 tl.set(`.part${a}3`,{x:'0%'})
             }
