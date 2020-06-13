@@ -2,13 +2,22 @@
     .sec1{
         display: block;
     }
+    .head1{
+        left:2vw;
+        top:50vh;
+        font-size:40px;
+    }
+    .img1{
+        margin-top:30vh;
+        transform: scale(1.5);
+    }
     .part11,.part12,.part21,.part22,.part31,.part32,.part41,.part42,.part51,.part52,.part61,.part62{
         width: 100vw;
         height:50vh;
         display: block;
     }
 
-    .img1,.img2,.img3,.img4,.img5,.img6{
+    .img2,.img3,.img4,.img5,.img6{
         position: relative;
         width:40vw;
         top: 0;
@@ -30,4 +39,7 @@
     .view4{
         top:5vh;
     }
+   .sidenav{
+       display:none;
+   }
 }
