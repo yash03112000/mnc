@@ -27,7 +27,7 @@ let mainSections = document.querySelectorAll("main section");
     // console.log(section)
 
     if (
-      section.offsetTop <= fromTop &&
+      section.offsetTop/1.10 <= fromTop &&
       section.offsetTop + section.offsetHeight > fromTop
     ) {
       link.classList.add("current");

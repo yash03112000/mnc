@@ -59,14 +59,21 @@ html {
       float:right;
       padding-left: 2rem;
   }
+ 
 nav {
     white-space: nowrap;
-    /* background: #37474F; */
+  /*   background: rgba(0, 0, 0, 0); */
   }
   nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+  @media all and (min-height:300px) and (min-width:700px){
+    nav ul {
+      position: sticky;
+      top: 0;
+    }
   }
   nav ul li a {
     display: block;
@@ -75,8 +82,7 @@ nav {
     text-decoration: none;
   }
   nav ul li a.current {
-    /* background: #cf8686; */
-    color: #8a8787;
+     background:#b4421f;
   }
 @media (max-width:700px){
   nav{
@@ -167,6 +173,10 @@ body { -ms-overflow-style: none; }
       padding-top:200px;
       padding-bottom: 500px;
       width:100%;
+  }
+  .logo{
+    height:40%;
+    margin-top: 2rem;
   }
   .mega{
    grid-template-columns:0% 100vw;
