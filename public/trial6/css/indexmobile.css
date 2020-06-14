@@ -1,9 +1,15 @@
 @media screen and (max-width: 500px){
-    .sec1{
+    body{
+        overflow: visible;
+    }
+    .sec1,.sec2,.sec3,.sec4,.sec5,.sec6{
         display: block;
     }
+    .part11,.part21,.part31,.part41,.part51,.part61,.img1,.img2,.img3,.img4,.img4,.img5,.img6{
+        opacity:1;
+    }
     .head1{
-        left:2vw;
+        left:0vw;
         top:50vh;
         font-size:40px;
     }
@@ -41,5 +47,8 @@
     }
    .sidenav{
        display:none;
+   }
+   .part13,.part23,.part33,.part43,.part53,.part63{
+       z-index: 2000;
    }
 }
