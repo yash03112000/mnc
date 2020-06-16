@@ -12,6 +12,10 @@
     z-index:1000;
   }
   
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
   .dropdown {
     position: relative;
     display: inline-block;
@@ -39,11 +43,9 @@
     display: block;
   }
   
-  .dropdown-content a:hover {background-image:linear-gradient(#FDA085,#F6D365);}
+  .dropdown a:hover {background-image:linear-gradient(#FDA085,#F6D365);}
   
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-image:linear-gradient(#FDA085,#F6D365);}
+  .show {display: block;}
   
   @media (min-width: 600px){
     .dropdown{
