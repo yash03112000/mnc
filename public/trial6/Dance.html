@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
     <link rel="stylesheet" href="css/Dance.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidenavMobile.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
     <script src="js/events.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <script src="js/sidenavMobile.js"></script>
+
 </head>
 <body>
 
@@ -63,6 +66,35 @@
 
       </ul>
     </nav>
+
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn"><b>Find all the clubs here</b></button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <div class="cut1">
+            <li><a onclick="trans('film','#e6837e')">Film Club</a></li>
+                    <li><a onclick="trans('photo','#713d39')">Photography Club</a></li>
+                    <li ><a class="current" >Dance Club</a></li></div>
+                    <div class="cut2">
+                    <li><a  onclick="trans('music','#43ccc7')">Music Club</a></li>
+                    <li><a onclick="trans('DNA','#e67496')">Design And Animation Club</a></li>
+                    <li><a onclick="trans('book','#96626f')">Book Club</a></li></div>
+                    <div class="cut3">
+                    <li><a onclick="trans('FAC','#96626f')">Fine Arts Club</a></li>
+                    <li><a onclick="trans('Dramatics Club','#96626f')">Dramatics Club</a></li>
+                    <li><a onclick="trans('HSS','#96626f')">Hindi Sahitya Sabha</a></li></div>
+                    <div class="cut4">
+                    <li><a onclick="trans('ELS','#96626f')">English Literacy Club</a></li>
+                    <li><a onclick="trans('sfs','#227d1f')">Student Film Society</a></li>
+                    <li><a onclick="trans('Anime','#ff9ea1')">Anime Club</a></li></div>
+                    <li><a onclick="trans('quiz','#dafa0d')">Quiz Club</a></li>
+                    <li><a onclick="trans('DebSoc','#dafa0d')">Debating Soceity</a></li>
+                    <li><a onclick="trans('sos','#dafa0d')">Student Opinion Society</a></li>  
+  
+        </ul>
+      </div>
+    </div>
   
     <main>
       <section id="section-3">
