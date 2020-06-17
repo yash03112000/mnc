@@ -52,3 +52,14 @@
       display: none;
     }
   }
+
+  @media (max-width: 600px){
+    nav {
+      display: none !important;
+      width: 100%;
+  }
+  .dropdown-content ul{
+      list-style-type: none;
+  }
+  
+   }
