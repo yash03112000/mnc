@@ -55,12 +55,12 @@ html {
       padding-left: 2rem;
   }
   /* Only stick if you can fit */
-  @media (min-height: 300px) {
+ @media all and (min-height:300px) and (min-width:600px){
     nav ul {
       position: sticky;
       top: 0;
     }
-  }
+  } 
   nav ul li a {
     display: block;
     padding: 0.5rem 1rem;
