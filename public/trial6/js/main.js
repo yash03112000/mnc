@@ -181,10 +181,9 @@ var current = 1;
             document.querySelector('.sec1').addEventListener('wheel', findScrollDirectionOtherBrowsers);
             var tl = gsap.timeline();
             // tl.from('.sec1',{duration: 0.5,x:'50px',opacity:0})
-            tl.to('.part11',{duration: 0.5,opacity:1})
+            tl.to('.sidenav',{duration: 0.5,opacity:1})
+            tl.to('.head1',{duration: 0.5,opacity:1})
             tl.to('.img1',{duration: 0.5,opacity:1})
-            // trial();
-            //barba1234();
         };
 
 
