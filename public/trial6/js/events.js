@@ -96,12 +96,22 @@ function getViewport() {
   return [viewPortWidth, viewPortHeight];
  }
 
- window.onload = function(){
+ window.onload = ()=>{
   console.log('abcde');
+  // window.scrollTo(0, 0);
   // document.querySelector('.sec1').addEventListener('wheel', findScrollDirectionOtherBrowsers);
   var tl = gsap.timeline();
   tl.to('.part23',{duration: 1,y:'-100vh'})
   tl.to('.mega',{duration: 1,y:'-100vh'},'-=1')
   tl.to('header h1',{duration: 1,opacity:1},'-=1')
+    .call(over)
 
 };
+var over = ()=>{
+  document.querySelector('body').style.overflow = 'visible';
+}
+
+
+
+
+
