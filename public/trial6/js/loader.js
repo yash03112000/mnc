@@ -3,3 +3,13 @@ $(window).on("load",function(){
     
     $(".loader-wrapper").fadeOut("slow");
  });
+
+
+
+ $(document).ready(function(){
+    //your code here;
+    console.log('unload');
+    window.scrollTo(0,0);
+    
+  
+  })
