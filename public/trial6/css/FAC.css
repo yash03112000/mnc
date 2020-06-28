@@ -206,7 +206,12 @@ padding:15px 0;
   opacity: 1;
   transform: scale(1);
 }
-.our-team .pic{ position: relative; }
+.our-team .pic{ 
+  position: relative;
+  object-fit: cover;
+  height: 300px;
+  width:380px;
+ }
 .our-team .pic:before{
   content: "";
   background: rgba(0,0,0,0.6);
@@ -479,8 +484,11 @@ counter-increment: li-counter;
     .list-type5,.list-type6{
       width:80vw;
     }
-    .frame,.images,.img-container{
+    .frame,.images,.img-container,.our-team .pic{
       width:80vw;
+    }
+    .our-team{
+      margin: 0;
     }
     .images,.frame{
       margin-left: 0px;

@@ -196,7 +196,12 @@ html {
     opacity: 1;
     transform: scale(1);
 }
-.our-team .pic{ position: relative; }
+.our-team .pic{ 
+  position: relative;  
+  object-fit: cover;
+  height: 300px;
+  width:300px;
+ }
 .our-team .pic:before{
     content: "";
     width: 100%;
@@ -426,7 +431,10 @@ footer {
     .list-type5,.list-type6{
       width:80vw;
     }
-    iframe{
+    iframe,.our-team .pic{
       width:80vw;
+    }
+    .our-team{
+      margin:0;
     }
    }
