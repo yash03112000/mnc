@@ -215,7 +215,12 @@ section h2{
   opacity: 1;
   transform: scale(1);
 }
-.our-team .pic{ position: relative; }
+.our-team .pic{
+  position: relative;
+  object-fit: cover;
+  height: 300px;
+  width:380px;
+ }
 .our-team .pic:before{
   content: "";
   background: rgba(0,0,0,0.6);
@@ -506,8 +511,11 @@ padding-right: 5px;
     iframe{
       width:80vw;
     }
-    .images, .frame,.img-blog{
+    .images, .frame,.img-blog,.our-team .pic{
       width:80vw;
+    }
+    .our-team{
+      margin:0;
     }
 }
 
