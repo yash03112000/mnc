@@ -18,7 +18,8 @@ html {
     margin: 0;
     display: grid;
     grid-template-columns: min-content 1fr;
-    font-family: system-ui, sans-serif;
+    position: relative;
+    top:100vh;
   }
   /*
 @media (max-width:700px){
@@ -141,8 +142,8 @@ body { -ms-overflow-style: none; }
   width: 100vw;
   position: absolute;
   /* background-color: #610c68; */
-  display: none;
-  z-index: 1000;
+  /* display: none; */
+  z-index: 1000!important;
 }
 
 @media (max-width:700px){
@@ -264,4 +265,3 @@ body { -ms-overflow-style: none; }
   }
 }
 
-  
