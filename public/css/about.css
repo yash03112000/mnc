@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Markazi+Text&family=Muli:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -56,7 +58,7 @@ section p{
  padding:2rem;
  margin:0rem;
  font-size:18px;
- font-family: 'Roboto Mono', monospace;
+ font-family: 'Rubik', sans-serif;
 
 }
 section h1{
@@ -67,11 +69,11 @@ section h1{
 }
 section h2{
   font-weight: lighter;
-  opacity:0.6;
+  opacity:0.8;
   padding:15px 0;
   margin:10px;
-  font-family: 'Comic Sans MS'; 
-
+  font-family: 'Markazi Text', serif;
+  font-size: 32px;
 }
 .section-header{
   padding:10px 0;
