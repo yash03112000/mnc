@@ -10,6 +10,14 @@ body {
   /* this breaks position sticky in Firefox */
   /* overflow-x: hidden; */
 }
+
+.mega{
+  margin: 0;
+  /* display: grid; */
+  grid-template-columns: min-content 1fr;
+  position: relative;
+  top:100vh;
+}
 header {
   /* background: #455A64; */
   color: #7d394a;
@@ -77,6 +85,16 @@ section h2{
     width:50%;
     margin-top:0;
   }
+}
+
+
+.part23{
+  height:100vh;
+  width: 100vw;
+  position: absolute;
+  /* background-color: #610c68; */
+  /* display: none; */
+  z-index: 1000!important;
 }
 
 .team{
