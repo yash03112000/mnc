@@ -170,7 +170,7 @@ body { -ms-overflow-style: none; }
 
 nav ul li a.current {
   /* background: #cf8686; */
-  color: #4e4e4e;
+  color: #4e4e4e98;
   background-color: white;
 }
 nav ul li a {
@@ -180,7 +180,7 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li{
-  color: #ebe6e6;
+  color: #3d3a3a60;
 }
 
 
