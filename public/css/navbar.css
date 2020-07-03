@@ -168,20 +168,22 @@ body { overflow: -moz-scrollbars-none; }
 body { -ms-overflow-style: none; }
 
 
-nav ul li a.current {
+nav div div a.current {
   /* background: #cf8686; */
   color: #4e4e4e98;
   background-color: white;
 }
-nav ul li a {
+nav div div a {
   display: block;
   padding: 0.5rem 1rem;
   color: #999797;
   text-decoration: none;
 }
-nav ul li{
+nav div div{
   color: #3d3a3a60;
 }
+
+
 
 
 
