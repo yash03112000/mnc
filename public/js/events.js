@@ -13,7 +13,7 @@ let cur = [];
 // Only not doing it here to keep this Pen dependency-free.
 
 window.addEventListener("scroll", event => {
-    var mainNavLinks = document.querySelectorAll("nav div div  a");
+var mainNavLinks = document.querySelectorAll("nav a");
 let mainSections = document.querySelectorAll("main section div");
     // console.log(mainNavLinks)
   let fromTop = window.scrollY;
