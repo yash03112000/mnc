@@ -47,6 +47,19 @@ html {
     white-space: nowrap;
     /* background: #37474F; */
   }
+
+  /* Only stick if you can fit */
+
+
+  nav  {
+    position: sticky; 
+    top: 100vh; 
+    height:100vh; 
+    display:flex;
+    flex-direction:column; 
+    justify-content:center;
+  }
+
   
   nav ul {
     list-style: none;
