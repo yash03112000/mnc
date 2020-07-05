@@ -69,7 +69,7 @@ nav ul {
   padding: 0;
 }
 .logo{
-    margin-top:100px;
+    margin-bottom: 10px;
     height: 70%;
     width: 40%;
     float:right;
@@ -214,9 +214,9 @@ margin-bottom: 350px;
   opacity: 0;
   position: absolute;
   top: -7px;
-  left: -7px;
-  bottom: -7px;
-  right: -7px;
+  left: 15px;
+  bottom: 10px;
+  right: 15px;
   transform: scale(1.03);
   transition: all 0.6s ease 0s;
 }
@@ -227,8 +227,6 @@ margin-bottom: 350px;
 .our-team .pic{
    position: relative; 
    object-fit: cover;
-   height: 300px;
-   width:380px;
   }
 .our-team .pic:before{
   content: "";
@@ -242,8 +240,8 @@ margin-bottom: 350px;
 }
 .our-team:hover .pic:before{ opacity: 1; }
 .our-team img{
-  width: 100%;
-  height: 100%;
+  width: 380px;
+  height: 300px;
 }
 .our-team .team-content{
   padding: 30px 0 20px;
@@ -313,10 +311,9 @@ background: #96626f;
 padding: 5rem 1rem;
 }
 .column {
-float: left;
-width: 45%;
-padding: 20px;
-margin:20px;
+  float: left;
+  padding: 40px;
+  margin-left:45px;
 }
 
 /* Clear floats after the columns */
@@ -328,9 +325,11 @@ clear: both;
 
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-.column {
-  width: 100%;
-}
+  .column {
+    width: 100%;
+    margin:0;
+    padding:20px;
+  }
 
 .divider1{
   width:100%;
@@ -467,11 +466,12 @@ counter-increment: li-counter;
   }
   .column-contact{
       width:45%;
-      margin:10px;
+      margin-left:45px;
   }
   @media screen and (max-width: 700px) {
     .column-contact {
       width: 100%;
+      margin: 0;
     }
     .list-type5,.list-type6{
       width:80vw;
@@ -481,6 +481,18 @@ counter-increment: li-counter;
     }
     .our-team{
       margin: 0;
+    }
+    .our-team .pic{
+      margin:0;
+    }
+    .our-team img{
+      width:75vw;
+    }
+    .our-team:before{
+      top: -7px;
+      left: -20px;
+      bottom: 10px;
+      right: -25px; 
     }
 }
 
