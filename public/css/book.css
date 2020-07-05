@@ -107,6 +107,10 @@ html {
        display:inline-table;
        font-size: 2.5vw;
    } 
+   .logo{
+    height: 70%;
+    width: 50%;
+   }
   }
  main{
    padding-bottom:10px;
@@ -195,7 +199,7 @@ html {
     top: -7px;
     left: -7px;
     bottom: -7px;
-    right: -7px;
+    right: 3px;
     transform: scale(1.03);
     transition: all 0.6s ease 0s;
 }
@@ -294,9 +298,8 @@ footer {
 }
 .column {
   float: left;
-  width: 45%;
-  padding: 10px;
-  margin:20px;
+  padding: 40px;
+  margin-left:20px;
 }
 
 /* Clear floats after the columns */
@@ -310,6 +313,8 @@ footer {
 @media screen and (max-width: 700px) {
   .column {
     width: 100%;
+    margin:0;
+    padding:20px;
   }
   .divider1{
     width:100%;
@@ -443,5 +448,17 @@ footer {
     }
     .our-team{
       margin:0;
+    }
+    .our-team .pic{
+      margin:0;
+    }
+    .our-team img{
+      width:75vw;
+    }
+    .our-team:before{
+      top: -7px;
+      left: -10px;
+      bottom: 10px;
+      right: -35px; 
     }
    }
