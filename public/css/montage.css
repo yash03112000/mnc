@@ -95,12 +95,12 @@ nav ul {
 nav ul li a {
   display: block;
   padding: 0.5rem 1rem;
-  color: black;
+  color: #ebe6e6;
   text-decoration: none;
   font-family: 'Rubik', sans-serif;
 }
 nav ul li a.current {
-  background: blue;
+  background: #000;
 }
 @media (max-width:700px){
   nav{
