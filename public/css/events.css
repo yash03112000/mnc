@@ -43,29 +43,18 @@ html {
   header h1{
     opacity: 0;
   }
+  
   nav {
     white-space: nowrap;
     /* background: #37474F; */
   }
-
-  /* Only stick if you can fit */
-
-
-  nav  {
-    position: sticky; 
-    top: 100vh; 
-    height:100vh; 
-    display:flex;
-    flex-direction:column; 
-    justify-content:center;
-  }
-
   
   nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+  /* Only stick if you can fit */
   @media all and (min-height:300px) and (min-width:700px){
       nav{
         grid-column: 1 / 2;
@@ -77,20 +66,18 @@ html {
         position: sticky; 
         top: 100vh; 
         height:100vh; 
-        display:flex;
-        flex-direction:column; 
         
       }
     } 
   nav ul li a {
     display: block;
     padding: 0.5rem 1rem;
-    color: black;
+    color: #ebe6e6;
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
   }
   nav ul li a.current {
-    background: blue;
+    color:#000;
   }
   @media (max-width:700px){
     nav{
@@ -102,7 +89,8 @@ html {
    } 
     nav ul li a{font-size: 4vw;}
     
-  }
+  } 
+
  main{
    padding-top: 5px;
    padding-bottom:100px;
