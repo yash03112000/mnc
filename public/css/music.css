@@ -75,6 +75,19 @@ nav ul {
     float:right;
     padding-left: 2rem;
 }
+
+
+nav  {
+  position: sticky; 
+  top: 100vh; 
+  height:100vh; 
+  display:flex;
+  flex-direction:column; 
+  justify-content:center;
+}
+
+
+
 /* Only stick if you can fit */
 @media (min-height: 300px) {
   nav ul {
