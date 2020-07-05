@@ -25,9 +25,13 @@
 
     .img2,.img3,.img4,.img5,.img6{
         position: relative;
-        width:40vw;
-        top: 0;
-        right:0vw;
+        width:60vw;
+        top: 10%;
+        left:20%;
+        /* right:0vw; */
+      }
+      .img6{
+          width:40vw;
       }
 
     .content2{
