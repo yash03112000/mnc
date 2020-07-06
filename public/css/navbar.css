@@ -178,10 +178,16 @@ nav div div a {
   padding: 0.5rem 1rem;
   color: #999797;
   text-decoration: none;
+  cursor: pointer;
 }
 nav div div{
   color: #3d3a3a60;
 }
+.btn,nav ul li{
+  cursor: pointer;
+}
+
+
 
 
 

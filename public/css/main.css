@@ -442,7 +442,9 @@ nav{
     font-family: 'Open Sans Condensed', sans-serif;
     cursor: pointer;
 }
-
+.sidenav ul li{
+    cursor: pointer;
+}
 @media(max-width:500px){
     .btn{
         position: relative;
