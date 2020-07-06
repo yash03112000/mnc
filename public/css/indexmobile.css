@@ -22,6 +22,9 @@
         height:50vh;
         display: block;
     }
+    .part22,.part32,.part42,.part52,.part62{
+        border-radius: 50px;
+    }
 
     .img2,.img3,.img4,.img5,.img6{
         position: relative;
