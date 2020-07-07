@@ -193,7 +193,7 @@ var over = ()=>{
     var b = a.split('.')[0];
     var c = b.split('/')[7];
     // console.log(c)
-    var query = document.querySelectorAll('nav div div a')
+    var query = document.querySelectorAll('.sidenav2 div a')
     query.forEach(element => {
       // console.log(element)
       var d = element.getAttribute('key')
