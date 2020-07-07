@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="css/hover.css"> 
         <link rel="stylesheet" href="css/sidenavMobile.css">
         <link rel="stylesheet" href="css/loader.css">
+
+
         <script src="js/events.js"></script>
         <script src="js/sidenavMobile.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
@@ -42,13 +44,31 @@
                   </div>
                 </div>
               </div>
-          </div> 
+          </div>
+          
+          <div id="mySidenav" class="sidenav2">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div><a href="#section-1">Anime Club</a></div>
+            <div><a href="#section-2">Book Club</a></div>
+            <div><a href="#section-3">Dance Club</a></div>
+            <div><a href="#section-4">Debating Soceity</a></div>
+            <div><a href="#section-5">Design And Animation Club</a></div>
+            <div><a href="#section-6">Dramatics Club</a></div>  
+            <div><a href="#section-7">English Literary Society</a></div>
+            <div><a href="#section-8">Fine Arts Club</a></div>
+            <div><a href="#section-9">Film Club</a></div>
+            <div><a href="#section-10">Hindi Sahitya Sabha</a></div>
+            <div><a href="#section-11">Music Club</a></div>
+            <div><a href="#section-12">Photography Club</a></div>
+            <div><a href="#section-13">Quiz Club</a></div>
+            <div><a href="#section-14">Student Film Society</a></div>
+            <div><a href="#section-15">Student Opinion Soceity</a></div>
+          </div>
         
         <!-- <div class="navbar" style="background-color: #b4421f">
             <a>MNC</a>
             <span style="text-align: center;">CLUBS AND SOCIETIES</span>
           </div>-->
-        
           <div class="mega">
             <header style="background: url(img/club.jpg) center/cover; color:white">
                 <h1>CLUBS AND SOCIETIES</h1>
@@ -78,7 +98,7 @@
                 </ul>
               </nav>  -->
 
-              <nav>
+              <!-- <nav>
                 <div>
                     <div><a href="#section-1">Anime Club</a></div>
                     <div><a href="#section-2">Book Club</a></div>
@@ -96,7 +116,7 @@
                     <div><a href="#section-14">Student Film Society</a></div>
                     <div><a href="#section-15">Student Opinion Soceity</a></div>  
                 </div>
-            </nav>
+            </nav> -->
 
 
 
@@ -122,8 +142,10 @@
                     <a href="#section-15">Student Opinion Soceity</a>
                 </div>
               </div>
-
-              <main>
+              <div class="sid">
+                <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger"><i class="fa fa-bars sidham" aria-hidden="true"></i></a>
+              </div>
+              <main class="main1">
                 <section id="section-1">
                    
                     <div class="clubs-container">
@@ -400,9 +422,10 @@
 
                 
               </main>
+              
           
           </div>
-          
+
      
     </body>
 </html>
