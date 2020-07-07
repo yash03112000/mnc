@@ -178,17 +178,19 @@ nav div div a {
   padding: 0.5rem 1rem;
   color: #999797;
   text-decoration: none;
+  cursor: pointer;
 }
 nav div div{
   color: #3d3a3a60;
 }
-
-
-nav{
-  /* background: #9bf215; */
-  /* border-right: 1px solid black; */
-  /* border-radius: 10px; */
+.btn,nav ul li{
+  cursor: pointer;
 }
+
+
+
+
+
 
 
 

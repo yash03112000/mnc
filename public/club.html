@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="css/hover.css"> 
         <link rel="stylesheet" href="css/sidenavMobile.css">
         <link rel="stylesheet" href="css/loader.css">
+
+
         <script src="js/events.js"></script>
         <script src="js/sidenavMobile.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
@@ -31,24 +33,42 @@
             <input type="checkbox" class="toggler">
             <div class="hamburger"><div></div></div>
             <div class="menu">
-              <div>
                 <div>
-                  <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./club.html">Clubs</a></li>
-                    <li><a href="./events.html">Events</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                  </ul>
+                  <div>
+                    <ul>
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./about.html">About Us</a></li>
+                      <li><a href="./events.html">Events</a></li>
+                      <li><a href="./club.html">Clubs</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div> 
+          </div>
+          
+          <div id="mySidenav" class="sidenav2">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div><a href="#section-1">Anime Club</a></div>
+            <div><a href="#section-2">Book Club</a></div>
+            <div><a href="#section-3">Dance Club</a></div>
+            <div><a href="#section-4">Debating Soceity</a></div>
+            <div><a href="#section-5">Design And Animation Club</a></div>
+            <div><a href="#section-6">Dramatics Club</a></div>  
+            <div><a href="#section-7">English Literary Society</a></div>
+            <div><a href="#section-8">Fine Arts Club</a></div>
+            <div><a href="#section-9">Film Club</a></div>
+            <div><a href="#section-10">Hindi Sahitya Sabha</a></div>
+            <div><a href="#section-11">Music Club</a></div>
+            <div><a href="#section-12">Photography Club</a></div>
+            <div><a href="#section-13">Quiz Club</a></div>
+            <div><a href="#section-14">Student Film Society</a></div>
+            <div><a href="#section-15">Student Opinion Soceity</a></div>
+          </div>
         
         <!-- <div class="navbar" style="background-color: #b4421f">
             <a>MNC</a>
             <span style="text-align: center;">CLUBS AND SOCIETIES</span>
           </div>-->
-        
           <div class="mega">
             <header style="background: url(img/club.jpg) center/cover; color:white">
                 <h1>CLUBS AND SOCIETIES</h1>
@@ -78,49 +98,192 @@
                 </ul>
               </nav>  -->
 
-              <nav>
-                  <div>
-                      <div><a href="#section-1">Film Club</a></div>
-                      <div><a href="#section-2">English Literacy Club</a></div>
-                      <div><a href="#section-3">Dance Club</a></div>
-                      <div><a href="#section-4">Music Club</a></div>
-                      <div><a href="#section-5">Design And Animation Club</a></div>
-                      <div><a href="#section-6">Book Club</a></div>
-                      <div><a href="#section-7">Quiz Club</a></div>
-                      <div><a href="#section-8">Debating Soceity</a></div>
-                      <div><a href="#section-9">Student Opinion Soceity</a></div>
-                      <div><a href="#section-10">Anime Club</a></div>
-                      <div><a href="#section-11">Student Film Society</a></div>
-                      <div><a href="#section-12">Photography Club</a></div>
-                      <div><a href="#section-13">Fine Arts Club</a></div>
-                      <div><a href="#section-14">Dramatics Club</a></div>
-                      <div><a href="#section-15">Hindi Sahitya Sabha</a></div>
-                  </div>
-              </nav>
+              <!-- <nav>
+                <div>
+                    <div><a href="#section-1">Anime Club</a></div>
+                    <div><a href="#section-2">Book Club</a></div>
+                    <div><a href="#section-3">Dance Club</a></div>
+                    <div><a href="#section-4">Debating Soceity</a></div>
+                    <div><a href="#section-5">Design And Animation Club</a></div>
+                    <div><a href="#section-6">Dramatics Club</a></div>  
+                    <div><a href="#section-7">English Literary Society</a></div>
+                    <div><a href="#section-8">Fine Arts Club</a></div>
+                    <div><a href="#section-9">Film Club</a></div>
+                    <div><a href="#section-10">Hindi Sahitya Sabha</a></div>
+                    <div><a href="#section-11">Music Club</a></div>
+                    <div><a href="#section-12">Photography Club</a></div>
+                    <div><a href="#section-13">Quiz Club</a></div>
+                    <div><a href="#section-14">Student Film Society</a></div>
+                    <div><a href="#section-15">Student Opinion Soceity</a></div>  
+                </div>
+            </nav> -->
+
+
+
+
 
               <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn"><b>Find all the clubs here</b></button>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="#section-1">Film Club</a>
-                    <a href="#section-2">English Literacy Club</a>
+                    <a href="#section-1">Anime Club</a>
+                    <a href="#section-2">Book Club</a>
                     <a href="#section-3">Dance Club</a>
-                    <a href="#section-4">Music Club</a>
+                    <a href="#section-4">Debating Soceity</a>
                     <a href="#section-5">Design And Animation Club</a>
-                    <a href="#section-6">Book Club</a>
-                    <a href="#section-7">Quiz Club</a>
-                    <a href="#section-8">Debating Soceity</a>
-                    <a href="#section-9">Student Opinion Soceity</a>
-                    <a href="#section-10">Anime Club</a>
-                    <a href="#section-11">Student Film Society</a>
+                    <a href="#section-6">Dramatics Club</a>
+                    <a href="#section-7">English Literacy Club</a>
+                    <a href="#section-8">Fine Arts Club</a>
+                    <a href="#section-9">Film Club</a>
+                    <a href="#section-10">Hindi Sahitya Sabha</a>
+                    <a href="#section-11">Music Club</a>
                     <a href="#section-12">Photography Club</a>
-                    <a href="#section-13">Fine Arts Club</a>
-                    <a href="#section-14">Dramatics Club</a>
-                    <a href="#section-15">Hindi Sahitya Sabha</a>
+                    <a href="#section-13">Quiz Club</a>
+                    <a href="#section-14">Student Film Society</a>
+                    <a href="#section-15">Student Opinion Soceity</a>
                 </div>
               </div>
-
-              <main> 
+              <div class="sid">
+                <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger"><i class="fa fa-bars sidham" aria-hidden="true"></i></a>
+              </div>
+              <main class="main1">
                 <section id="section-1">
+                   
+                    <div class="clubs-container">
+                        <div class="clubs">
+                           
+                                <div class="clubs-preview" style="background-color:#DAAB65">
+                                    <img src="img/logo/anime.png" height="100%" width="100%"alt="">
+                               </div>
+                           
+                            <div class="clubs-info">
+                                <h1>Anime Club</h1>
+                                <h2>Experience the Art of Anime and Manga,Screenings, discussions, quizzes, and a lot more!</h2> 
+                                <button class="btn" style="background-color:#DAAB65" onclick="trans('Anime','#DAAB65')">View More</button>
+                            </div>
+                        </div>
+
+                </section>   
+                <section id="section-2">
+                   
+                    <div class="clubs-container">
+                        <div class="clubs">
+                           
+                                <div class="clubs-preview" style="background-color:#CB997E">
+                                    <img src="img/logo/book.jpg" height="100%" width="100%"alt="">
+                               </div>
+                           
+                            <div class="clubs-info">
+                                <h1>Book Club</h1>
+                                <h2>A-Tag line type description with almost same number of words</h2>
+                                <button class="btn" style="background-color:#CB997E" onclick="trans('book','#CB997E')">View More</button>
+                            </div>
+                        </div>
+    
+                </section>
+                <section id="section-3">
+
+                    <div class="clubs-container">
+                        <div class="clubs">
+                           
+                                <div class="clubs-preview" style="background-color:#979DAD">
+                                    <img src="img/logo/kos.png" height="100%" width="100%"alt="">
+                               </div>
+                           
+                            <div class="clubs-info">
+                                <h1>Dance Club</h1>
+                                <h2>A-Tag line type description with almost same number of words</h2>
+                                <button class="btn" style="background-color:#979DAD" onclick="trans('Dance','#979DAD')">View More</button>
+                            </div>
+                        </div>    
+        
+                </section>
+                <section id="section-4">
+                   
+                    <div class="clubs-container">
+                        <div class="clubs">
+                           
+                                <div class="clubs-preview" style="background-color:#FFAEAD">
+                                    <img src="img/logo/debsoc1.png" height="100%" width="100%"alt="">
+                               </div>
+                           
+                            <div class="clubs-info">
+                                <h1>Debating Soceity</h1>
+                                <h2>A-Tag line type description with almost same number of words</h2>
+                                <button class="btn" style="background-color: #FFAEAD" onclick="trans('DebSoc','#FFAEAD')">View More</button>
+                            </div>
+                        </div>
+
+                </section>
+                <section id="section-5"> 
+    
+                    <div class="clubs-container">
+                        <div class="clubs">
+                           
+                                <div class="clubs-preview" style="background-color:#F296BB">
+                                    <img src="img/logo/dna.png" height="100%" width="100%"alt="">
+                               </div>
+                           
+                            <div class="clubs-info">
+                                <h1>Design And Animation Club</h1>
+                                <h2>A-Tag line type description with almost same number of words</h2>
+                                <button class="btn" style="background-color:#F296BB" onclick="trans('DNA','#F296BB')">View More</button>
+                            </div>
+                        </div>
+    
+                    </section>
+                    <section id="section-6">
+                    
+                        <div class="clubs-container">
+                            <div class="clubs">
+                               
+                                    <div class="clubs-preview" style="background-color:#CF79FF">
+                                        <img src="img/logo/film.png" height="100%" width="100%"alt="">
+                                   </div>
+                               
+                                <div class="clubs-info">
+                                    <h1>Dramatics Club</h1>
+                                    <h2>A-Tag line type description with almost same number of words</h2>  
+                                    <button class="btn" style="background-color:#CF79FF" onclick="trans('Dramatics Club','#CF79FF')">View More</button>
+                                </div>
+                            </div>
+    
+                    </section>    
+                    <section id="section-7">
+
+                        <div class="clubs-container">
+                            <div class="clubs">
+                               
+                                    <div class="clubs-preview" style="background-color:#B1FF3A">
+                                        <img src="img/logo/ELS.JPG" height="100%" width="100%"alt="">
+                                   </div>
+                               
+                                <div class="clubs-info">
+                                    <h1>English Literacy Club</h1>
+                                    <h2>A-Tag line type description with almost same number of words</h2>
+                                    <button class="btn" style="background-color:#B1FF3A" onclick="trans('ELS','#B1FF3A')">View More</button>
+                                </div>
+                            </div>
+                        </div>  
+        
+                    </section>
+                    <section id="section-8">
+                   
+                        <div class="clubs-container">
+                            <div class="clubs">
+                               
+                                    <div class="clubs-preview" style="background-color:#FEF552">
+                                        <img src="img/faclogo.png" height="100%" width="100%"alt="">
+                                   </div>
+                               
+                                <div class="clubs-info">
+                                    <h1>Fine Arts Club</h1>
+                                    <h2>A-Tag line type description with almost same number of words</h2>  
+                                    <button class="btn" style="background-color:#FEF552" onclick="trans('FAC','#FEF552')">View More</button>
+                                </div>
+                            </div>
+    
+                    </section>
+                <section id="section-9">
                       
                     
                     <div class="clubs-container">
@@ -139,46 +302,28 @@
                     </div> 
 
                 </section>
-                 
-              <section id="section-2">
-
-                <div class="clubs-container">
-                    <div class="clubs">
-                       
-                            <div class="clubs-preview" style="background-color:#B1FF3A">
-                                <img src="img/logo/ELS.JPG" height="100%" width="100%"alt="">
-                           </div>
-                       
-                        <div class="clubs-info">
-                            <h1>English Literacy Club</h1>
-                            <h2>A-Tag line type description with almost same number of words</h2>
-                            <button class="btn" style="background-color:#B1FF3A" onclick="trans('ELS','#B1FF3A')">View More</button>
+                <section id="section-10">
+                   
+                    <div class="clubs-container">
+                        <div class="clubs">
+                           
+                                <div class="clubs-preview" style="background-color:#CF79FF">
+                                    <img src="img/logo/hss.png" height="100%" width="100%"alt="">
+                               </div>
+                           
+                            <div class="clubs-info">
+                                <h1>Hindi Sahitya Sabha</h1>
+                                <h2>A-Tag line type description with almost same number of words</h2>  
+                                <button class="btn" style="background-color:#CF79FF" onclick="trans('HSS','#CF79FF')">View More</button>
+                            </div>
                         </div>
-                    </div>
-                </div>  
-
                 </section>
-    
-               <section id="section-3">
 
-                <div class="clubs-container">
-                    <div class="clubs">
-                       
-                            <div class="clubs-preview" style="background-color:#979DAD">
-                                <img src="img/logo/kos.png" height="100%" width="100%"alt="">
-                           </div>
-                       
-                        <div class="clubs-info">
-                            <h1>Dance Club</h1>
-                            <h2>A-Tag line type description with almost same number of words</h2>
-                            <button class="btn" style="background-color:#979DAD" onclick="trans('Dance','#979DAD')">View More</button>
-                        </div>
-                    </div>    
     
-                </section>
+
     
     
-                <section id="section-4">
+                <section id="section-11">
                 
                     <div class="clubs-container">
                         <div class="clubs">
@@ -195,44 +340,28 @@
                         </div>
 
                </section>
-    
-               <section id="section-5"> 
-    
+               <section id="section-12">
+                    
                 <div class="clubs-container">
                     <div class="clubs">
                        
-                            <div class="clubs-preview" style="background-color:#F296BB">
-                                <img src="img/logo/dna.png" height="100%" width="100%"alt="">
+                            <div class="clubs-preview" style="background-color:#A7D7CB">
+                                <img src="img/logo/photo.png" height="100%" width="100%"alt="">
                            </div>
                        
                         <div class="clubs-info">
-                            <h1>Design And Animation Club</h1>
-                            <h2>A-Tag line type description with almost same number of words</h2>
-                            <button class="btn" style="background-color:#F296BB" onclick="trans('DNA','#F296BB')">View More</button>
+                            <h1>Photography Club</h1>
+                            <h2>The Photography Club is the common ground for the photography enthusiasts in the campus to come together and try, explore and enjoy the art of photography.</h2>  
+                            <button class="btn" style="background-color:#A7D7CB" onclick="trans('photo','#A7D7CB')">View More</button>
                         </div>
                     </div>
 
-                </section>
+           </section>
+
     
-                <section id="section-6">
-                   
-                    <div class="clubs-container">
-                        <div class="clubs">
-                           
-                                <div class="clubs-preview" style="background-color:#CB997E">
-                                    <img src="img/logo/book.jpg" height="100%" width="100%"alt="">
-                               </div>
-                           
-                            <div class="clubs-info">
-                                <h1>Book Club</h1>
-                                <h2>A-Tag line type description with almost same number of words</h2>
-                                <button class="btn" style="background-color:#CB997E" onclick="trans('book','#CB997E')">View More</button>
-                            </div>
-                        </div>
+
     
-                </section>
-    
-                 <section id="section-7">
+                 <section id="section-13">
                     
                     <div class="clubs-container">
                         <div class="clubs">
@@ -250,61 +379,7 @@
 
                 </section>
     
-                <section id="section-8">
-                   
-                    <div class="clubs-container">
-                        <div class="clubs">
-                           
-                                <div class="clubs-preview" style="background-color:#FFAEAD">
-                                    <img src="img/logo/debsoc1.png" height="100%" width="100%"alt="">
-                               </div>
-                           
-                            <div class="clubs-info">
-                                <h1>Debsoc</h1>
-                                <h2>A-Tag line type description with almost same number of words</h2>
-                                <button class="btn" style="background-color: #FFAEAD" onclick="trans('DebSoc','#FFAEAD')">View More</button>
-                            </div>
-                        </div>
-
-                </section>
-    
-                <section id="section-9">
-                   
-                    <div class="clubs-container">
-                        <div class="clubs">
-                           
-                                <div class="clubs-preview" style="background-color:#FFD6BA">
-                                    <img src="img/soslogo.png" height="100%" width="100%"alt="">
-                               </div>
-                           
-                            <div class="clubs-info">
-                                <h1>Student Opinion Soceity</h1>
-                                <h2>A-Tag line type description with almost same number of words</h2>
-                                <button class="btn" style="background-color:#FFD6BA" onclick="trans('sos','#FFD6BA')">View More</button>
-                            </div>
-                        </div>
-
-                </section>
-                 
-                 <section id="section-10">
-                   
-                    <div class="clubs-container">
-                        <div class="clubs">
-                           
-                                <div class="clubs-preview" style="background-color:#DAAB65">
-                                    <img src="img/logo/anime.png" height="100%" width="100%"alt="">
-                               </div>
-                           
-                            <div class="clubs-info">
-                                <h1>Anime Club</h1>
-                                <h2>Experience the Art of Anime and Manga,Screenings, discussions, quizzes, and a lot more!</h2> 
-                                <button class="btn" style="background-color:#DAAB65" onclick="trans('Anime','#DAAB65')">View More</button>
-                            </div>
-                        </div>
-
-                  </section>
-               
-                <section id="section-11">
+                <section id="section-14">
                    
                     <div class="clubs-container">
                         <div class="clubs">
@@ -321,82 +396,36 @@
                         </div>
 
                 </section>
-                
-                <section id="section-12">
-                    
-                    <div class="clubs-container">
-                        <div class="clubs">
-                           
-                                <div class="clubs-preview" style="background-color:#A7D7CB">
-                                    <img src="img/logo/photo.png" height="100%" width="100%"alt="">
-                               </div>
-                           
-                            <div class="clubs-info">
-                                <h1>Photography Club</h1>
-                                <h2>The Photography Club is the common ground for the photography enthusiasts in the campus to come together and try, explore and enjoy the art of photography.</h2>  
-                                <button class="btn" style="background-color:#A7D7CB" onclick="trans('photo','#A7D7CB')">View More</button>
-                            </div>
-                        </div>
-
-               </section>
-                  
-                  
-                <section id="section-13">
-                   
-                    <div class="clubs-container">
-                        <div class="clubs">
-                           
-                                <div class="clubs-preview" style="background-color:#FEF552">
-                                    <img src="img/logo/fac.png" height="100%" width="100%"alt="">
-                               </div>
-                           
-                            <div class="clubs-info">
-                                <h1>Fine Arts Club</h1>
-                                <h2>A-Tag line type description with almost same number of words</h2>  
-                                <button class="btn" style="background-color:#FEF552" onclick="trans('FAC','#FEF552')">View More</button>
-                            </div>
-                        </div>
-
-                </section>
-
-                <section id="section-14">
-                    
-                    <div class="clubs-container">
-                        <div class="clubs">
-                           
-                                <div class="clubs-preview" style="background-color:#CF79FF">
-                                    <img src="img/logo/film.png" height="100%" width="100%"alt="">
-                               </div>
-                           
-                            <div class="clubs-info">
-                                <h1>Dramatics Club</h1>
-                                <h2>A-Tag line type description with almost same number of words</h2>  
-                                <button class="btn" style="background-color:#CF79FF" onclick="trans('Dramatics Club','#CF79FF')">View More</button>
-                            </div>
-                        </div>
-
-                </section>
                 <section id="section-15">
                    
                     <div class="clubs-container">
                         <div class="clubs">
                            
-                                <div class="clubs-preview" style="background-color:#CF79FF">
-                                    <img src="img/logo/hss.png" height="100%" width="100%"alt="">
+                                <div class="clubs-preview" style="background-color:#FFD6BA">
+                                    <img src="img/soslogo.png" height="100%" width="100%"alt="">
                                </div>
                            
                             <div class="clubs-info">
-                                <h1>Hindi Sahitya Sabha</h1>
-                                <h2>A-Tag line type description with almost same number of words</h2>  
-                                <button class="btn" style="background-color:#CF79FF" onclick="trans('HSS','#CF79FF')">View More</button>
+                                <h1>Student Opinion Soceity</h1>
+                                <h2>A-Tag line type description with almost same number of words</h2>
+                                <button class="btn" style="background-color:#FFD6BA" onclick="trans('sos','#FFD6BA')">View More</button>
                             </div>
                         </div>
+
                 </section>
+
+                  
+                  
+
+
+
+
                 
               </main>
+              
           
           </div>
-          
+
      
     </body>
 </html>
