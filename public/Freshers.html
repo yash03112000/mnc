@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/hover.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+    <link rel="stylesheet" href="css/sidnav.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
     <script src="js/events.js"></script>
@@ -43,20 +44,27 @@
       </div>
     </div>
   </div> 
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" style="color:#227d1f ;"onclick="closeNav()">&times;</a>
+    <div><a onclick="trans('Galaxy','#e6837e')">GALAXY</a></div>
+    <div><a class="current">FRESHERS</a></div>
+    <div><a onclick="trans('impression','#43ccc7')">IMPRESSION</a></div>
+    <div><a onclick="trans('montage','#713d39')">MONTAGE FILM FESTIVAL</a></div>
+  </div>
   
   <div class="mega">
     <header style="background: url(img/about.jpg) center/cover; color:white">
       <h1>FRESHERS</h1>
     </header>
     
-    <nav>
+    <!-- <nav>
       <ul class="nav-hover">
         <li><a onclick="trans('Galaxy','#e6837e')">GALAXY</a></li>
         <li><a class="current">FRESHERS</a></li>
         <li><a onclick="trans('impression','#43ccc7')">IMPRESSION</a></li>  
         <li><a onclick="trans('montage','#713d39')" >MONTAGE FILM FESTIVAL</a></li>
       </ul>
-    </nav>
+    </nav> -->
 
 
     <div class="dropdown">
@@ -70,7 +78,9 @@
         </ul>
       </div>
     </div>
-  
+    <div class="sid" style="background-color: #227d1f;">
+      <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger"><i class="fa fa-bars sidham" aria-hidden="true"></i></a>
+    </div>
     <main>
       <section id="section-3">
         
@@ -119,9 +129,6 @@
       <!-- <img src="img/main.png" alt="" class="aimg"> -->
     </div>
   
-    <footer>
-      &copy;2020 Footer
-    </footer>
   </div>
   
 
