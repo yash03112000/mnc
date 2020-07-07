@@ -272,10 +272,14 @@ var over = ()=>{
 }
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
+  var a = document.querySelector('main');
+  a.addEventListener('click',closeNav)
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+  var a = document.querySelector('main');
+  a.removeEventListener('click',closeNav)
 }
 
 
