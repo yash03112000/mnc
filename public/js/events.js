@@ -13,7 +13,7 @@ let cur = [];
 // Only not doing it here to keep this Pen dependency-free.
 
 window.addEventListener("scroll", event => {
-var mainNavLinks = document.querySelectorAll("nav a");
+var mainNavLinks = document.querySelectorAll(".sidenav2 div a");
 let mainSections = document.querySelectorAll("main section div");
     // console.log(mainNavLinks)
   let fromTop = window.scrollY;
@@ -270,8 +270,17 @@ var over = ()=>{
 
 
 }
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  var a = document.querySelector('main');
+  a.addEventListener('click',closeNav)
+}
 
-
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  var a = document.querySelector('main');
+  a.removeEventListener('click',closeNav)
+}
 
 
 
