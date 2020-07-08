@@ -51,7 +51,7 @@ body{
 .head2{
     width: 100%;
     text-align: center;
-    padding-top: 15%;
+    padding-top: 10%;
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
     letter-spacing: 3px;
@@ -61,6 +61,7 @@ body{
     width:80%;
     position: relative;
     left: 10%;
+    top:10%;
     font-size: 20px;
     /* padding-top: 10%; */
     font-family: 'Open Sans Condensed', sans-serif;
@@ -73,7 +74,7 @@ body{
     text-decoration: underline;
     position: relative;
     left:10%;
-    top:10vh;
+    top:40vh;
 }
 .img1{
     position:absolute;
