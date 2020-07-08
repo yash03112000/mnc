@@ -408,6 +408,7 @@ clear: both;
 .list-type5{
 width:430px;
 margin:0 auto;
+margin-right: 4vw;
 }
 .list-type5 ol {
 list-style-type: none;
@@ -464,6 +465,7 @@ counter-increment: li-counter;
 .list-type6{
   width:430px;
   margin:0 auto;
+  margin-left:4vw;
   }
   .list-type6 ol {
   list-style-type: none;
@@ -523,6 +525,7 @@ counter-increment: li-counter;
   .video-container{
     margin-top:0px;
     margin-bottom: 25px;
+    margin-left: 5vw;
 }
   .video-container img{
     width: 380px;
@@ -531,18 +534,19 @@ counter-increment: li-counter;
   .img-container{
       margin-top:25px;
       margin-bottom: 25px;
+      margin-left: 5vw;
   }
   .column-contact{
       width:45%;
-      margin-left:50px;
+      margin-left:auto;
   }
   .column-contact-els{
     width:30%;
-    margin-left:30px;
+    margin-left:auto;
 }
 .column-contact-anime{
    width:45%;
-   margin-left:50px;
+   margin-left:auto;
 }
 .images{
   width:380px;
@@ -574,9 +578,11 @@ padding-right: 5px;
     }
     .list-type5,.list-type6{
       width:80vw;
+      margin:0 auto;
     }
     .img-container,.video-container{
       width:80vw;
+      margin:0;
     }
     
     iframe{
