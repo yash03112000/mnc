@@ -42,15 +42,20 @@
     }
     .view2{
         top:5vh;
+        left: 0vw;
     }
     .events{
         font-size: 20px;
     }
     .view3{
-        top:5vh;
+        top:3vh;
+        left: 0vw;
+
     }
     .view4{
-        top:5vh;
+        top:3vh;
+        left: 0vw;
+
     }
    .sidenav{
        display:none;
