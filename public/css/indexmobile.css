@@ -33,24 +33,27 @@
         left:20%;
         /* right:0vw; */
       }
-      .img6{
-          width:40vw;
-      }
+      
 
     .content2{
     font-size: 12px;
     }
     .view2{
         top:5vh;
+        left: 0vw;
     }
     .events{
         font-size: 20px;
     }
     .view3{
-        top:5vh;
+        top:3vh;
+        left: 0vw;
+
     }
     .view4{
-        top:5vh;
+        top:3vh;
+        left: 0vw;
+
     }
    .sidenav{
        display:none;
