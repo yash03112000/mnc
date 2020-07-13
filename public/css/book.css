@@ -220,6 +220,7 @@ html {
   .our-team{
     text-align: center;
     position: relative;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .our-team:before{
     content: "";
@@ -269,15 +270,15 @@ html {
 .our-team:hover .team-content{ top: -50%; }
 .our-team .title{
     display: block;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 550;
     color: #333;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin: 0 0 7px 0;
     transition: all 0.6s ease 0s;
 }
-.our-team:hover .title{ color: #fff; }
+.our-team:hover .title{ opacity: 0; }
 .our-team .post{
     display: block;
     font-size: 17px;
@@ -286,11 +287,11 @@ html {
     text-transform: capitalize;
     transition: all 0.6s ease 0s;
 }
-.our-team:hover .post{ color: white; }
+.our-team:hover .post{ opacity: 0; }
 .our-team .social{
     width: 100%;
     padding: 0;
-    margin: 0 0 30px;
+    margin: 0 0 50px;
     list-style: none;
     position: absolute;
     bottom: 0;

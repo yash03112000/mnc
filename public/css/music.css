@@ -235,6 +235,7 @@ margin-bottom: 350px;
 .our-team{
   text-align: center;
   position: relative;
+  font-family: 'Open Sans Condensed', sans-serif;
   margin:20px
 }
 .our-team:before{
@@ -242,10 +243,10 @@ margin-bottom: 350px;
   border: 4px solid #083d77;
   opacity: 0;
   position: absolute;
-  top: -7px;
-  left: 15px;
-  bottom: 10px;
-  right: 15px;
+  top: -15px;
+  left: 40px;
+  bottom: 15px;
+  right: 40px;
   transform: scale(1.03);
   transition: all 0.6s ease 0s;
 }
@@ -282,14 +283,14 @@ margin-bottom: 350px;
 .our-team .title{
   display: block;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   color: #333;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0 0 7px 0;
   transition: all 0.6s ease 0s;
 }
-.our-team:hover .title{ color: #fff; }
+.our-team:hover .title{ opacity: 0; }
 .our-team .post{
   display: block;
   font-size: 17px;
@@ -298,11 +299,11 @@ margin-bottom: 350px;
   text-transform: capitalize;
   transition: all 0.6s ease 0s;
 }
-.our-team:hover .post{ color: white; }
+.our-team:hover .post{ opacity: 0; }
 .our-team .social{
   width: 100%;
   padding: 0;
-  margin: 0 0 30px;
+  margin: 0 0 50px;
   list-style: none;
   position: absolute;
   bottom: 0;
