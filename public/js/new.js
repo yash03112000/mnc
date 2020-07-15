@@ -124,3 +124,41 @@ function page(){
 function page1(a){
 window.location = "./about.html"
 }
+
+
+
+window.addEventListener("scroll", event => {
+  // var mainNavLinks = document.querySelectorAll(".sidenav2 div a");
+  let mainSections = document.querySelectorAll(".parallax");
+      // console.log(mainNavLinks)
+    let fromTop = window.scrollY;
+  //   console.log(fromTop);
+  
+  mainSections.forEach((link,i) => {
+    // console.log(link)
+      let section = link
+      // console.log(section)
+  
+      if (
+        section.offsetTop <= (fromTop+(0.9*getViewport()[1])) &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        // link.classList.add("current");
+        var tl = gsap.timeline();
+                // console.log(entry)
+                tl.set(section,{opacity:1})
+                tl.to(`.part${i+2}2`,{duration: 0.2,opacity:1})
+                tl.to(`.head${i+2}`,{duration: 0.2,opacity:1,y:-10},'-=0.2')
+                tl.to(`.content${i+2}`,{duration: 0.2,opacity:1,y:-10})
+                tl.to(`.view${i+2}`,{duration: 0.2,opacity:1},'-=0.2')
+                tl.to(`.img${i+2}`,{duration: 0.4,opacity:1,scale: '0.8',x:"10px"})
+
+
+
+  
+      }
+    });
+  
+  
+    
+  });

@@ -5,6 +5,9 @@
     .sec1,.sec2,.sec3,.sec4,.sec5,.sec6{
         display: block;
     }
+    .sec2,.sec3,.sec4,.sec5,.sec6{
+        opacity: 0;
+    }
     .part11,.part21,.part31,.part41,.part51,.part61,.img1,.img2,.img3,.img4,.img4,.img5,.img6{
         opacity:1;
     }
@@ -31,29 +34,21 @@
         width:60vw;
         top: 10%;
         left:20%;
+        /* left:-40px; */
         /* right:0vw; */
       }
       
 
-    .content2{
+    .content2,.content3,.content4{
     font-size: 12px;
     }
-    .view2{
+    .view2,.view3,.view4{
         top:5vh;
         left: 0vw;
     }
-    .events{
-        font-size: 20px;
-    }
-    .view3{
-        top:3vh;
-        left: 0vw;
-
-    }
-    .view4{
-        top:3vh;
-        left: 0vw;
-
+    .btn{
+        position: relative;
+        top:10vh;
     }
    .sidenav{
        display:none;
@@ -72,4 +67,18 @@
   .pen-container button{
       transform: scale(0.95);
   }
+  .head2,.head3,.head4,.head5,.head6{
+    opacity: 0;
+}
+.content2,.content3,.content4,.content5,.content6,.view2,.view3,.view4{
+    opacity: 0;
+}
+.part22,.part32,.part42,.part52,.part62,.img2,.img3,.img4,.img5,.img6{
+    opacity: 0;
+}
+}
+@media screen and (max-width: 350px){
+    .head2,.head3,.head4,.head5,.head6{
+        font-size: 30px;
+    }
 }
