@@ -61,4 +61,15 @@
    .part13,.part23,.part33,.part43,.part53,.part63{
        z-index: 2000;
    }
+   .pen-container{
+    margin:0;
+    padding: 10vh 4vw;
+    max-width: none;
+    }
+    #facebook,#googleplus,#instagram{
+        margin:10px;
+    }
+  .pen-container button{
+      transform: scale(0.95);
+  }
 }
