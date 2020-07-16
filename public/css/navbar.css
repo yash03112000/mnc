@@ -21,6 +21,7 @@
   
   /* MENU STYLES */
   .menu-wrap {
+    
     position: fixed;
     top: 0;
     right: 0;
@@ -153,40 +154,7 @@
     opacity: 0;
     transition: opacity 0.4s ease;
   }
-  .menu-wrap .menu > div > div > ul  {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-align: start;
-            align-items: start;
-    list-style-type: none;
-  }
-  .menu-wrap .menu > div > div > ul > li {
-    padding: 6px 0;
-  }
-  .menu-wrap .menu > div > div > ul > li>a{
-    --fill-color: #000;
-    position: relative;
-    display: block;
-    padding: 4px 0;
-    font: 700 3rem R;
-
-    text-decoration: none;
-    text-transform: uppercase;
-    -webkit-text-stroke: 2px var(--fill-color);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, var(--fill-color))) left/0 no-repeat;
-    background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
-    color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-transition: 0.5s linear;
-    transition: 0.5s linear;
-  }
-  .menu-wrap .menu > div > div > ul > li>a:hover {
-    background-size: 100%;
-  }
+ 
   .menu-wrap .menu > div > div > ul  {
     display: -webkit-box;
     display: flex;
@@ -210,22 +178,34 @@
     text-decoration: none;
     text-transform: uppercase;
     -webkit-text-stroke: 2px var(--fill-color);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, var(--fill-color))) left/0 no-repeat;
-    background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
+    background: -webkit-gradient(linear, right top, left bottom, color-stop(0, var(--fill-color))) top/0 no-repeat;
+    background: linear-gradient(to bottom,var(--fill-color) 0 100%) top/0 no-repeat;
     color: transparent;
     -webkit-background-clip: text;
             background-clip: text;
-    -webkit-transition: 0.5s linear;
-    transition: 0.5s linear;
+    -webkit-transition: 0.01s linear;
+    transition: 0.01s linear;
   }
   .menu-wrap .menu > div > div > ul > li>a:hover {
     background-size: 100%;
   }
+    /*=====================*/
+
+   .menu-wrap .menu > div .box-container{
+    width:20vw;
+    height:30vh;
+    background:#000;
+    right:0;
+    top:0;
+    margin-left: 10vw;
+   }
+
+
   
     /*=====================*/
     .menu-wrap .menu > div > .social-nav {
       margin-top:80vh;
-      margin-left:40vw;
+      margin-left:10vw;
       text-align: left;
       max-width: 90vw;
       max-height: 100vh;
