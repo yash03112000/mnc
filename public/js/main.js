@@ -184,6 +184,7 @@ var current = 1;
             tl.to('.sidenav',{duration: 0.5,opacity:1})
             tl.to('.head1',{duration: 0.5,opacity:1})
             tl.to('.img1',{duration: 0.5,opacity:1})
+                .call(scrolltrigg,[])
         };
 
 
