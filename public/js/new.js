@@ -188,7 +188,7 @@ var imgtrans = (a)=>{
     tra=1;
     var tl = gsap.timeline();
     tl.to(`.navimg${b}`,{duration:0.3,opacity:0,y:-150})
-    tl.to(`.menu-wrap .menu > div .box-container`,{duration:0.3,background:(color[a])})
+    tl.to(`.menu`,{duration:0.3,background:(color[a])})
     tl.fromTo(`.navimg${a}`,{opacity:0,y:150},{opacity:1,y:0,duration:0.3})
       .call(after,[a])
 
