@@ -172,8 +172,9 @@
     --fill-color: #000;
     position: relative;
     display: block;
+    margin-left: 20px;
     padding: 4px 0;
-    font: 700 3rem 'Roboto', sans-serif;
+    font: 700 2.5rem 'Roboto', sans-serif;
     letter-spacing: 0.5px;
     text-decoration: none;
     text-transform: uppercase;
