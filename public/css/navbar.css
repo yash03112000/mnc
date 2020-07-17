@@ -146,7 +146,7 @@
   }
   
   .menu-wrap .menu > div > div {
-    margin-top:-30vh;
+    margin-top:-15vh;
     margin-left:10vw;
     text-align: left;
     max-width: 90vw;
@@ -178,13 +178,13 @@
     text-decoration: none;
     text-transform: uppercase;
     -webkit-text-stroke: 2px var(--fill-color);
-    background: -webkit-gradient(linear, right top, left bottom, color-stop(0, var(--fill-color))) top/0 no-repeat;
-    background: linear-gradient(to bottom,var(--fill-color) 0 100%) top/0 no-repeat;
+    background: -webkit-gradient( color-stop(0, var(--fill-color)));
+    background: linear-gradient(var(--fill-color) 0 100%) left/0 no-repeat;
     color: transparent;
     -webkit-background-clip: text;
             background-clip: text;
-    -webkit-transition: 0.01s linear;
-    transition: 0.01s linear;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
   }
   .menu-wrap .menu > div > div > ul > li>a:hover {
     background-size: 100%;
@@ -193,9 +193,10 @@
 
    .menu-wrap .menu > div .box-container{
     width:20vw;
-    height:30vh;
-    background:#000;
-    right:0;
+    height:50vh;
+    background:#7b2982;
+    position: relative;
+    left:25vw;
     top:0;
     margin-left: 10vw;
    }
@@ -269,21 +270,7 @@
     .model-1 .instagram {
       color: #007BB6;
     }
-  }
-  /*
-  .menu-wrap .menu > div > div > ul > li {
-    list-style: none;
-    color: #000;
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
   
-  .menu-wrap .menu > div > div > ul > li > a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.4s ease;
-  }
-*/
   header h1{
     opacity: 0;
   }
@@ -292,25 +279,7 @@ body::-webkit-scrollbar { width: 0 !important }
 body { overflow: -moz-scrollbars-none; }
 body { -ms-overflow-style: none; }
 
-/*
-nav div div a.current {
-  // background: #cf8686; 
-  color: #4e4e4e98;
-  // background-color: white; 
-}
-nav div div a {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #999797;
-  text-decoration: none;
-  cursor: pointer;
-}
-nav div div{
-  color: #3d3a3a60;
-}
-.btn,nav ul li{
-  cursor: pointer;
-}*/
+
 @media screen and (max-width: 500px){
   .menu-wrap .menu > div > div > ul > li>a{
     font: 400 2rem Raleway, sans-serif;
@@ -319,5 +288,24 @@ nav div div{
     margin-top:25vh;
     margin-left:-48vw;;
     text-align: center;
+  }
+}
+
+
+.navimg{
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  top:5%;
+  left: 5%;
+}
+
+.navimg2,.navimg3,.navimg4{
+  opacity: 0;
+}
+
+@media screen and (max-width:500px){
+  .menu-wrap .menu > div .box-container{
+    display: none;
   }
 }
