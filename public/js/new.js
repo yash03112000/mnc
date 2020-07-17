@@ -157,8 +157,48 @@ window.addEventListener("scroll", event => {
 
   
       }
-    });
-  
-  
-    
+    });    
   });
+
+const navbar = ()=>{
+  var items = document.querySelectorAll('.menu div div ul li')
+  items[0].addEventListener('mouseover',()=>{imgtrans(1)})
+  items[1].addEventListener('mouseover',()=>{imgtrans(2)})
+  items[2].addEventListener('mouseover',()=>{imgtrans(3)})
+  items[3].addEventListener('mouseover',()=>{imgtrans(4)})
+
+  // items.forEach((element,index)=>{
+  //   element.addEventListener('mouseover',imgtrans)
+  // })
+}
+var active = 1;
+var tra = 0;
+
+var imgtrans = (a)=>{
+  var color = [];
+  color[1] = '#610c68';
+  color[2] = '#e65f5c';
+  color[3] = '#84dcc6';
+  color[4] = '#ffff82';
+
+  if(a!=active && tra === 0){
+    console.log(a)
+    var b=active;
+    active = a;
+    tra=1;
+    var tl = gsap.timeline();
+    tl.to(`.navimg${b}`,{duration:0.3,opacity:0,y:-150})
+    tl.to(`.menu-wrap .menu > div .box-container`,{duration:0.3,background:(color[a])})
+    tl.fromTo(`.navimg${a}`,{opacity:0,y:150},{opacity:1,y:0,duration:0.3})
+      .call(after,[a])
+
+  }
+
+}
+
+var after = (a)=>{
+  tra=0;
+}
+// var why(a)=>{
+//   if(a===0) return 'mncrhs';
+// }

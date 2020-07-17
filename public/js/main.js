@@ -178,6 +178,7 @@ var current = 1;
 
         window.onload = function(){
             console.log('abcd');
+            navbar();
             document.querySelector('.sec1').addEventListener('wheel', findScrollDirectionOtherBrowsers);
             var tl = gsap.timeline();
             // tl.from('.sec1',{duration: 0.5,x:'50px',opacity:0})
