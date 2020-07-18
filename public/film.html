@@ -21,26 +21,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
     <script src="js/loader.js"></script>
+    <script src="js/card.js"></script>
+
 </head>
 <body>
   <div class="loader-wrapper">
     <span id="loader"></span>
   </div>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+      </svg>
+    </div>
+  </div>
   <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
+    <input type="checkbox" class="toggler hoverable">
     <div class="hamburger"><div></div></div>
     <div class="menu">
-      <div>
         <div>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./events.html">Events</a></li>
-            <li><a href="./club.html">Clubs</a></li>
-          </ul>
+          <div>
+            <ul>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+            </ul>
+          </div>
+          <div class="box-container">
+            <img src="img/mncrhs.png" alt="" class="navimg navimg1">
+            <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+            <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+            <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+
+        </div> 
+          <div class="social-nav model-1">
+            <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+            <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+            <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+          </div>  
         </div>
       </div>
-    </div>
   </div>
   <div id="mySidenav" class="sidenav2">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#FECC47 ;"" >&times;</a>

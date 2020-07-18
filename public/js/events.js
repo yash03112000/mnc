@@ -98,6 +98,8 @@ function getViewport() {
 
  window.onload = ()=>{
   console.log('abcde');
+  navbar();
+  hover();
   // window.scrollTo(0, 0);
   // document.querySelector('.sec1').addEventListener('wheel', findScrollDirectionOtherBrowsers);
   var tl = gsap.timeline();
@@ -434,3 +436,44 @@ function closeNav() {
 
 
 
+const navbar = ()=>{
+  var items = document.querySelectorAll('.menu div div ul li')
+  items[0].addEventListener('mouseover',()=>{imgtrans(1)})
+  items[1].addEventListener('mouseover',()=>{imgtrans(2)})
+  items[2].addEventListener('mouseover',()=>{imgtrans(3)})
+  items[3].addEventListener('mouseover',()=>{imgtrans(4)})
+
+  // items.forEach((element,index)=>{
+  //   element.addEventListener('mouseover',imgtrans)
+  // })
+}
+var active = 1;
+var tra = 0;
+
+var imgtrans = (a)=>{
+  var color = [];
+  color[1] = '#610c68';
+  color[2] = '#e65f5c';
+  color[3] = '#84dcc6';
+  color[4] = '#ffff82';
+
+  if(a!=active && tra === 0){
+    console.log(a)
+    var b=active;
+    active = a;
+    tra=1;
+    var tl = gsap.timeline();
+    tl.set(`.navt${a}`,{backgroundSize: '100%'})
+    tl.set(`.navt${b}`,{backgroundSize: '0%'})
+    tl.to(`.navimg${b}`,{duration:0.2,opacity:0,y:-150})
+    tl.to(`.menu`,{duration:0.2,background:(color[a])})
+    tl.fromTo(`.navimg${a}`,{opacity:0,y:150},{opacity:1,y:0,duration:0.2})
+      .call(after,[a])
+
+  }
+
+}
+
+var after = (a)=>{
+  tra=0;
+}

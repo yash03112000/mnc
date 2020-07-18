@@ -9,12 +9,12 @@ function onMouseMove(e) {
     const bigBall = document.querySelector('.cursor__ball--big');
 const smallBall = document.querySelector('.cursor__ball--small');
   gsap.to(bigBall, .4, {
-    x: e.pageX - 15,
-    y: e.pageY - 15 });
+    x: e.clientX - 15,
+    y: e.clientY - 15 });
 
     gsap.to(smallBall, .1, {
-    x: e.pageX - 5,
-    y: e.pageY - 7 });
+    x: e.clientX - 5,
+    y: e.clientY - 7 });
 
 }
 
