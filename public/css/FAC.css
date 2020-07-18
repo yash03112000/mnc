@@ -376,9 +376,11 @@ clear: both;
  margin-top:100px;
 }
 }
-
+.list-type-quiz{
+  margin-bottom:250px;
+}
 .list-type{
-  margin-bottom: 250px;
+  margin-bottom: 500px;
 }
 
 .list-type5{
