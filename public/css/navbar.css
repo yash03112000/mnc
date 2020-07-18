@@ -316,6 +316,9 @@ body { -ms-overflow-style: none; }
   .menu-wrap .menu > div .box-container{
     display: none;
   }
+  .cursor{
+    display: none;
+  }
 }
 
 .menu{
@@ -339,3 +342,12 @@ body .cursor__ball--small {
   stroke: black;
 }
 body{cursor:none}
+
+.btn,.sid a i{
+  cursor: none;
+}
+.sidenav2 a{
+  cursor: none;
+}
+
+

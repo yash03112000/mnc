@@ -55,18 +55,20 @@ var current = 1;
                 // tl.to(`.sidenav`, {duration:.2, opacity:'1' });
                 // tl.set(`.part${a}3`,{y:'0%'})
             }else{
-                if(a===1){
+                if(a==1){
+                    console.log('a')
                     var tl = gsap.timeline();
                     tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
                     tl.to(`.head1`, {duration:0.2, opacity:'0' });
                     tl.to(`.img1`, {duration:0.2, opacity:'0' });
-                    tl.set(`.part${a}3`, { display: 'initial' });
-                    tl.from(`.part${a}3`,{duration: .5,x:'100%'})
+                    // tl.set(`.part${a}3`, { display: 'initial' });
+                    // tl.from(`.part${a}3`,{duration: .5,x:'100%'})
                     // tl.to(`.img${a}`, { duration: .3,opacity: '0' });
                     // tl.set(`.img${a}`, {scale: '0.7',x:"0px" })
                     tl.set(`.sec${a}`,{duration: .01,display:'none'})
-                    tl.to(`.part${a}3`,{duration: .5,x:'-100%'})
-                    tl.to(`.part${a}3`, { duration: .01,display:'none' });
+                    // tl.to(`.part${a}3`,{duration: .5,x:'-100%'})
+                    // tl.to(`.part${a}3`, { duration: .01,display:'none' });
+                    tl.to(`.sec${a}`,{duration:0.5})
                     tl.to(`.sec${b}`, { duration: .01,display: 'flex' },"-=0.2");
                     tl.from(`.sec${b}`, { duration: .4,x:'100%' },"-=0.21");
                     tl.to(`.img${b}`, { duration: .3,opacity: '1' })
@@ -74,7 +76,7 @@ var current = 1;
                     tl.to(`.img${b}`, { duration: .3,scale: '0.6',x:"40px" })
                     tl.to(`.part${b}1`, { duration: .5,y:'30px',opacity:'1' });
                     tl.to(`.sidenav`, {duration:.2, opacity:'1' });
-                    tl.set(`.part${a}3`,{x:'0%'})
+                    // tl.set(`.part${a}3`,{x:'0%'})
                 }else{
                     var tl = gsap.timeline();
                     tl.set(`.part${a}3`, { transformOrigin: "left"});
@@ -100,6 +102,8 @@ var current = 1;
 
         }
         function scrollup(a,b){
+            console.log(a)
+            console.log(b)
             var x = window.matchMedia("(max-width: 500px)")
             if(x.matches){
                 // var tl = gsap.timeline();
@@ -121,7 +125,8 @@ var current = 1;
                 // tl.to(`.sidenav`, {duration:.2, opacity:'1' });
                 // tl.set(`.part03`,{y:'00%'})
             }else{
-                if(b===1){
+                console.log(b)
+                if(b==1){
                     var tl = gsap.timeline();
                     console.log(b);
                     // tl.set(`.part${a}3`, { transformOrigin: "left"});
@@ -134,17 +139,17 @@ var current = 1;
                     tl.to(`.sec${a}`,{duration: .01,display:'none'})
                     tl.to(`.part03`,{duration: .5,x:'100%'})
                     tl.set(`.part03`, { display:'none' });
-                    tl.set(`.part${b}3`, { display: 'initial' },"-=0.5");
-                    tl.from(`.part${b}3`,{duration: .5,x:'-100%'},"-=0.5")
-                    tl.to(`.part${b}3`,{duration: .5,x:'100%'})
-                    tl.set(`.part${b}3`, { display:'none' });
+                    // tl.set(`.part${b}3`, { display: 'initial' },"-=0.5");
+                    // tl.from(`.part${b}3`,{duration: .5,x:'-100%'},"-=0.5")
+                    // tl.to(`.part${b}3`,{duration: .5,x:'100%'})
+                    // tl.set(`.part${b}3`, { display:'none' });
                     tl.set(`.sec${b}`, {display: 'flex' },"-=0.5");
                     tl.to(`.sidenav`, {duration:.2, opacity:'1' })
                         .call(updateup,[a,b]);
                     tl.to(`.head1`, {duration:0.2, opacity:'1' });
                     tl.to(`.img${b}`, {duration:1,opacity: '1' })
                     tl.set(`.part03`,{x:'00%'})
-                    tl.set(`.part${b}3`,{x:'00%'})
+                    // tl.set(`.part${b}3`,{x:'00%'})
                 }else{
                     var tl = gsap.timeline();
                     console.log(b);
@@ -255,6 +260,8 @@ function updateup(a,b){
 }
 
 function abc(a){
+    console.log(a)
+    console.log(current)
     if(current<a){
         document.querySelector('.sec'+current).removeEventListener('wheel',findScrollDirectionOtherBrowsers);
         setTimeout(() => {
