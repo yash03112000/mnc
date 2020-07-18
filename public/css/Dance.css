@@ -238,7 +238,7 @@ section h3{
 }
 
 .list-type{
-margin-bottom: 500px;
+margin-bottom: 600px;
 }
 .list-type-pc{
   margin-bottom: 600px;
@@ -455,6 +455,7 @@ counter-increment: li-counter;
   width:430px;
   margin:0 auto;
   margin-left:4vw;
+  
   }
   .list-type6 ol {
   list-style-type: none;
@@ -505,6 +506,10 @@ counter-increment: li-counter;
   content: counter(li-counter);
   counter-increment: li-counter;
   }
+.film-container{
+  margin-bottom:750px;
+}
+
  .images{
    width:300px;
    height:200px;
@@ -551,6 +556,9 @@ counter-increment: li-counter;
       left: -15px;
       bottom: 10px;
       right: -25px; 
+    }
+    .film-container{
+      margin-bottom:0px;
     }
 }
 
