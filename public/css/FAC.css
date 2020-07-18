@@ -511,8 +511,8 @@ counter-increment: li-counter;
     margin-left:auto;
 }
 .images{
-    width:380px;
-    height:300px;
+    width:100%;
+    height:100%;
 }
 .frame{
     margin-left:10px;
@@ -520,7 +520,7 @@ counter-increment: li-counter;
     height:320px;
     border: 1px solid #000;
     background-color: #96626f;
-    padding: 15px 15px;
+    /* padding: 15px 15px; */
 }
 
 
