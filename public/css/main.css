@@ -287,7 +287,7 @@ body { -ms-overflow-style: none; }
             transform: perspective(800px);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   .card-wrap:hover .card-info {
     -webkit-transform: translateY(0);
@@ -540,11 +540,9 @@ nav{
     letter-spacing: 1px;
     font-size: 18px;
     font-family: 'Open Sans Condensed', sans-serif;
-    cursor: pointer;
+    cursor: none;
 }
-.sidenav ul li{
-    cursor: pointer;
-}
+
 @media(max-width:500px){
     .btn{
         position: relative;
@@ -564,7 +562,7 @@ nav{
 
 #facebook {
   outline: 0 none;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   display: inline-block;
   width: 70px;
@@ -657,7 +655,7 @@ nav{
 }
 #instagram {
   outline: 0 none;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   display: inline-block;
   width: 70px;
@@ -748,7 +746,7 @@ nav{
 }
 #googleplus {
   outline: 0 none;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   display: inline-block;
   width: 70px;
@@ -920,3 +918,22 @@ nav{
 .header{
   background-color: #e46314;
 }
+
+
+body .cursor {
+  pointer-events: none;
+}
+body .cursor__ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* mix-blend-mode: difference; */
+  z-index: 1000;
+}
+body .cursor__ball--big  {
+  stroke: rgb(0, 0, 0)
+}
+body .cursor__ball--small {
+  stroke: black;
+}
+body{cursor:none}

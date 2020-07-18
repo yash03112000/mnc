@@ -179,7 +179,10 @@ var current = 1;
         window.onload = function(){
             console.log('abcd');
             navbar();
+            hover();
             document.querySelector('.sec1').addEventListener('wheel', findScrollDirectionOtherBrowsers);
+            var x = window.matchMedia("(max-width: 500px)")
+            if(x.matches) document.querySelector('.cursor').style.display = 'none';
             var tl = gsap.timeline();
             // tl.from('.sec1',{duration: 0.5,x:'50px',opacity:0})
             tl.to('.sidenav',{duration: 0.5,opacity:1})
