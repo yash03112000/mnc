@@ -86,7 +86,7 @@ nav {
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
   }
-@media (max-width:700px){
+@media (max-width:500px){
   nav{
       display:none;
       width:100%;
@@ -147,7 +147,7 @@ body { -ms-overflow-style: none; }
   z-index: 1000!important;
 }
 
-@media (max-width:700px){
+@media (max-width:500px){
   main{
       padding-top:200px;
       padding-bottom: 200px;

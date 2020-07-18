@@ -18,7 +18,7 @@ body {
   position: relative;
   top:100vh;
 }
-@media (max-width:700px){
+@media (max-width:500px){
   .mega{
     grid-template-columns:0% 100vw;
     min-width: 0;
@@ -100,7 +100,7 @@ nav ul li a {
   font-family: 'Rubik', sans-serif;
 }
 
-@media (max-width:700px){
+@media (max-width:500px){
   nav{
       display: block;
       width:100%;
@@ -194,7 +194,7 @@ section h3{
 .section-team{
   width:100%;
 }
-@media (max-width:600px){
+@media (max-width:500px){
   main{
       padding-top:200px;
       padding-bottom: 200px;
