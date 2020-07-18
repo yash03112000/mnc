@@ -53,7 +53,7 @@
     }
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 500px){
     nav {
       display: none !important;
       width: 100%;
