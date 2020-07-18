@@ -184,22 +184,23 @@
     color: transparent;
     -webkit-background-clip: text;
             background-clip: text;
-    -webkit-transition: 0.2s linear;
-    transition: 0.2s linear;
+    -webkit-transition: 0.6s linear;
+    transition: 0.6s linear;
   }
-  .menu-wrap .menu > div > div > ul > li>a:hover {
+  .menu-wrap .menu > div > div > ul > li>.navt1{
     background-size: 100%;
+
   }
     /*=====================*/
 
    .menu-wrap .menu > div .box-container{
-    width:20vw;
+    width:35vw;
     height:50vh;
     /* background:#7b2982; */
     position: relative;
     left:25vw;
     top:0;
-    margin-left: 10vw;
+    margin-left: 7vw;
    }
 
 
