@@ -133,6 +133,8 @@ section p{
  margin:0rem;
  font-size:16px;
  font-family:  'Rubik', sans-serif;
+ text-align: justify;
+ text-justify: inter-word;
 }
 section h1{
   font-size:36px;
@@ -168,7 +170,9 @@ section h3{
 .aboutu-info {
 	padding: 30px;
 	position: relative;
-	width: 100%;
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
 }
 @media  (max-width:500px) {
   .aboutu {

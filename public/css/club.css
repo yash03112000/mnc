@@ -196,9 +196,11 @@ body { -ms-overflow-style: none; }
 
 
 .clubs h2 {
-	opacity: 0.6;
-	margin: 0;
-	letter-spacing: 1px;
+  opacity: 0.6;
+  margin: 0;
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  font-family:'Rubik', sans-serif;
 /*	text-transform: uppercase; */
 }
 
@@ -252,7 +254,7 @@ body { -ms-overflow-style: none; }
       font-size: 20px;
   }
   .clubs h2{
-      font-size: 16px;
+      font-size: 14px;
   }
   .clubs-info{
       padding:15px;
