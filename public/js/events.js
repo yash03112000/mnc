@@ -115,10 +115,85 @@ var over = ()=>{
     var b = a.split('.')[0];
     var c = b.split('/')[1];
     var query = document.querySelectorAll('.sidenav2 div a')
+    var query2 = document.querySelectorAll('#myDropdown ul li a');
     query.forEach(element => {
       // console.log(element)
       var d = element.getAttribute('key')
       // console.log(d)
+      if(d === c) element.classList.add('current');
+      else{
+        switch(d){
+          case 'film':element.addEventListener('click',()=>{
+            trans('film','#FECC47')
+          })
+          break;
+          case 'ELS':element.addEventListener('click',()=>{
+            trans('ELS','#B1FF3A')
+          })
+          break;
+          case 'Dance':element.addEventListener('click',()=>{
+            trans('Dance','#979DAD')
+          })
+          break;
+          case 'music':element.addEventListener('click',()=>{
+            trans('music','#73F6C4')
+          })
+          break;
+          case 'DNA':element.addEventListener('click',()=>{
+            trans('DNA','#F296BB')
+          })
+          break;
+          case 'book':element.addEventListener('click',()=>{
+            trans('book','#CB997E')
+          })
+          break;                              
+          case 'quiz':element.addEventListener('click',()=>{
+            trans('quiz','#7BC1FF')
+          })
+          break;
+          case 'DebSoc':element.addEventListener('click',()=>{
+            trans('DebSoc','#FFAEAD')
+          })
+          break;
+          case 'sos':element.addEventListener('click',()=>{
+            trans('sos','#FFD6BA')
+          })
+          break;
+          case 'sfs':element.addEventListener('click',()=>{
+            trans('sfs','#BDB2FF')
+          })
+          break;
+          case 'photo':element.addEventListener('click',()=>{
+            trans('photo','#A7D7CB')
+          })
+          break;
+          case 'fac':element.addEventListener('click',()=>{
+            trans('FAC','#FEF552')
+          })
+          break;
+          case 'Dramatics':element.addEventListener('click',()=>{
+            trans('Dramatics','#CF79FF')
+          })
+          break;
+          case 'HSS':element.addEventListener('click',()=>{
+            trans('HSS','#CF79FF')
+          })
+          break;
+          case 'Anime':element.addEventListener('click',()=>{
+            trans('Anime','#DAAB65')
+          })
+          break;
+
+        }
+      }
+      
+    });
+    query2.forEach(element => {
+      // console.log(element)
+      var d = element.getAttribute('key')
+      console.log(d)
+      console.log(c)
+
       if(d === c) element.classList.add('current');
       else{
         switch(d){
