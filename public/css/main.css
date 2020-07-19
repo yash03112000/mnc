@@ -937,3 +937,30 @@ body .cursor__ball--small {
   stroke: black;
 }
 body{cursor:none}
+
+
+.vdes1:hover{
+  background-color: #ec2c29;
+}
+
+.vdes1{
+  background-color:#e65f5c;
+  transition: background-color 0.3s;
+}
+
+.vdes2:hover{
+  background-color: #3cd4ae;
+}
+
+.vdes2{
+  background-color:#84dcc6;
+  transition: background-color 0.3s;
+}
+.vdes3:hover{
+  background-color: #cece2f;
+}
+
+.vdes3{
+  background-color:#ffff82;
+  transition: background-color 0.3s;
+}

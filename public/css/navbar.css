@@ -212,7 +212,7 @@
     /*=====================*/
     .menu-wrap .menu > div > .social-nav {
       margin-top:80vh;
-      margin-left:10vw;
+      margin-left:-5vw;
       text-align: left;
       max-width: 90vw;
       max-height: 100vh;
@@ -322,7 +322,7 @@ body { -ms-overflow-style: none; }
 }
 
 .menu{
-  background: #610c68;
+  background: #7b2982;
 }
 
 body .cursor {

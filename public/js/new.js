@@ -176,7 +176,7 @@ var tra = 0;
 
 var imgtrans = (a)=>{
   var color = [];
-  color[1] = '#610c68';
+  color[1] = '#7b2982';
   color[2] = '#e65f5c';
   color[3] = '#84dcc6';
   color[4] = '#ffff82';
@@ -203,4 +203,8 @@ var after = (a)=>{
 }
 // var why(a)=>{
 //   if(a===0) return 'mncrhs';
+// }
+
+// const venter = ()=>{
+
 // }
