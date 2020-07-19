@@ -201,10 +201,24 @@ var imgtrans = (a)=>{
 var after = (a)=>{
   tra=0;
 }
-// var why(a)=>{
-//   if(a===0) return 'mncrhs';
-// }
+var logobounce = (x1,y1)=>{
+  var x2 = x1-xpos;
+  var y2 = y1 -ypos;
+  console.log(x2)
+  console.log(y2)
+  var rat = y2/x2;
+  var xmov = x2;
+  var ymov = y2;
+  const tl = gsap.timeline();
+  tl.to(`.img1`,{duration:0.6,y:ymov,x:xmov})
+  tl.to(`.img1`,{duration:0.6,y:0,x:0})
+}
 
-// const venter = ()=>{
 
-// }
+var xpos = 0;
+var ypos = 0;
+
+var xx = (e)=>{
+  xpos = e.clientX;
+  ypos = e.clientY;
+}

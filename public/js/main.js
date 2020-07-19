@@ -185,14 +185,13 @@ var current = 1;
             console.log('abcd');
             navbar();
             hover();
+            document.addEventListener('mousemove',xx)
             document.querySelector('.sec1').addEventListener('wheel', findScrollDirectionOtherBrowsers);
-            // document.querySelector('.vdes1').addEventListener('mouseenter', venter);
-            // document.querySelector('.vdes2').addEventListener('mouseenter', venter);
-            // document.querySelector('.vdes3').addEventListener('mouseenter', venter);
-            // document.querySelector('.vdes1').addEventListener('mouseleave', vleave);
-            // document.querySelector('.vdes2').addEventListener('mouseleave', vleave);
-            // document.querySelector('.vdes3').addEventListener('mouseleave', vleave);
-
+            document.querySelector('.img1').addEventListener('mouseenter',(e)=>{
+                var x = e.clientX;
+                var y = e.clientY;
+                logobounce(x,y)
+            });
             var x = window.matchMedia("(max-width: 500px)")
             if(x.matches) document.querySelector('.cursor').style.display = 'none';
             var tl = gsap.timeline();
