@@ -186,6 +186,13 @@ var current = 1;
             navbar();
             hover();
             document.querySelector('.sec1').addEventListener('wheel', findScrollDirectionOtherBrowsers);
+            // document.querySelector('.vdes1').addEventListener('mouseenter', venter);
+            // document.querySelector('.vdes2').addEventListener('mouseenter', venter);
+            // document.querySelector('.vdes3').addEventListener('mouseenter', venter);
+            // document.querySelector('.vdes1').addEventListener('mouseleave', vleave);
+            // document.querySelector('.vdes2').addEventListener('mouseleave', vleave);
+            // document.querySelector('.vdes3').addEventListener('mouseleave', vleave);
+
             var x = window.matchMedia("(max-width: 500px)")
             if(x.matches) document.querySelector('.cursor').style.display = 'none';
             var tl = gsap.timeline();

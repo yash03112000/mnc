@@ -40,10 +40,10 @@
       
 
     .content2,.content3,.content4{
-    font-size: 12px;
+    font-size: 20px;
     }
     .view2,.view3,.view4{
-        top:5vh;
+        top:0vh;
         left: 0vw;
     }
     .btn{
