@@ -189,7 +189,7 @@ html {
          
     }
     section h2{
-        font-size:26px;
+        font-size:30px;
     }
    }
   .events_vm_1 ,.events_vm_2,.events_vm_3,.events_vm_4{
@@ -469,11 +469,22 @@ footer {
     content: counter(li-counter);
     counter-increment: li-counter;
     }
+    .list-type{
+      margin-bottom: 300px;
+    }
    .get-touch{
      margin-top: 20px;
    }
    .img-container{
      margin-left: 5vw;
+   }
+   .contact h3{
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+   .contact p{
+     font-size: 17px;
    }
  @media screen and (max-width: 500px) {
     .list-type5,.list-type6{

@@ -491,21 +491,28 @@ counter-increment: li-counter;
   
 
   .get-touch{
-    margin-top: 50px;
+    margin-top: 25px;
   }
   .video-container{
       margin-top:0px;
       margin-bottom: 25px;
       margin-left:5vw;
   }
-  .column-contact{
-      width:45%;
-      margin-left:auto;
+  .column-contact h3{
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 10px;
   }
+   .column-contact p{
+     font-size: 17px;
+   }
   @media screen and (max-width: 500px) {
     .column-contact {
       width: 100%;
       margin: 0;
+    }
+    .music-info{
+      margin-bottom: 20px;
     }
     .list-type5,.list-type6{
       width:80vw;
