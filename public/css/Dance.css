@@ -238,7 +238,7 @@ section h3{
 }
 
 .list-type{
-margin-bottom: 600px;
+margin-bottom: 550px;
 }
 .list-type-pc{
   margin-bottom: 600px;
@@ -518,7 +518,7 @@ counter-increment: li-counter;
   margin-bottom: 20px;
 }
   .get-touch{
-    margin-top: 50px;
+    margin-top: 25px;
   }
   .video-container{
       margin-top:0px;
@@ -529,9 +529,21 @@ counter-increment: li-counter;
       width:30%;
       margin-left:auto;
   }
+  .column-contact p{
+    font-size: 17px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .column-contact h3{
+    font-size: 24px;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    margin-top:10px;
+  }
   @media screen and (max-width: 500px) {
     .column-contact {
       width: 100%;
+      margin-bottom: 20px;
     }
     .list-type5,.list-type6,iframe{
       width:80vw;
@@ -541,6 +553,12 @@ counter-increment: li-counter;
     }
     .hss-info{
       margin-bottom:20px;
+    }
+    .dance-info{
+      margin-bottom: 20px;
+    }
+    .column-contact h3{
+      margin-top:5px;
     }
     .our-team,.video-container{
       margin: 0;

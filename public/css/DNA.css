@@ -546,9 +546,17 @@ counter-increment: li-counter;
     width:30%;
     margin-left:auto;
 }
-.column-contact-anime{
-   width:45%;
-   margin-left:auto;
+ .column-contact-anime p,.column-contact p,.column-contact-els p,.column-contact-photo p{
+   font-size:17px ;
+ }
+ .column-contact h3{
+  margin-bottom:0;
+  padding-bottom: 0;
+}
+.column-contact-els h3,.column-contact-photo h3{
+  margin-top:10px;
+  padding-bottom:0px;
+  margin-bottom: 0px;
 }
 .images{
   width:380px;
@@ -572,11 +580,21 @@ padding-right: 5px;
     }
     .column-contact-els {
       width: 100%;
-      margin:0;
+      margin-bottom:25px;
     }
     .column-contact-anime{
       width:100%;
       margin:0;
+    }
+    .column-contact-anime h3,.column-contact h3,.column-contact-photo h3{
+      margin-bottom:0;
+      padding-bottom: 0;
+    }
+    .anime-info{
+      margin-top:20px;
+    }
+    .photo-info{
+      margin-bottom:25px;
     }
     .list-type5,.list-type6{
       width:80vw;
