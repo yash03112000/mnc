@@ -298,10 +298,10 @@ body { -ms-overflow-style: none; }
 
 
 .navimg{
-  height: 80%;
-  width: 80%;
+  /* height: 80%; */
+  width: 70%;
   position: absolute;
-  top:5%;
+  /* top:5%; */
   left: 5%;
 }
 .navimg1{
@@ -322,7 +322,7 @@ body { -ms-overflow-style: none; }
 }
 
 .menu{
-  background: #7b2982;
+  background: #a848b0;
 }
 
 body .cursor {

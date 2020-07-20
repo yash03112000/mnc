@@ -176,7 +176,7 @@ var tra = 0;
 
 var imgtrans = (a)=>{
   var color = [];
-  color[1] = '#7b2982';
+  color[1] = '#a848b0';
   color[2] = '#e65f5c';
   color[3] = '#84dcc6';
   color[4] = '#ffff82';
@@ -194,6 +194,8 @@ var imgtrans = (a)=>{
     tl.fromTo(`.navimg${a}`,{opacity:0,y:150},{opacity:1,y:0,duration:0.2})
       .call(after,[a])
 
+  }else{
+    // tra=0;
   }
 
 }
@@ -201,10 +203,39 @@ var imgtrans = (a)=>{
 var after = (a)=>{
   tra=0;
 }
-// var why(a)=>{
-//   if(a===0) return 'mncrhs';
-// }
 
-// const venter = ()=>{
+var tra2 = 0;
+var logobounce = (x1,y1)=>{
+const tl2 = gsap.timeline();
+  if(tra2 ==0){
+    tra2 = 1;
+    var x2 = x1-xpos;
+    var y2 = y1 -ypos;
+    // console.log(x2)
+    // console.log(y2)
+    var rat = y2/x2;
+    var xmov = x2;
+    var ymov = y2;
+    tl2.to(`.img1`,{duration:0.6,y:ymov,x:xmov})
+    tl2.to(`.img1`,{duration:0.6,y:0,x:0})
+      .call(after1,[])
+  }else{
+    // console.log('here')
+    // console.log(tl2.progress())
+    tra2 = 0
+  }
 
-// }
+}
+
+const after1 = ()=>{
+  tra2=0;
+}
+
+
+var xpos = 0;
+var ypos = 0;
+
+var xx = (e)=>{
+  xpos = e.clientX;
+  ypos = e.clientY;
+}
