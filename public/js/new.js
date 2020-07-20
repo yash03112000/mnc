@@ -194,6 +194,8 @@ var imgtrans = (a)=>{
     tl.fromTo(`.navimg${a}`,{opacity:0,y:150},{opacity:1,y:0,duration:0.2})
       .call(after,[a])
 
+  }else{
+    tra=0;
   }
 
 }
