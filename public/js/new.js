@@ -195,7 +195,7 @@ var imgtrans = (a)=>{
       .call(after,[a])
 
   }else{
-    tra=0;
+    // tra=0;
   }
 
 }
