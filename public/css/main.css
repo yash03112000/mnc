@@ -469,29 +469,34 @@ body { -ms-overflow-style: none; }
     opacity:0;
 }
 
-nav{
-    position: absolute;
-    margin-left: 25vw;
-    /* padding-right:30px; */
-    bottom: 0;
- /*   width:60vw; */
-    z-index:50;
-  }
-  
-  nav ul li{
-    display:inline-block;
-    padding:1.5vw;
-    color:black;
-    opacity: 1;
-    font-family: 'Livvic', sans-serif;
-    font-size: 1.25rem;
-    letter-spacing: -1px;
-  }
-  nav ul li span{
-    /* overflow: hidden;*/
-     
-    display: none;
-  }
+nav {
+  position: absolute;
+  left: 0px;
+  bottom:0px;
+  width: 100vw;
+  z-index:50;
+  display: flex;
+  justify-content: center;
+}
+/*nav ul {
+  margin: 0;
+  padding: 0;
+}*/
+nav ul li {
+  margin: 0;
+  padding: 0;
+  float:left;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 0px 5px;
+  display: block;
+  color:black;
+  opacity: 1;
+  font-family: 'Livvic', sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+}
   .head1{
       opacity: 0;
   }
