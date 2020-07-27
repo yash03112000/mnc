@@ -248,11 +248,10 @@ footer {
   padding-top: 0;
 }
 
-@media 
+/* @media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
-	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
     display: block;
 	}
@@ -260,7 +259,6 @@ only screen and (max-width: 760px),
     padding:0px;
     margin:0;
   }
-	/* Hide table headers (but not display: none;, for accessibility) */
 	thead tr { 
 		position: absolute;
 		top: -9999px;
@@ -270,7 +268,6 @@ only screen and (max-width: 760px),
 	tr { border: 1px solid #ccc; }
 	
 	th { 
-		/* Behave  like a "row" */
 		border: none;
 		border-bottom: 1px solid #eee; 
 		position: relative;
@@ -285,9 +282,7 @@ only screen and (max-width: 760px),
     padding-right:50%;
   }
 	th:before { 
-		/* Now like a table header */
 		position: absolute;
-		/* Top/left values mimic padding */
 		top: 6px;
     left: 6px;
 		width: 100%; 
@@ -295,9 +290,7 @@ only screen and (max-width: 760px),
 		white-space: nowrap;
 	}
 	
-	/*
-	Label the data
-	*/
+	
 	
 	td:nth-of-type(2):before { content: "Points"; }
 	td:nth-of-type(3):before { content: "Aryans"; }
@@ -306,4 +299,19 @@ only screen and (max-width: 760px),
 	td:nth-of-type(6):before { content: "Peshwas"; }
 	td:nth-of-type(7):before { content: "Shauryas"; } 
 	
+} */
+.galaxytable{
+  font-size: 1.4rem;
+}
+
+@media(max-width:500px){
+  .galaxytable{
+    font-size: 6px;
+  }
+}
+
+@media(max-width:350px){
+  .galaxytable{
+    font-size: 4px;
+  }
 }
