@@ -136,8 +136,19 @@ section p{
  text-align: justify;
  text-justify: inter-word;
 }
+.table>thead>tr>th, .table>tbody>tr>th, .table>thead>tr>td, .table>tbody>tr>td{
+  padding-left: 10px;
+  margin:10px;
+  font-family:  'Rubik', sans-serif;
+}
+.panel-default{
+  margin:100px 0;
+}
+.panel-heading{
+  font-size: 20px;
+}
 section h1{
-  font-size:36px;
+  font-size:32px;
   padding: 2px;
   /* font-family: 'Open Sans Condensed', sans-serif; */
 }
@@ -193,11 +204,12 @@ section h3{
 }
 
 .section-header{
-  padding:25px 0;
+  padding:10px 0;
 }
 .section-team{
   width:100%;
 }
+
 @media (max-width:500px){
   main{
       padding-top:200px;
@@ -225,5 +237,73 @@ footer {
     background: #96626f;
     padding: 5rem 1rem;
     }
+.contact h3{
+ margin:0px;
+ padding-top: 5px;
+ margin-top:5px;
+}
+.contact p{
+  text-align: center;
+  margin-top:0;
+  padding-top: 0;
+}
 
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
 
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+    display: block;
+	}
+	.table>thead>tr>th, .table>tbody>tr>th, .table>thead>tr>td, .table>tbody>tr>td{
+    padding:0px;
+    margin:0;
+  }
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	th { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+	 
+  }
+ 
+  td{
+    width:100%;
+  }
+	td:before{
+    width:100%;
+    padding-right:50%;
+  }
+	th:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+    left: 6px;
+		width: 100%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	
+	td:nth-of-type(2):before { content: "Points"; }
+	td:nth-of-type(3):before { content: "Aryans"; }
+	td:nth-of-type(4):before { content: "Kshatriya"; }
+	td:nth-of-type(5):before { content: "Nawab"; }
+	td:nth-of-type(6):before { content: "Peshwas"; }
+	td:nth-of-type(7):before { content: "Shauryas"; } 
+	
+}
