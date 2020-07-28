@@ -449,6 +449,8 @@ const navbar = ()=>{
 }
 var active = 1;
 var tra = 0;
+var check = 0;
+var ah= 0;
 
 var imgtrans = (a)=>{
   var color = [];
@@ -470,10 +472,18 @@ var imgtrans = (a)=>{
     tl.fromTo(`.navimg${a}`,{opacity:0,y:150},{opacity:1,y:0,duration:0.2})
       .call(after,[a])
 
+  }else{
+    check = 1;
+    ah=a;
   }
 
 }
 
 var after = (a)=>{
   tra=0;
+  if(check === 1){
+    // console.log('qqq')
+    check =0;
+    imgtrans(ah)
+  }
 }
