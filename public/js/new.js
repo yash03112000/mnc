@@ -173,7 +173,9 @@ const navbar = ()=>{
 }
 var active = 1;
 var tra = 0;
-
+var check = 0;
+var ah= 0;
+// var b = 0;
 var imgtrans = (a)=>{
   var color = [];
   color[1] = '#a848b0';
@@ -195,13 +197,19 @@ var imgtrans = (a)=>{
       .call(after,[a])
 
   }else{
-    // tra=0;
+    check = 1;
+    ah=a;
   }
 
 }
 
 var after = (a)=>{
   tra=0;
+  if(check === 1){
+    // console.log('qqq')
+    check =0;
+    imgtrans(ah)
+  }
 }
 
 var tra2 = 0;
