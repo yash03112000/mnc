@@ -54,7 +54,7 @@ html {
     position: relative;
     margin:0;
     padding: 0;
-    z-index:-1
+    z-index:-1;
   }
   .slide > div {
     margin: 0;
@@ -264,7 +264,7 @@ body { -ms-overflow-style: none; }
 	letter-spacing: 1px;
 	margin: 10px 0;
 }
-
+/*
 .clubs-preview {
 	color: #fff;
 	width:30vw;
@@ -272,6 +272,22 @@ body { -ms-overflow-style: none; }
 
 .clubs-info {
 	padding: 30px;
+	position: relative;
+	width: 100%;
+} */
+.clubs-preview {
+	color: #fff;
+  width:25vw;
+  overflow: hidden;
+  object-fit: contain;
+  object-position: center center;
+}
+.clubs-preview img{
+  max-width: 100%;
+}
+.clubs-info {
+  padding: 30px;
+  padding-bottom:70px;
 	position: relative;
 	width: 100%;
 }
