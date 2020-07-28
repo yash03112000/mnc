@@ -186,7 +186,7 @@ body { -ms-overflow-style: none; }
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 	display: flex;
   max-width: 100%;
-  margin: 10px;
+  margin: 20px;
   overflow: hidden;
   font-family: 'Open Sans Condensed', sans-serif;
   height:300px;
@@ -213,9 +213,14 @@ body { -ms-overflow-style: none; }
 
 .clubs-preview {
 	color: #fff;
-	width:30vw;
+  width:25vw;
+  overflow: hidden;
+  object-fit: contain;
+  object-position: center center;
 }
-
+.clubs-preview img{
+  max-width: 100%;
+}
 .clubs-info {
   padding: 30px;
   padding-bottom:70px;
