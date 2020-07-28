@@ -14,12 +14,14 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
    
     <script src="js/events.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
     <script src="js/sidenavMobile.js"></script>
     <script src="js/loader.js"></script>
     <script src="js/card.js"></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src='js/galaxy.js'></script>
 
 </head>
 <body>
@@ -141,9 +143,9 @@
               </tr> 
             </thead>
             <tbody>
-              <tr data-toggle="collapse" id="table1" data-target=".table1">
+              <tr class="clickable event4" data-toggle="collapse" id="table1" data-target=".table1" >
                 <td>Film Club</td>
-                <td>100</td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -167,16 +169,16 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
+                        <tr class="club1 event0">
                           <td>Shortfilm</td>
-                          <td>80</td>
+                          <td></td>
                           <td></td>
                           <td></td>
                           <td></td>
                           <td></td>
                           <td></td>
                         </tr>
-                        <tr>
+                        <tr class="club1 event1">
                           <td>51 hrs</td>
                           <td></td>
                           <td></td>
@@ -185,7 +187,7 @@
                           <td></td>
                           <td></td>
                         </tr>
-                        <tr>
+                        <tr class="club1 event2">
                           <td>Screen-writing</td>
                           <td></td>
                           <td></td>
@@ -194,7 +196,7 @@
                           <td></td>
                           <td></td>
                         </tr>
-                        <tr>
+                        <tr class="club1 event3">
                         <td>B Roll</td>
                         <td></td>
                         <td></td>
@@ -210,7 +212,7 @@
               </tr>
       
       
-           <tr class="clickable" data-toggle="collapse" id="table2" data-target=".table2">
+           <tr class="clickable event8" data-toggle="collapse" id="table2" data-target=".table2">
               <td>Dance Club</td>
               <td></td>
               <td></td>
@@ -236,7 +238,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club2 event5">
                       <td>Group Dance</td>
                       <td></td>
                       <td></td>
@@ -245,7 +247,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club2 event6">
                       <td>Cypher Hustle</td>
                       <td></td>
                       <td></td>
@@ -254,7 +256,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club2 event7">
                       <td>Dance Drama</td>
                       <td></td>
                       <td></td>
@@ -271,7 +273,7 @@
       
       
       
-              <tr class="clickable" data-toggle="collapse" id="table3" data-target=".table3">
+              <tr class="clickable event12" data-toggle="collapse" id="table3" data-target=".table3">
                   <td>Design And Animation Club</td>
                   <td></td>
                   <td></td>
@@ -297,7 +299,7 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
+                        <tr class="club3 event9">
                           <td>Composites</td>
                           <td></td>
                           <td></td>
@@ -306,7 +308,7 @@
                           <td></td>
                           <td></td>
                         </tr>
-                        <tr>
+                        <tr class="club3 event10">
                           <td>48 hours 2D design</td>
                           <td></td>
                           <td></td>
@@ -315,7 +317,7 @@
                           <td></td>
                           <td></td>
                         </tr>
-                        <tr>
+                        <tr class="club3 event11">
                           <td>Rebranding</td>
                           <td></td>
                           <td></td>
@@ -331,7 +333,7 @@
               </tr>
       
       
-           <tr class="clickable" data-toggle="collapse" id="table4" data-target=".table4">
+           <tr class="clickable event17" data-toggle="collapse" id="table4" data-target=".table4">
               <td>Dramatics Club</td>
               <td></td>
               <td></td>
@@ -357,7 +359,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club4 event13">
                       <td>Stage Play</td>
                       <td></td>
                       <td></td>
@@ -366,7 +368,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club4 event14">
                       <td> Street Play</td>
                       <td></td>
                       <td></td>
@@ -375,7 +377,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club4 event15">
                       <td>Monoact</td>
                       <td></td>
                       <td></td>
@@ -384,7 +386,7 @@
                       <td></td>
                       <td></td>
                     </tr> 
-                    <tr>
+                    <tr class="club4 event16">
                       <td>Mime</td>
                       <td></td>
                       <td></td>
@@ -399,7 +401,7 @@
             </td>
           </tr>
       
-          <tr class="clickable" data-toggle="collapse" id="table5" data-target=".table5">
+          <tr class="clickable event27" data-toggle="collapse" id="table5" data-target=".table5">
               <td>Hindi Sahitya Sabha</td>
               <td></td>
               <td></td>
@@ -425,7 +427,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club5 event18">
                       <td>Aaghaz</td>
                       <td></td>
                       <td></td>
@@ -434,7 +436,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club5 event19">
                       <td>Gupchup</td>
                       <td></td>
                       <td></td>
@@ -443,7 +445,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club5 event20">
                       <td>Tark</td>
                       <td></td>
                       <td></td>
@@ -452,7 +454,7 @@
                       <td></td>
                       <td></td>
                     </tr> 
-                    <tr>
+                    <tr class="club5 event21">
                       <td> Aamne- Saamne</td>
                       <td></td>
                       <td></td>
@@ -461,7 +463,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club5 event22">
                       <td>Kirdaar</td>
                       <td></td>
                       <td></td>
@@ -470,7 +472,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club5 event23">
                       <td>Nirvaak</td>
                       <td></td>
                       <td></td>
@@ -479,7 +481,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club5 event24">
                       <td>PD</td>
                       <td></td>
                       <td></td>
@@ -488,7 +490,7 @@
                       <td></td>
                       <td></td>
                     </tr> 
-                    <tr>
+                    <tr class="club5 event25">
                       <td>Kavyanjali</td>
                       <td></td>
                       <td></td>
@@ -497,7 +499,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club5 event26">
                       <td>Shabdrang</td>
                       <td></td>
                       <td></td>
@@ -513,7 +515,7 @@
           </tr>
       
       
-          <tr class="clickable" data-toggle="collapse" id="table6" data-target=".table6">
+          <tr class="clickable event31" data-toggle="collapse" id="table6" data-target=".table6">
               <td>Anime Society</td>
               <td></td>
               <td></td>
@@ -539,7 +541,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club6 event28">
                       <td>Cosplay</td>
                       <td></td>
                       <td></td>
@@ -548,7 +550,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club6 event29">
                       <td>Character Design</td>
                       <td></td>
                       <td></td>
@@ -557,7 +559,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club6 event30">
                       <td>Seiyuu Challenge</td>
                       <td></td>
                       <td></td>
@@ -572,7 +574,7 @@
             </td>
           </tr>
       
-          <tr class="clickable" data-toggle="collapse" id="table7" data-target=".table7">
+          <tr class="clickable event33" data-toggle="collapse" id="table7" data-target=".table7">
               <td>Book Club</td>
               <td></td>
               <td></td>
@@ -587,7 +589,7 @@
               <div>
                 <table class="table table-striped">
                   <thead>
-                    <tr>
+                    <tr >
                       <th>Events</th>
                       <th>Points</th>
                       <th>Aryans</th>
@@ -598,7 +600,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club7 event32">
                       <td>Book Cover Design</td>
                       <td></td>
                       <td></td>
@@ -614,7 +616,7 @@
           </tr>
       
       
-          <tr class="clickable" data-toggle="collapse" id="table8" data-target=".table8">
+          <tr class="clickable event42" data-toggle="collapse" id="table8" data-target=".table8">
               <td>Photography Club</td>
               <td></td>
               <td></td>
@@ -629,7 +631,7 @@
               <div>
                 <table class="table table-striped">
                   <thead>
-                    <tr>
+                    <tr >
                       <th>Events</th>
                       <th>Points</th>
                       <th>Aryans</th>
@@ -640,7 +642,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club8 event34">
                       <td>Untangle</td>
                       <td></td>
                       <td></td>
@@ -649,7 +651,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club8 event35">
                       <td>Resonance</td>
                       <td></td>
                       <td></td>
@@ -658,7 +660,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club8 event36">
                       <td>PhotoStory</td>
                       <td></td>
                       <td></td>
@@ -667,7 +669,7 @@
                       <td></td>
                       <td></td>
                     </tr> 
-                    <tr>
+                    <tr class="club8 event37">
                       <td>Portraits</td>
                       <td></td>
                       <td></td>
@@ -676,7 +678,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club8 event38">
                       <td>TechTricks</td>
                       <td></td>
                       <td></td>
@@ -685,7 +687,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club8 event39">
                       <td>Street </td>
                       <td></td>
                       <td></td>
@@ -694,7 +696,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club8 event40">
                       <td>Minimalism</td>
                       <td></td>
                       <td></td>
@@ -703,7 +705,7 @@
                       <td></td>
                       <td></td>
                     </tr> 
-                    <tr>
+                    <tr class="club8 event41">
                       <td>In the studio</td>
                       <td></td>
                       <td></td>
@@ -718,7 +720,7 @@
             </td>
           </tr>
       
-          <tr class="clickable" data-toggle="collapse" id="table9" data-target=".table9">
+          <tr class="clickable event45" data-toggle="collapse" id="table9" data-target=".table9">
               <td>SFS</td>
               <td></td>
               <td></td>
@@ -744,7 +746,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club9 event43">
                       <td>SFS	Insider</td>
                       <td></td>
                       <td></td>
@@ -753,7 +755,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club9 event44">
                       <td>Film Fights</td>
                       <td></td>
                       <td></td>
@@ -768,7 +770,7 @@
             </td>
           </tr>
       
-          <tr class="clickable" data-toggle="collapse" id="table10" data-target=".table10">
+          <tr class="clickable event51" data-toggle="collapse" id="table10" data-target=".table10">
               <td>Fine Arts Club</td>
               <td></td>
               <td></td>
@@ -794,7 +796,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club10 event46">
                       <td>Digital Painting</td>
                       <td></td>
                       <td></td>
@@ -803,7 +805,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club10 event47">
                       <td>Canvas Painting</td>
                       <td></td>
                       <td></td>
@@ -812,7 +814,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club10 event48">
                       <td>Still Life Sketching</td>
                       <td></td>
                       <td></td>
@@ -821,7 +823,7 @@
                       <td></td>
                       <td></td>
                     </tr> 
-                    <tr>
+                    <tr class="club10 event49">
                       <td>Merge-it-all</td>
                       <td></td>
                       <td></td>
@@ -830,7 +832,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club10 event50">
                       <td>The Big Art Thing</td>
                       <td></td>
                       <td></td>
@@ -846,7 +848,7 @@
             </td>
           </tr>
       
-          <tr class="clickable" data-toggle="collapse" id="table11" data-target=".table11">
+          <tr class="clickable event58" data-toggle="collapse" id="table11" data-target=".table11">
               <td>Quiz Club</td>
               <td></td>
               <td></td>
@@ -872,7 +874,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club11 event52">
                       <td>SciBizTech Quiz</td>
                       <td></td>
                       <td></td>
@@ -881,7 +883,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club11 event53">
                       <td>India Quiz</td>
                       <td></td>
                       <td></td>
@@ -890,7 +892,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club11 event54">
                       <td>Sports Quiz</td>
                       <td></td>
                       <td></td>
@@ -899,7 +901,7 @@
                       <td></td>
                       <td></td>
                     </tr> 
-                    <tr>
+                    <tr class="club11 event55">
                       <td>MELA & Pop Culture Quiz</td>
                       <td></td>
                       <td></td>
@@ -908,7 +910,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club11 event56">
                       <td>HELM Quiz</td>
                       <td></td>
                       <td></td>
@@ -917,7 +919,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club11 event57">
                       <td>General Quiz</td>
                       <td></td>
                       <td></td>
@@ -934,7 +936,7 @@
           </tr>
       
       
-          <tr class="clickable" data-toggle="collapse" id="table12" data-target=".table12">
+          <tr class="clickable event64" data-toggle="collapse" id="table12" data-target=".table12">
               <td>ELS</td>
               <td></td>
               <td></td>
@@ -960,7 +962,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club12 event59">
                       <td>JAM</td>
                       <td></td>
                       <td></td>
@@ -969,7 +971,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club12 event60">
                       <td>Poetry slam</td>
                       <td></td>
                       <td></td>
@@ -978,7 +980,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club12 event61">
                       <td>Creative writing</td>
                       <td></td>
                       <td></td>
@@ -987,7 +989,7 @@
                       <td></td>
                       <td></td>
                     </tr> 
-                    <tr>
+                    <tr class="club12 event62">
                       <td>Word games</td>
                       <td></td>
                       <td></td>
@@ -996,7 +998,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club12 event63">
                       <td>DumbC</td>
                       <td></td>
                       <td></td>
@@ -1012,7 +1014,7 @@
           </tr>
       
       
-          <tr class="clickable" data-toggle="collapse" id="table13" data-target=".table13">
+          <tr class="clickable event67" data-toggle="collapse" id="table13" data-target=".table13">
               <td>SOS</td>
               <td></td>
               <td></td>
@@ -1038,7 +1040,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club13 event65">
                       <td>SOS	Opinion</td>
                       <td></td>
                       <td></td>
@@ -1047,7 +1049,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club13 event66">
                       <td>Blitz</td>
                       <td></td>
                       <td></td>
@@ -1062,7 +1064,7 @@
             </td>
           </tr>
       
-          <tr class="clickable" data-toggle="collapse" id="table14" data-target=".table14">
+          <tr class="clickable event70" data-toggle="collapse" id="table14" data-target=".table14">
               <td>Music Club</td>
               <td></td>
               <td></td>
@@ -1088,7 +1090,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club14 event68">
                       <td>Band</td>
                       <td></td>
                       <td></td>
@@ -1097,7 +1099,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club14 event69">
                       <td>Pair on Stage</td>
                       <td></td>
                       <td></td>
@@ -1112,7 +1114,7 @@
             </td>
           </tr>
       
-          <tr class="clickable" data-toggle="collapse" id="table15" data-target=".table15">
+          <tr class="clickable event72" data-toggle="collapse" id="table15" data-target=".table15">
               <td>Debating Society</td>
               <td></td>
               <td></td>
@@ -1138,7 +1140,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club15 event71">
                       <td>Parliamentary Debate</td>
                       <td></td>
                       <td></td>
@@ -1153,7 +1155,7 @@
             </td>
           </tr>
       
-          <tr class="clickable" data-toggle="collapse" id="table16" data-target=".table16">
+          <tr class="clickable event78" data-toggle="collapse" id="table16" data-target=".table16">
               <td>Miscellaneous</td>
               <td></td>
               <td></td>
@@ -1161,7 +1163,6 @@
               <td></td>
               <td></td>
               <td></td>    
-              </tr>
           </tr>
           <tr class="collapse table16">
             <td colspan="999">
@@ -1179,7 +1180,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr class="club15 event73">
                       <td>Galaxy Parade</td>
                       <td></td>
                       <td></td>
@@ -1188,7 +1189,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club15 event74">
                       <td>Pool Flag</td>
                       <td></td>
                       <td></td>
@@ -1197,7 +1198,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club15 event75">
                       <td>Stand Up</td>
                       <td></td>
                       <td></td>
@@ -1206,7 +1207,7 @@
                       <td></td>
                       <td></td>
                     </tr> 
-                    <tr>
+                    <tr class="club15 event76">
                       <td>Improv</td>
                       <td></td>
                       <td></td>
@@ -1215,7 +1216,7 @@
                       <td></td>
                       <td></td>
                     </tr>
-                    <tr>
+                    <tr class="club15 event77">
                       <td>Pool Video</td>
                       <td></td>
                       <td></td>
@@ -1229,7 +1230,24 @@
               </div>
             </td>
           </tr>
-      
+          <tr class="clickable warning event79" data-toggle="collapse" id="table17" data-target=".table17">
+            <td>Points</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>    
+          </tr>
+          <tr class="clickable info event80" data-toggle="collapse" id="table18" data-target=".table18">
+            <td>Points(Normalised)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>    
+          </tr>
             </tbody>
           </table>
         </div>

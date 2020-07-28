@@ -193,8 +193,8 @@ var over = ()=>{
     query2.forEach(element => {
       // console.log(element)
       var d = element.getAttribute('key')
-      console.log(d)
-      console.log(c)
+      // console.log(d)
+      // console.log(c)
 
       if(d === c) element.classList.add('current');
       else{
