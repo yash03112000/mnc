@@ -6,8 +6,8 @@ function openform() {
   
   function closeNav2() {
     document.getElementById("mySidenav2").style.width = "0";
-    var a = document.querySelector('main');
-    a.removeEventListener('click',closeNav)
+    // var a = document.querySelector('main');
+    // a.removeEventListener('click',closeNav)
   }
 
 
@@ -17,7 +17,7 @@ function openform() {
     // a.addEventListener('click',closeNav)
   }
   
-  function closeNav2() {
+  function closeNav3() {
     document.getElementById("mySidenav3").style.width = "0";
     var a = document.querySelector('main');
     a.removeEventListener('click',closeNav)
