@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+        <link rel="stylesheet" href="css/events.css">
+        <link rel="stylesheet" href="css/navbar.css"> 
+        <link rel="stylesheet" href="css/loader.css">
+        <link rel="stylesheet" href="css/sidenavMobile.css">
+        <link rel="stylesheet" href="css/sidnav.css">
+        <link rel="stylesheet" href="css/services.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+
+
+        <script src="js/events.js"></script>
+        <script src="js/sidenavMobile.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+        <script src="js/loader.js"></script>
+        <script src="js/card.js"></script>
+        <script src="js/services.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+
+    </head>
+    <body>
+      <div class="loader-wrapper">
+        <span id="loader"></span>
+      </div>
+        <div class="part23" style="background-color:#84dcc6;">
+          <!-- <img src="img/main.png" alt="" class="aimg"> -->
+        </div>
+
+        <div class="cursor">
+          <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+              <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+            </svg>
+          </div>
+          
+          <div class="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+              <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler hoverable">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+                  </ul>
+                </div>
+                <div class="box-container">
+                  <img src="img/mncrhs.png" alt="" class="navimg navimg1">
+                  <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+                  <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+                  <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+
+              </div> 
+                <div class="social-nav model-1">
+                  <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+                  <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+                  <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+                </div>  
+              </div>
+            </div>
+        </div> 
+
+          <div id="mySidenav" class="sidenav2">
+            <a href="javascript:void(0)" class="closebtn" style="color:#84dcc6 ;"onclick="closeNav()">&times;</a>
+            <div><a href="#section-1">Equipment Booking</a></div>
+            <div><a href="#section-2">Movie Request</a></div>
+            <div><a href="#section-3">WorkShop Registrations</a></div>
+          </div>
+
+          <div id="mySidenav2" class="sidenav3">
+            <a href="javascript:void(0)" class="closebtn hoverable" style="color:#84dcc6 ;z-index: 100;" onclick="closeNav2()">&times;</a>
+                <div class="login-box">
+                    <h2>Equipment Booking</h2>
+                    <form id="equip" action="/equipment" method="POST" onsubmit="setTimeout(function(){window.location.reload();},2000);">
+                      <div class="user-box">
+                        <input type="text" name="Name" required>
+                        <label>Name</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="text" name="Roll" required>
+                        <label>RollNo</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="text" name="Address" required>
+                        <label>Address</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="text" name="details" required>
+                        <label>Equipment Details</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="datetime-local" name="date" required>
+                        <label>Date</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="number" name="duration" required>
+                        <label>Duration</label>
+                      </div>
+                      <button href ="#" class="formsbn hoverable" >
+                        Submit
+                      </button>
+                    </form>
+                  </div>
+
+          </div>
+
+          <div id="mySidenav3" class="sidenav3">
+            <a href="javascript:void(0)" class="closebtn hoverable" style="color:#84dcc6 ;"onclick="closeNav3()">&times;</a>
+                <div class="login-box">
+                    <h2>Movie Requests</h2>
+                    <form id="equip" action="/movie" method="POST" onsubmit="setTimeout(function(){window.location.reload();},2000);">
+                      <div class="user-box">
+                        <input type="text" name="Name" required>
+                        <label>Name</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="text" name="Roll" required>
+                        <label>RollNo</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="text" name="movie" required>
+                        <label>Movie Name</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="datetime-local" name="date" required>
+                        <label>Date</label>
+                      </div>
+                      <button href ="#" class="formsbn hoverable" >
+                        Submit
+                      </button>
+                    </form>
+                  </div>
+
+          </div>
+
+          <div class="mega">
+            <header style="background: url(img/event.jpg) center/cover; color:white">
+              <h1>Services</h1>
+            </header>
+            
+         
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn"><b>Find all the events here</b></button>
+              <div id="myDropdown" class="dropdown-content" >
+                <a href="#section-1">Equipment Booking</a>
+                <a href="#section-2">Movie Request</a>
+                <a href="#section-3">WorkShop Registrations</a>
+              </div>
+            </div>
+            <div class="sid" style="background-color: #84dcc6;">
+              <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true"></i></a>
+            </div>
+            <main>
+              <section id="section-1">
+                       
+                <div class="clubs-container">
+                  <div class="clubs">
+                     
+                          <div class="clubs-preview" >
+                              <img src="img/galaxy_out.jpg" height="100%" width="100%"alt="">
+                         </div>
+                     
+                      <div class="clubs-info">
+                          <h1>Equipment Booking</h1>
+                          <h2>A Portal to book Equipments Provided By the council</h2>
+                          <button class="btn hoverable" style="background-color:#e6837e" onclick="openform()">Book Now</button>
+                      </div>
+                  </div>
+              </div>
+  
+              </section>
+  
+              <section id="section-2">
+  
+                <div class="clubs-container">
+                  <div class="clubs">
+                     
+                          <div class="clubs-preview" style="background-color:#227d1f">
+                              <img src="img/freshers_out.jpg" height="100%" width="100%"alt="">
+                         </div>
+                     
+                      <div class="clubs-info">
+                          <h1>Movie Request</h1>
+                          <h2>Screen your Movie at OAT</h2>
+                          <button class="btn hoverable" style="background-color:#227d1f" onclick="openform2()">Request Now</button>  
+                      </div>
+                  </div>
+              </div> 
+  
+              </section>
+  
+              <section id="section-3">
+  
+                <div class="clubs-container">
+                  <div class="clubs">
+                     
+                          <div class="clubs-preview" style="background-color:#43ccc7">
+                              <img src="img/impression_out.jpg" height="100%" width="100%"alt="">
+                         </div>
+                     
+                      <div class="clubs-info">
+                          <h1>WorkShop Registrations</h1>
+                          <h2>A-Tag line type description with almost same number of words</h2>
+                          <button class="btn hoverable" style="background-color:#43ccc7" onclick="trans('impression','#43ccc7')">View More</button>   
+                      </div>
+                  </div>
+              </div> 
+                 
+                 </section>
+                
+  
+              </section>
+  
+            
+            </main>
+        
+          </div>
+
+        
+        
+
+        
+
+    </body>
+</html>
