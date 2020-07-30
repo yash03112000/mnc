@@ -125,7 +125,88 @@ function page1(a){
 window.location = "./about.html"
 }
 
+function up(){
+  var x = window.matchMedia("(max-width: 500px)")
+  if(x.matches){
+    var a=5;
+    console.log('mobile');
+    var pos = window.pageYOffset ||  document.documentElement.scrollTop;
+    var final = pos + getViewport()[1];
+    // console.log(final)
+    // console.log(pos)
+    document.querySelector('body').style.height = "100vh";
+    document.querySelector('body').style.overflow = "hidden";
+    var tl = gsap.timeline();
+    tl.set(`.part${a}3`, { transformOrigin: "bottom"});
+    // tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
+    tl.to(`.part${a}1`, { duration: .5,opacity:'0' });
+    tl.set(`.part${a}3`, { transformOrigin: "bottom",y:final,display:'block'});
+    tl.to(`.part${a}3`,{duration:0.8,y:pos})
+    tl.to(`.img${a}`, { duration: .3,opacity: '0' });
+    tl.to(`.sec${a}`,{duration: .01,display:'none'})
+    .call(club1,[a]);
+    // tl.to(`.part${a}3`,{duration: .5,x:'-100%'},"-=0.2")
+  }else{
+    var a=5;
+    console.log('aaa');
+    var tl = gsap.timeline();
+    tl.set(`.part${a}3`, { transformOrigin: "left"});
+    tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
+    tl.to(`.part${a}1`, { duration: .5,y:'-30px',opacity:'0' });
+    tl.to(`.part${a}3`, { duration: .01,display: 'initial' },"-=0.3");
+    tl.from(`.part${a}3`,{duration: .5,x:'100%'},"-=0.31")
+    tl.to(`.img${a}`, { duration: .3,opacity: '0' });
+    tl.to(`.sec${a}`,{duration: .01,display:'none'},"-=0.2")
+    .call(up1,[a]);
+    // tl.to(`.part${a}3`,{duration: .5,x:'-100%'},"-=0.2")
+  }
 
+}
+function up1(a){
+  window.location = "./UpEvents.html"
+}
+
+
+function serv(){
+  var x = window.matchMedia("(max-width: 500px)")
+  if(x.matches){
+    var a=6;
+    console.log('mobile');
+    var pos = window.pageYOffset ||  document.documentElement.scrollTop;
+    var final = pos + getViewport()[1];
+    // console.log(final)
+    // console.log(pos)
+    document.querySelector('body').style.height = "100vh";
+    document.querySelector('body').style.overflow = "hidden";
+    var tl = gsap.timeline();
+    tl.set(`.part${a}3`, { transformOrigin: "bottom"});
+    // tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
+    tl.to(`.part${a}1`, { duration: .5,opacity:'0' });
+    tl.set(`.part${a}3`, { transformOrigin: "bottom",y:final,display:'block'});
+    tl.to(`.part${a}3`,{duration:0.8,y:pos})
+    tl.to(`.img${a}`, { duration: .3,opacity: '0' });
+    tl.to(`.sec${a}`,{duration: .01,display:'none'})
+    .call(club1,[a]);
+    // tl.to(`.part${a}3`,{duration: .5,x:'-100%'},"-=0.2")
+  }else{
+    var a=6;
+    console.log('aaa');
+    var tl = gsap.timeline();
+    tl.set(`.part${a}3`, { transformOrigin: "left"});
+    tl.to(`.sidenav`, {duration:0.2, opacity:'0' });
+    tl.to(`.part${a}1`, { duration: .5,y:'-30px',opacity:'0' });
+    tl.to(`.part${a}3`, { duration: .01,display: 'initial' },"-=0.3");
+    tl.from(`.part${a}3`,{duration: .5,x:'100%'},"-=0.31")
+    tl.to(`.img${a}`, { duration: .3,opacity: '0' });
+    tl.to(`.sec${a}`,{duration: .01,display:'none'},"-=0.2")
+    .call(serv1,[a]);
+    // tl.to(`.part${a}3`,{duration: .5,x:'-100%'},"-=0.2")
+  }
+
+}
+function serv1(a){
+  window.location = "./services.html"
+}
 
 window.addEventListener("scroll", event => {
   // var mainNavLinks = document.querySelectorAll(".sidenav2 div a");
