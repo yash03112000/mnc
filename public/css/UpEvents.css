@@ -20,9 +20,10 @@ body {
 
   .events-header{
       padding: 50px;
+      text-align: center;
   }
   .events-header h1{
-      font-size:26px;
+      font: 600 2rem Raleway, sans-serif;
       letter-spacing: -0.5px;
       color: #000;
   }
@@ -131,15 +132,37 @@ body {
      font-size:20px;
      margin-bottom: 0;
  }
- @media  (max-width:500px) {
+ 
+.leftm{
+  margin-right:5vw;
+}
+.rigthm{
+  margin-left:2vw;
+} 
+ @media  (max-width:600px) {
+    .leftm,.rightm{
+        margin:auto;
+    }
     .flip-card{
         width:90vw;
-        margin:auto;
+        margin:0 auto;
         margin-bottom: 100px;
     }
     .clubs-preview{
         width:90vw;
     }
+ }
+ @media  (max-width:900px) and (min-width:500px){
+  .leftm,.rightm{
+    margin: auto;
+    margin-bottom: 70px;
+  }
+  .flip-card{
+     width:45vw;
+  }
+  .clubs-preview{
+    width:45vw;
+}
  }
 .upcoming-events{
   position: absolute;
