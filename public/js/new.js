@@ -247,6 +247,8 @@ const navbar = ()=>{
   items[1].addEventListener('mouseover',()=>{imgtrans(2)})
   items[2].addEventListener('mouseover',()=>{imgtrans(3)})
   items[3].addEventListener('mouseover',()=>{imgtrans(4)})
+  items[4].addEventListener('mouseover',()=>{imgtrans(5)})
+  items[5].addEventListener('mouseover',()=>{imgtrans(6)})
 
   // items.forEach((element,index)=>{
   //   element.addEventListener('mouseover',imgtrans)
@@ -263,6 +265,8 @@ var imgtrans = (a)=>{
   color[2] = '#e65f5c';
   color[3] = '#84dcc6';
   color[4] = '#ffff82';
+  color[5] = '#ff8c42';
+  color[6] = '#ffff82'; 
 
   if(a!=active && tra === 0){
     console.log(a)
