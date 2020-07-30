@@ -177,7 +177,7 @@
     display: block;
     margin-left: 20px;
     padding: 4px 0;
-    font: 700 2.5rem 'Roboto', sans-serif;
+    font: 600 2.25rem 'Roboto', sans-serif;
     letter-spacing: 0.5px;
     text-decoration: none;
     text-transform: uppercase;
@@ -204,7 +204,7 @@
     position: relative;
     left:25vw;
     top:0;
-    margin-left: 7vw;
+    margin-left: -5vw;
    }
 
 
@@ -287,11 +287,11 @@ body { -ms-overflow-style: none; }
 
 @media screen and (max-width: 500px){
   .menu-wrap .menu > div > div > ul > li>a{
-    font: 400 2rem Raleway, sans-serif;
+    font: 600 1.95rem Raleway, sans-serif;
   }
   .menu-wrap .menu > div > .social-nav {
-    margin-top:35vh;
-    margin-left:-48vw;;
+    margin-top:55vh;
+    margin-left:-88vw;;
     text-align: center;
   }
 }
@@ -308,7 +308,7 @@ body { -ms-overflow-style: none; }
   width:70%
 }
 
-.navimg2,.navimg3,.navimg4{
+.navimg2,.navimg3,.navimg4,.navimg5,.navimg6{
   opacity: 0;
 }
 
