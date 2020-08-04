@@ -336,7 +336,7 @@ footer {
 .column {
   float: left;
   padding: 40px;
-  margin-left:20px;
+  margin-left:30px;
 }
 
 /* Clear floats after the columns */
@@ -482,7 +482,8 @@ footer {
      margin-top: 20px;
    }
    .img-container{
-     margin-left: 5vw;
+    margin: 0 auto;
+    max-width: 1050px;
    }
    .contact h3{
     font-size: 24px;

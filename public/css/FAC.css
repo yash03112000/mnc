@@ -348,8 +348,8 @@ padding: 5rem 1rem;
 }
 .column {
 float: left;
-width: 45%;
-margin-left:45px;
+padding: 50px;
+margin-left:15px;
 margin-bottom: 100px;
 }
 
@@ -507,7 +507,8 @@ counter-increment: li-counter;
   .img-container{
       margin-top:0px;
       margin-bottom: 25px;
-      margin-left: 5vw;
+      margin: 0 auto;
+      max-width: 1050px;
   }
 
   .column-contact{
