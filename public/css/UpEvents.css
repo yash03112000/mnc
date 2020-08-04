@@ -21,6 +21,7 @@ body {
   .events-header{
       padding: 50px;
       text-align: center;
+      margin-bottom: 40px;
   }
   .events-header h1{
       font: 600 2rem Raleway, sans-serif;
@@ -133,15 +134,17 @@ body {
      margin-bottom: 0;
  }
  
-.leftm{
-  margin-right:5vw;
-}
-.rigthm{
-  margin-left:2vw;
+ .leftm,.rightm{
+  margin-left:5vw;
 } 
  @media  (max-width:600px) {
+  .events-header h1{
+    font: 500 1.75rem Raleway, sans-serif;
+    letter-spacing: 2px;
+    color: #000;
+}
     .leftm,.rightm{
-        margin:auto;
+        margin-left:5vw;
     }
     .flip-card{
         width:90vw;
