@@ -264,7 +264,7 @@ var imgtrans = (a)=>{
   color[1] = '#a848b0';
   color[2] = '#e65f5c';
   color[3] = '#84dcc6';
-  color[4] = '#ffff82';
+  color[4] = '#ecc782';
   color[5] = '#ff8c42';
   color[6] = '#378a99'; 
 
