@@ -148,7 +148,7 @@ body { -ms-overflow-style: none; }
   font-family: 'Bebas Neue', cursive;
   font-size: 45px;
   letter-spacing: 3px;
-  color: #e6e647;
+  color: #ecc782;
 }
 .head5{
   width: 100%;
@@ -213,13 +213,13 @@ body { -ms-overflow-style: none; }
     width: 50%;
     height:100%;
     display: block;
-    background-color: #ffff82;
+    background-color: #f1dab0;
 }
 .part43{
     height:100vh;
     width: 100vw;
     position: absolute;
-    background-color: #ffff82;
+    background-color: #f1dab0;
     display: none;
 }
 .part41{
@@ -686,11 +686,11 @@ body{cursor:none}
   transition: background-color 0.3s;
 }
 .vdes3:hover{
-  background-color: #cece2f;
+  background-color:  #f0c068;
 }
 
 .vdes3{
-  background-color:#ffff82;
+  background-color:#ecc782;
   transition: background-color 0.3s;
 }
 
