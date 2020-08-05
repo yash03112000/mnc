@@ -145,7 +145,7 @@ section h1{
 section h2{
  padding:15px 0;
   margin:10px;
-  font-size:32px;
+  font-size:34px;
   font-family: 'Markazi Text', serif;
 }
 section h3{
@@ -364,7 +364,7 @@ padding: 5rem 1rem;
 }
 .column {
 float: left;
-padding: 40px;
+padding: 50px;
 margin-left:45px;
 }
 
@@ -527,7 +527,8 @@ counter-increment: li-counter;
   .video-container{
       margin-top:0px;
       margin-bottom: 25px;
-      margin-left:5vw;
+      margin: 0 auto;
+      max-width: 1050px;
   }
   .column-contact{
       width:30%;
