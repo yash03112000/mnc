@@ -1,4 +1,4 @@
-axios.get('table')
+axios.get('https://mncweb.herokuapp.com/table')
     .then((res)=>{
         var data = res.data.rows;
         var leader = [0,1,2,3,4];
