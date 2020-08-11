@@ -144,7 +144,7 @@ function up(){
     tl.to(`.part${a}3`,{duration:0.8,y:pos})
     tl.to(`.img${a}`, { duration: .3,opacity: '0' });
     tl.to(`.sec${a}`,{duration: .01,display:'none'})
-    .call(club1,[a]);
+    .call(up1,[a]);
     // tl.to(`.part${a}3`,{duration: .5,x:'-100%'},"-=0.2")
   }else{
     var a=5;
@@ -186,7 +186,7 @@ function serv(){
     tl.to(`.part${a}3`,{duration:0.8,y:pos})
     tl.to(`.img${a}`, { duration: .3,opacity: '0' });
     tl.to(`.sec${a}`,{duration: .01,display:'none'})
-    .call(club1,[a]);
+    .call(serv1,[a]);
     // tl.to(`.part${a}3`,{duration: .5,x:'-100%'},"-=0.2")
   }else{
     var a=6;
