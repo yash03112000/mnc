@@ -96,9 +96,7 @@ body { -ms-overflow-style: none; }
     display: block;
     background-color:#610c68;
 }
-/* .part31{
-    opacity: 0;
-} */
+
 .part13{
     height:100vh;
     width: 100vw;
