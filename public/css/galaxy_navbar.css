@@ -7,11 +7,11 @@
 }
 @media screen and (max-width: 500px){
   .menu-wrap .menu > div > div > ul > li>a{
-    font: 500 3.2rem Raleway, sans-serif;
+    font: 600 3.2rem Raleway, sans-serif;
   }
   .menu-wrap .menu > div > .social-nav {
-    margin-top:35vh;
-    margin-left:-48vw;;
+    margin-top: 60vh;
+    margin-left:-87vw;;
     text-align: center;
   }
-}
+} 
