@@ -287,11 +287,12 @@ body { -ms-overflow-style: none; }
 
 @media screen and (max-width: 500px){
   .menu-wrap .menu > div > div > ul > li>a{
-    font: 600 1.95rem Raleway, sans-serif;
+    font: 600 2rem Raleway, sans-serif;
+    padding: 4px 50px 4px 0px;
   }
   .menu-wrap .menu > div > .social-nav {
-    margin-top:55vh;
-    margin-left:-88vw;;
+    margin-top:60vh;
+    margin-left:-87vw;
     text-align: center;
   }
 }
