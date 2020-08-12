@@ -19,14 +19,19 @@ body {
   }
 
   .events-header{
-      padding: 50px;
       text-align: center;
+      padding: 50px;
       margin-bottom: 40px;
   }
   .events-header h1{
       font: 600 2rem Raleway, sans-serif;
       letter-spacing: -0.5px;
-      color: #000;
+      color: #000;  
+  }
+  .events-header p{
+    margin:40px 0 auto;
+    padding: auto;
+    font-size: 1.5rem;
   }
   .row{
     width: 100vw;
@@ -139,7 +144,7 @@ body {
 } 
  @media  (max-width:600px) {
   .events-header h1{
-    font: 500 1.75rem Raleway, sans-serif;
+    font: 550 1.75rem Raleway, sans-serif;
     letter-spacing: 2px;
     color: #000;
 }
