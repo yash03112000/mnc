@@ -28,6 +28,7 @@ html {
       grid-template-columns:0% auto;
     }
   } */
+  
   section{
     opacity: 0;
     position: relative;
@@ -213,7 +214,10 @@ body { -ms-overflow-style: none; }
    min-height: 0;
  }
  section{
-   height: 500px;
+   height: auto;
+ }
+ #section-1{
+   margin-top:-50px;
  }
   nav ul li{
     font-size: 2.5vw;
@@ -309,7 +313,7 @@ body { -ms-overflow-style: none; }
 
 @media  (max-width:500px) {
   .clubs {
-      margin:0vw;
+      margin:0 auto;
       padding: 0vw;
       display: block;
       width:80vw;
@@ -317,8 +321,8 @@ body { -ms-overflow-style: none; }
   }
   .clubs-preview {
       position:relative;
-      width:100%;
-      height:50vw;
+      width:auto;
+      height:60vw;
   }
   .clubs h1{
       font-size: 20px;
