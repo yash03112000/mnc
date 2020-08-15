@@ -29,6 +29,11 @@
       <div class="loader-wrapper">
         <span id="loader"></span>
       </div>
+      <div class="sucess">
+
+         <p >Form Submitted</p>
+
+      </div>
         <div class="part23" style="background-color:#55828b;">
           <!-- <img src="img/main.png" alt="" class="aimg"> -->
         </div>
@@ -91,7 +96,9 @@
             <a href="javascript:void(0)" class="closebtn hoverable" style="color:#e6837e ;z-index: 100;" onclick="closeNav2()">&times;</a>
                 <div class="login-box">
                     <h2>Equipment Booking</h2>
-                    <form id="equip" action="https://mncweb.herokuapp.com/equipment" method="POST" onsubmit="setTimeout(function(){window.location.reload();},2000);">
+                    <span class="equipman">Please Fill Dates Correctly</span>
+                    <span class="equipwarn">Server Error</span>
+                    <form id="equip"  method="POST" onsubmit="form(event)">
                       <div class="user-box">
                         <input type="text" name="Name" required>
                         <label>Name</label>
@@ -114,11 +121,11 @@
                       </div>
                       <div class="user-box dateinput">
                         <input type="datetime-local" name="date" required>
-                        <label>Date</label>
+                        <label>Date(From)</label>
                       </div>
-                      <div class="user-box">
-                        <input type="number" name="duration" required>
-                        <label>Duration</label>
+                      <div class="user-box dateinput">
+                        <input type="datetime-local" name="date2" required>
+                        <label>Date(Till)</label>
                       </div>
                       <button href ="#" class="formsbn hoverable" >
                         Submit
@@ -132,7 +139,9 @@
             <a href="javascript:void(0)" class="closebtn hoverable" style="color:#227d1f ;"onclick="closeNav3()">&times;</a>
                 <div class="login-box">
                     <h2>Movie Requests</h2>
-                    <form id="equip" action="https://mncweb.herokuapp.com/movie" method="POST" onsubmit="setTimeout(function(){window.location.reload();},2000);">
+                    <span class="equipman">Please Fill Dates Correctly</span>
+                    <span class="equipwarn">Server Error</span>
+                    <form id="equip2"  method="POST" onsubmit="form2(event)">
                       <div class="user-box">
                         <input type="text" name="Name" required>
                         <label>Name</label>
