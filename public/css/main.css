@@ -146,7 +146,7 @@ body { -ms-overflow-style: none; }
   font-family: 'Bebas Neue', cursive;
   font-size: 45px;
   letter-spacing: 3px;
-  color: #ecc782;
+  color: #91a7ee;
 }
 .head5{
   width: 100%;
@@ -211,13 +211,13 @@ body { -ms-overflow-style: none; }
     width: 50%;
     height:100%;
     display: block;
-    background-color: #f1dab0;
+    background-color: #91a7ee;
 }
 .part43{
     height:100vh;
     width: 100vw;
     position: absolute;
-    background-color: #f1dab0;
+    background-color: #91a7ee;
     display: none;
 }
 .part41{
@@ -562,7 +562,6 @@ nav ul li a {
     /* top:5%; */
 }
 
-
 .pen-container {
   position: relative;
   margin: 0 auto;
@@ -684,11 +683,11 @@ body{cursor:none}
   transition: background-color 0.3s;
 }
 .vdes3:hover{
-  background-color:  #f0c068;
+  background-color:  #6989f3;
 }
 
 .vdes3{
-  background-color:#ecc782;
+  background-color:#91a7ee ;
   transition: background-color 0.3s;
 }
 

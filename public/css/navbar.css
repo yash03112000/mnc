@@ -198,7 +198,7 @@
     /*=====================*/
 
    .menu-wrap .menu > div .box-container{
-    width:35vw;
+    width:38vw;
     height:50vh;
     /* background:#7b2982; */
     position: relative;
@@ -323,7 +323,7 @@ body { -ms-overflow-style: none; }
 }
 
 .menu{
-  background: #a848b0;
+  background: #fff;
 }
 
 body .cursor {

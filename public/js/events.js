@@ -456,10 +456,10 @@ var ah= 0;
 
 var imgtrans = (a)=>{
   var color = [];
-  color[1] = '#a848b0';
+  color[1] = '#fff';
   color[2] = '#e65f5c';
   color[3] = '#84dcc6';
-  color[4] = '#ecc782';
+  color[4] = '#91a7ee';
   color[5] = '#ff8c42';
   color[6] = '#378a99';
 
