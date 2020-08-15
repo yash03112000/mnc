@@ -41,7 +41,7 @@ header {
   text-align: center;
   font-size: 70px;
   height: 100vh;
-  background-color: black;
+  background-color: white;
   font-family: 'Darker Grotesque', sans-serif;
 }
 header h1{
@@ -473,7 +473,16 @@ Leaderboard
 .the-most img {
   max-width: 100%;
 }
-
+.img-container{
+  width: 100vw;
+  margin:0;
+  padding: 0;
+}
+.resize{
+  height:100vh;
+  margin:0;
+  padding: 0;
+}
 @media  (max-width:500px) {
     .leaderboard{
         width:80vw;
@@ -482,5 +491,9 @@ Leaderboard
     }
     .leaderboard ol li mark {
       width:50%;
+    }
+    .img-container{
+      width: 100vw;
+      margin-top: 30vh;
     }
 }

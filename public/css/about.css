@@ -27,7 +27,7 @@ header {
   text-align: center;
   font-size: 70px;
   height: 100vh;
-  background-color: #e86868;
+  background-color: white;
   font-family: 'Darker Grotesque', sans-serif;
 }
 header h1{
@@ -293,7 +293,16 @@ clear: both;
   padding:125px;
   padding-top:0.5rem;
 }
-
+.img-container{
+  width: 100vw;
+  margin:0;
+  padding: 0;
+}
+.resize{
+  height:100vh;
+  margin:0;
+  padding: 0;
+}
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
 
@@ -335,6 +344,10 @@ clear: both;
    margin:0;
    padding: 0;
  } 
+ .img-container{
+  width: 100vw;
+  margin-top: 30vh;
+}
 }
  
 
