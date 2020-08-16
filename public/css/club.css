@@ -276,26 +276,20 @@ body { -ms-overflow-style: none; }
 	letter-spacing: 1px;
 	margin: 10px 0;
 }
-/*
-.clubs-preview {
-	color: #fff;
-	width:30vw;
-}
 
-.clubs-info {
-	padding: 30px;
-	position: relative;
-	width: 100%;
-} */
 .clubs-preview {
-	color: #fff;
-  width:30vw;
+  margin: 0 auto;
+  position: relative;
+  width: 50%;
+  height: 100%;
   overflow: hidden;
   object-fit: contain;
   object-position: center center;
 }
 .clubs-preview img{
   max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
 }
 .clubs-info {
   padding: 30px;
