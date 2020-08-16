@@ -49,7 +49,7 @@ html {
   }
 
   
-  .img-container{
+  .img-header{
     width: 100vw;
 }
   .resize{
@@ -158,12 +158,13 @@ nav {
 
   section{
    /* display:flex; */
-    padding: 2rem; 
+    padding: 2rem 2rem 2rem 4rem; 
     margin: 0 0 2rem 0;
     height:450px; 
     background-color: white;
     padding-top: 0 10px; 
   }
+ 
   section p{
    padding-top:5px;
    margin:0rem;
@@ -209,7 +210,7 @@ body { -ms-overflow-style: none; }
 @media (max-width:500px){
   main{
       padding-top:200px;
-      padding-bottom: 200px;
+      padding-bottom: 50px;
       width:100%;
   }
   .mega{
@@ -218,6 +219,7 @@ body { -ms-overflow-style: none; }
    min-height: 0;
  }
  section{
+   padding:2rem;
    height: auto;
  }
  #section-1{
@@ -236,7 +238,7 @@ body { -ms-overflow-style: none; }
     position: relative;
     top:5vh;
   }
-  .img-container{
+  .img-header{
     width: 100vw;
     margin-top: 30vh;
   }
