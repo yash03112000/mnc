@@ -110,7 +110,7 @@ app.get('/table',(req,res)=>{
 })
 
 app.post('/equipment',(req,res)=>{
-  equip([req.body.Name,req.body.Roll,req.body.Address,req.body.email,req.body.date,req.body.duration],res);
+  equip([req.body.Name,req.body.Roll,req.body.Address,req.body.email,req.body.date,req.body.date2],res);
   console.log(req.body)
 })
 
@@ -189,9 +189,9 @@ const equip = (data,res2)=>{
       valueInputOption:'USER_ENTERED'
     }, (err, res) => {
       if (err) return console.log('The API returned an error: ' + err);
-        // res2.status(200).json({
-        //   status:'Added'
-        // })
+        res2.status(200).json({
+          status:'Added'
+        })
     });
   
   }
@@ -268,9 +268,9 @@ const movie = (data,res2)=>{
       valueInputOption:'USER_ENTERED'
     }, (err, res) => {
       if (err) return console.log('The API returned an error: ' + err);
-        // res2.status(200).json({
-        //   status:'Added'
-        // })
+        res2.status(200).json({
+          status:'Added'
+        })
     });
   
   }
