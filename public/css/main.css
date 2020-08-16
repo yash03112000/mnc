@@ -107,12 +107,15 @@ body { -ms-overflow-style: none; }
 .img1{
     transform:scale(0.6);
 }
+.sec1{
+  line-height: 1;
+}
 .head1{
     /* width: 100%; */
     /* text-align: center; */
     /* padding-top: 20%; */
     font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
+    font-size:55px;
     letter-spacing: 3px;
     color: #7b2982;
     position: relative;
@@ -120,6 +123,11 @@ body { -ms-overflow-style: none; }
    /* left:30%; */
     margin:0 auto;
     top:65%;
+}
+
+.subhead{
+  font-size: 35px;
+  color:#653669;
 }
 .head2{
   width: 100%;
