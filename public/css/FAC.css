@@ -41,7 +41,7 @@ header {
   text-align: center;
   font-size: 70px;
   height: 100vh;
-  background-color: #96626f;
+  background-color: #fff;
   font-family: 'Darker Grotesque', sans-serif;
 }
 header h1{
@@ -237,7 +237,7 @@ section h3{
 .our-team{
   text-align: center;
   position: relative;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin:20px
 }
 .our-team:before{
@@ -290,7 +290,7 @@ section h3{
   display: block;
   font-size: 17px;
   color: #333;
-  font-weight: 550;
+  font-weight: bolder;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0 0 7px 0;
@@ -514,6 +514,8 @@ counter-increment: li-counter;
   .column-contact{
       width:30%;
       margin-left:auto;
+      font-family: 'Rubik', sans-serif;
+      font-weight: bold;
   }
   .column-contact p{
     font-size: 17px;
@@ -522,6 +524,8 @@ counter-increment: li-counter;
     margin-bottom: 0;
     padding-bottom: 5px;
     margin-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
   }
   .column-contact-qc p,.contact p,.column-contact-sos p{
     margin-top:0;
@@ -539,7 +543,16 @@ counter-increment: li-counter;
     border: 1px solid #000;
     background-color: #96626f;
 }
-
+.img-header{
+  width: 100vw;
+  margin:0;
+  padding: 0;
+}
+.resize{
+  height:100vh;
+  margin:0;
+  padding: 0;
+}
 
   @media screen and (max-width: 500px) {
     .column-contact{
@@ -582,6 +595,10 @@ counter-increment: li-counter;
       left: 0px;
       bottom: 10px;
       right: -25px; 
+    }
+    .img-header{
+      width: 100vw;
+      margin-top: 30vh;
     }
 }
  
