@@ -203,12 +203,13 @@ section h3{
 @media (max-width:500px){
   main{
       padding-top:200px;
-      padding-bottom: 200px;
+      padding-bottom: 0px;
       width:100%;
   }
   section{
       width:90%;
       margin: 1rem;
+      margin-top:-70px;
   }
   section h2{
       font-size:30px;
