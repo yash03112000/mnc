@@ -41,7 +41,7 @@ header {
   text-align: center;
   font-size: 70px;
   height: 100vh;
-  background-color: black;
+  background-color: #fff;
   font-family: 'Darker Grotesque', sans-serif;
 }
 header h1{
@@ -254,7 +254,7 @@ margin-bottom: 550px;
 .our-team{
   text-align: center;
   position: relative;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin:20px
 }
 .our-team:before{
@@ -306,7 +306,7 @@ margin-bottom: 550px;
 .our-team .title{
   display: block;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: bolder;
   color: #333;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -545,6 +545,18 @@ counter-increment: li-counter;
     margin-bottom: 5px;
     padding-bottom: 0;
     margin-top:10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+  }
+  .img-header{
+    width: 100vw;
+    margin:0;
+    padding: 0;
+  }
+  .resize{
+    height:100vh;
+    margin:0;
+    padding: 0;
   }
   @media screen and (max-width: 500px) {
     .column-contact {
@@ -580,6 +592,10 @@ counter-increment: li-counter;
     }
     .film-container{
       margin-bottom:0px;
+    }
+    .img-header{
+      width: 100vw;
+      margin-top: 30vh;
     }
 }
 

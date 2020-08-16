@@ -243,6 +243,8 @@ footer {
  margin:0px;
  padding-top: 5px;
  margin-top:5px;
+ font-family: 'Rubik', sans-serif;
+ font-weight: bold;
 }
 .contact p{
   text-align: center;

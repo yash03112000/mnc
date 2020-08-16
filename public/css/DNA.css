@@ -41,7 +41,7 @@ header {
   text-align: center;
   font-size: 70px;
   height: 100vh;
-  background-color: #96626f;
+  background-color: #fff;
   font-family: 'Darker Grotesque', sans-serif;
 }
 header h1{
@@ -257,7 +257,7 @@ section h3{
 .our-team{
   text-align: center;
   position: relative;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin:20px
 }
 .our-team:before{
@@ -308,7 +308,7 @@ section h3{
 .our-team .title{
   display: block;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: bold;
   color: #333;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -554,14 +554,22 @@ counter-increment: li-counter;
  .column-contact-anime p,.column-contact p,.column-contact-els p,.column-contact-photo p{
    font-size:17px ;
  }
+ .column-contact-anime h3{
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+ }
  .column-contact h3{
   margin-bottom:0;
   padding-bottom: 0;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
 }
 .column-contact-els h3,.column-contact-photo h3{
   margin-top:10px;
   padding-bottom:0px;
   margin-bottom: 0px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
 }
 .images{
   width:380px;
@@ -577,6 +585,16 @@ height: 310px;
 border: 5px solid #000;
 background-color: #000;
 padding-right: 5px;
+}
+.img-header{
+  width: 100vw;
+  margin:0;
+  padding: 0;
+}
+.resize{
+  height:100vh;
+  margin:0;
+  padding: 0;
 }
   @media screen and (max-width: 500px) {
     .column-contact {
@@ -634,5 +652,11 @@ padding-right: 5px;
     .video-container img{
       width:80vw;
     }
+    .img-header{
+      width: 100vw;
+      
+      margin-top: 30vh;
+    }
+   
   }   
 

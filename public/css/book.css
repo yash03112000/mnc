@@ -41,7 +41,7 @@ html {
     text-align: center;
     font-size: 70px;
     height: 100vh;
-    background-color: #96626f;
+    background-color: #fff;
     font-family: 'Darker Grotesque', sans-serif;
   }
  header h1{
@@ -222,7 +222,7 @@ html {
   .our-team{
     text-align: center;
     position: relative;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
     margin:20px
   }
   .our-team:before{
@@ -489,10 +489,22 @@ footer {
     font-size: 24px;
     margin-bottom: 0;
     margin-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
   }
    .contact p{
      font-size: 17px;
    }
+   .img-header{
+    width: 100vw;
+    margin:0;
+    padding: 0;
+  }
+  .resize{
+    height:100vh;
+    margin:0;
+    padding: 0;
+  }
  @media screen and (max-width: 500px) {
     .list-type5,.list-type6{
       width:80vw;
@@ -519,5 +531,9 @@ footer {
       bottom: 15px;
       right: -35px; 
     }
-    
+    .img-header{
+      width: 100vw;
+      height: 40vh;
+      margin-top: 25vh;
+    }
    }

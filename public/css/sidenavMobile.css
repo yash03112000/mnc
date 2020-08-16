@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 .dropbtn {
     font-family: 'Open Sans Condensed', sans-serif;
     background-image: linear-gradient(#FDA085,#F6D365);
     color: white;
     padding: 16px;
-    font-size: 20px;
+    font-size: 22px;
     text-transform: uppercase;
     border: none;
     width:90vw;
     margin:5vw;
     margin-bottom: 0;
     z-index:1000;
+    letter-spacing: 1px;
   }
   
   .dropbtn:hover, .dropbtn:focus {
@@ -35,7 +37,7 @@
   .dropdown-content a {
     width:90vw;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size:18px;
+    font-size:22px;
     text-transform: uppercase;
     color:white;
     padding: 16px;
