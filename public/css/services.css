@@ -86,3 +86,30 @@
 ::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
     color: transparent;
 } */
+
+
+.equipman{
+  color:rgba(228, 54, 54, 0.822);
+  font-size: 10px;
+  padding-bottom: 10px;
+  display: none;
+}
+.equipwarn{
+  color:rgba(228, 54, 54, 0.822);
+  font-size: 10px;
+  padding-bottom: 10px;
+  display: none;
+}
+
+.sucess{
+  position: fixed;
+  background-color: rgba(22, 218, 22, 0.404);
+  z-index: 999999;
+  width: 100vw;
+  display: none;
+
+  /* top:100vh */
+}
+.sucess p{
+  padding: 20px;
+}
