@@ -515,7 +515,9 @@ counter-increment: li-counter;
       width:30%;
       margin-left:auto;
       font-family: 'Rubik', sans-serif;
-      font-weight: bold;
+  }
+  .column-contact h3{
+    font-weight: bold;
   }
   .column-contact p{
     font-size: 17px;
