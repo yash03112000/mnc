@@ -299,14 +299,11 @@ body { -ms-overflow-style: none; }
 
 
 .navimg{
-  /* height: 80%; */
-  width: 70%;
+  height: 100%;
+  /* width: 70%; */
   position: absolute;
   /* top:5%; */
   left: 5%;
-}
-.navimg1{
-  width:70%
 }
 
 .navimg2,.navimg3,.navimg4,.navimg5,.navimg6{
