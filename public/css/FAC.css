@@ -603,4 +603,26 @@ counter-increment: li-counter;
       margin-top: 30vh;
     }
 }
- 
+@media screen and (min-width: 500px) and (max-width:1024px){
+  .divider1{
+      width:100%;
+      margin:0 auto;
+      margin-bottom: 10px;
+    }
+    .divider2{
+     margin:0 auto;
+     width:100%;
+     margin-bottom:100px;
+    }
+    .list-type5,.list-type6{
+      width:80vw;
+      margin:0 auto;
+    }
+    .column{
+      margin: 0 auto;
+      padding:20px;
+    }
+    .frame,.images{
+      width:40vw;
+    }
+  }
