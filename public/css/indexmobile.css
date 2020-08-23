@@ -91,3 +91,14 @@
         font-size: 30px;
     }
 }
+@media screen and (min-width: 500px) and (max-width:1024px){
+    .img1{
+        margin-top:30vh;
+        transform: scale(1);
+    }
+    .head1{
+        left:0vw;
+        top:55vh;
+        font-size:40px;
+    }
+}
