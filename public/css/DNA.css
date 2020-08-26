@@ -118,7 +118,7 @@ nav ul li {
 }
 
 main{
- padding-bottom:10px;
+ padding-bottom:100px;
  background-color: #F8F8F8;
 }
 
@@ -359,12 +359,26 @@ section h3{
 
 
 /*--- Footer --- */
-
 footer {
-grid-column: 1 / 3;
-background: #96626f;
-padding: 5rem 1rem;
-} 
+  grid-column: 1 / 3;
+  background: #26272b;
+  padding: 1.5rem 1rem;
+  color:#fff;
+  font-family: 'Rubik', sans-serif;
+}
+footer a{
+  text-decoration: none;
+  color:#d4d0e7;
+}
+footer a:hover{
+  color:#3366cc;
+  text-decoration:none;
+}
+footer .foot-text{
+  padding-left:20px;
+  padding-top:10px;
+}
+
 /*
 .column {
 float: left;
