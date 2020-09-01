@@ -499,3 +499,10 @@ Leaderboard
       margin-top: 30vh;
     }
 }
+
+.video-container{
+  margin-top:0px;
+  margin-bottom: 25px;
+  margin: 0 auto;
+  max-width: 1050px;
+}

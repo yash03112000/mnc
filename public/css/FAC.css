@@ -626,3 +626,18 @@ counter-increment: li-counter;
       width:40vw;
     }
   }
+
+
+  .video-container{
+    margin-top:0px;
+    margin-bottom: 25px;
+    margin: 0 auto;
+    max-width: 1050px;
+}
+
+@media screen and (max-width: 500px) {
+  
+  .our-team,.video-container{
+    margin: 0;
+  }
+}
