@@ -266,7 +266,7 @@ var imgtrans = (a)=>{
   color[3] = '#84dcc6';
   color[4] = '#91a7ee';
   color[5] = '#ff8c42';
-  color[6] = '#378a99'; 
+  color[6] = '#faf6da'; 
 
   if(a!=active && tra === 0){
     console.log(a)

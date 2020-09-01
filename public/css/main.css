@@ -419,13 +419,13 @@ body { -ms-overflow-style: none; }
     width: 50%;
     height:100%;
     display: block;
-    background-color: #378a99;
+    background-color: #faf6da;
 }
 .part63{
     height:100vh;
     width: 100vw;
     position: absolute;
-    background-color: #378a99;
+    background-color: #faf6da;
     display: none;
 }
 
@@ -436,7 +436,7 @@ body { -ms-overflow-style: none; }
     font-family: 'Bebas Neue', cursive;
     font-size: 45px;
     letter-spacing: 3px;
-    color: #378a99;
+    color: #e0d796;
 }
 
 /* .content6{
@@ -711,10 +711,10 @@ body{cursor:none}
 
 
 .vdes5:hover{
-  background-color: #3fa3b8;
+  background-color: #dfce54;
 }
 
 .vdes5{
-  background-color:#378a99;
+  background-color:#e0d796;
   transition: background-color 0.3s;
 }
