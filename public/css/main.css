@@ -65,14 +65,14 @@ body{
 }
 
 
-.view2{
+/* .view2{
     font-weight: bold;
     font-size: 18px;
     text-decoration: underline;
     position: relative;
     left:10%;
     top:30vh;
-}
+} */
 .img1{
     position:absolute;
     width:40vw;
@@ -189,14 +189,14 @@ body { -ms-overflow-style: none; }
 
 
 
-.view3{
+/* .view3{
     font-weight: bold;
     font-size: 18px;
     text-decoration: underline;
     position: relative;
     left:10%;
     top:30vh;
-}
+} */
 .events{
     color:#7C7C7C;
     font-size: 40px;
@@ -235,12 +235,12 @@ body { -ms-overflow-style: none; }
 
 
 
-.view4,.view5,.view6{
+.view2,.view3,.view4,.view5,.view6{
     font-weight: bold;
     font-size: 18px;
     text-decoration: underline;
     position: relative;
-    left:10%;
+    left:40%;
     top:30vh;
 }
 /* .img4{
