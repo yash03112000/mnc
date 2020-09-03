@@ -25,9 +25,10 @@ axios.get('https://mncweb.herokuapp.com/table')
             }
             // console.log(j)
         }
-        var name = ['Aryans','Kshatriya','Nawab','Peshwas','Shauryas']
+        var name = ['Aryans','Kshatriyas','Nawabs','Peshwas','Shauryas']
         for(j=0;j<5;j++){
             document.querySelector(`.lead${j+1}pool`).innerText = name[leader[j]]
+            document.querySelector(`.lead${j+1}img`).src = `img/${name[leader[j]]}.png` 
             document.querySelector(`.lead${j+1}point`).innerText = leaderpoints[j]
         }
 
