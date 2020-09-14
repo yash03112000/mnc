@@ -22,6 +22,20 @@ This project uses the following technologies:
 npm install
 ```
 
+
+### Running
+
+```shell
+npm run start
+```
+
+
+## Website
+- [MnCWeb](http://students.iitk.ac.in/mnc)
+
+## App(Github)
+- [MnCWeb](https://github.com/yash03112000/MnCApp)
+
 ## Contributors
 - Yash Agrawal 
 - Aman Yadav
