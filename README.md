@@ -1,4 +1,4 @@
-# Polls
+# Media And Cultural Council IITK Website
 
 Website For Media And Cultural Council IITK. 
 
