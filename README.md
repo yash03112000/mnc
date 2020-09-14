@@ -34,7 +34,7 @@ npm run start
 - [MnCWeb](http://students.iitk.ac.in/mnc)
 
 ## App(Github)
-- [MnCWeb](https://github.com/yash03112000/MnCApp)
+- [MnCApp](https://github.com/yash03112000/MnCApp)
 
 ## Contributors
 - Yash Agrawal 
