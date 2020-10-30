@@ -553,15 +553,20 @@ nav ul li a {
   font-size: 18px;
   font-family: 'Open Sans Condensed', sans-serif;
   cursor: none;
+  /* width: 100%; */
 }
+
 
 @media(max-width:500px){
     .btn{
         position: relative;
         font-size: 18px;
         transform: scale(0.8);
-        float:right;
+        /* float:right; */
+        /* justify-content: center;
+        align-items: center; */
         margin-right:0px;
+        left: 30vw;
     }
 }
 .img2,.img3,.img4,.img5,.img6{
