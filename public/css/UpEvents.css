@@ -38,7 +38,7 @@ body {
   }
   .flip-card {
     background-color: transparent;
-    height:300px;
+    height:400px;
     width:450px;
     margin: 0 auto;
     margin-bottom:70px;
@@ -90,7 +90,7 @@ body {
     background-color: #fff;
  }
   .clubs-preview{
-    height:250px;
+    height:350px;
     width:450px;
     overflow: hidden;
     object-fit: contain;
